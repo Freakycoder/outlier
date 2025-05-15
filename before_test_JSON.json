@@ -1,2810 +1,366 @@
 [
   {
-    "name": "packages/utils/plugins-helpers/tests/is-using-types.spec.ts | isUsingTypes | Should work with __typename on fragments",
+    "name": "test/telemetry.test.ts | Telemetry | should not record events when telemetry is disabled",
     "status": "PASSED"
   },
   {
-    "name": "packages/utils/plugins-helpers/tests/is-using-types.spec.ts | isUsingTypes | Should include fragments when they are not extenral",
+    "name": "test/telemetry.test.ts | Telemetry | should record events when telemetry is enabled",
     "status": "PASSED"
   },
   {
-    "name": "packages/utils/plugins-helpers/tests/is-using-types.spec.ts | isUsingTypes | Should ignore fragments when they are extenral",
+    "name": "test/telemetry.test.ts | Telemetry | should send events and clear events array when telemetry is enabled and send is called",
     "status": "PASSED"
   },
   {
-    "name": "packages/utils/plugins-helpers/tests/is-using-types.spec.ts | isUsingTypes | Should includes types import when fragment spread is used over an optional field",
+    "name": "test/telemetry.test.ts | Telemetry | should not send events when telemetry is disabled and send is called",
     "status": "PASSED"
   },
   {
-    "name": "packages/utils/plugins-helpers/tests/is-using-types.spec.ts | isUsingTypes | Should includes types correctly",
+    "name": "test/updates.test.ts | getLatestVersion | should return the latest version of the package",
     "status": "PASSED"
   },
   {
-    "name": "packages/utils/plugins-helpers/tests/is-using-types.spec.ts | isUsingTypes | Should includes types correctly when used in fragment",
+    "name": "test/updates.test.ts | getLatestVersion | should throw an error if the response is not ok",
     "status": "PASSED"
   },
   {
-    "name": "packages/utils/plugins-helpers/tests/is-using-types.spec.ts | Issues | #3248 - error on missing field on type",
+    "name": "test/updates.test.ts | checkForUpdates | should log an update message if a newer version is available - minor ver",
     "status": "PASSED"
   },
   {
-    "name": "packages/utils/plugins-helpers/tests/is-using-types.spec.ts | Issues | #3217 - complex selection set causes issues with incorrect parent type",
+    "name": "test/updates.test.ts | checkForUpdates | should log an update message if a newer version is available - major ver",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/enum-values.spec.ts | enumValues | should work with namespaces",
+    "name": "test/updates.test.ts | checkForUpdates | should not log an update message if the current version is up to date",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/enum-values.spec.ts | enumValues | should work with regular type",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should not cache data with failed request",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/enum-values.spec.ts | enumValues | should work with aliased type",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should fetch data with cache enabled",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/enum-values.spec.ts | enumValues | should respect enum values from schema and escape it if needed",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should fetch data with cache enabled after previous test",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/enum-values.spec.ts | enumValues | should ignore enum values from schema",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should fetch data without cache for a single test",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/enum-values.spec.ts | enumValues | should respect non-string enum values",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should still fetch data without cache for a single test",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | parseMapper | Should return the correct values for a simple named mapper",
+    "name": "test/providers.test.ts | providers | OpenAiCompletionProvider callApi",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | parseMapper | Should support a custom mapper with no imports",
+    "name": "test/providers.test.ts | providers | OpenAiChatCompletionProvider callApi",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | parseMapper | Should return the correct values for a external named mapper",
+    "name": "test/providers.test.ts | providers | OpenAiChatCompletionProvider callApi with cache disabled",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | parseMapper | Should return the correct values for a external default mapper",
+    "name": "test/providers.test.ts | providers | loadApiProvider with openai:chat",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | parseMapper | Should support namespaces",
+    "name": "test/providers.test.ts | providers | loadApiProvider with openai:completion",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | parseMapper | Should support aliases",
+    "name": "test/providers.test.ts | providers | loadApiProvider with openai:chat:modelName",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | parseMapper | Should support aliases",
+    "name": "test/providers.test.ts | providers | loadApiProvider with openai:completion:modelName",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | parseMapper | should support generic with complex setup",
+    "name": "test/providers.test.ts | providers | loadApiProvider with RawProviderConfig",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | parseMapper | Should support generics",
+    "name": "test/providers.test.ts | providers | loadApiProviders with RawProviderConfig[]",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | suffix | Should not add a suffix to a simple named mapper",
+    "name": "test/providers.test.ts | util | readPrompts with single prompt file",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | suffix | Should add a suffix to an external named mapper",
+    "name": "test/providers.test.ts | util | readPrompts with multiple prompt files",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | suffix | Should add a suffix to an external default mapper",
+    "name": "test/providers.test.ts | util | readPrompts with directory",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | suffix | Should add a suffix and support generics",
+    "name": "test/providers.test.ts | util | readPrompts with empty input",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | suffix | Should not add a suffix to a namespace",
+    "name": "test/providers.test.ts | util | readPrompts with map input",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | suffix | Should add a suffix next to an alias",
+    "name": "test/providers.test.ts | ✕ readPrompts with JSONL file (8 ms) | readVars with CSV input",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts | suffix | transformMappers should apply a suffix to parseMapper",
+    "name": "test/providers.test.ts | ✕ readPrompts with JSONL file (8 ms) | readVars with JSON input",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should use pascal case by default",
+    "name": "test/providers.test.ts | ✕ readPrompts with JSONL file (8 ms) | readVars with YAML input",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should allow to override underscore behaviour directly from configuration.",
+    "name": "test/providers.test.ts | ✕ readPrompts with JSONL file (8 ms) | writeOutput with CSV output",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should allow to use \"keep\" as root",
+    "name": "test/providers.test.ts | ✕ readPrompts with JSONL file (8 ms) | writeOutput with JSON output",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should allow to use Function as root",
+    "name": "test/providers.test.ts | ✕ readPrompts with JSONL file (8 ms) | writeOutput with YAML output",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should allow to use object of naming conventions",
+    "name": "test/providers.test.ts | readTests | readTests with no input",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should allow to use function of naming conventions",
+    "name": "test/providers.test.ts | readTests | readTests with string input",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should allow to use function of naming conventions",
+    "name": "test/providers.test.ts | readTests | readTests with array input",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should keep underscore by default",
+    "name": "test/assertions.test.ts | runAssertions | should pass when all assertions pass",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should allow to override underscore behaviour",
+    "name": "test/assertions.test.ts | runAssertions | should fail when any assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts | convertFactory | Should allow to override transformUnderscore in config",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the equality assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/utils.spec.ts | flatten | should flatten a nested array",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the equality assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/utils.spec.ts | groupBy | should group by a property",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the is-json assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/utils.spec.ts | unique | should return unique items when no key selector is passed",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the is-json assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/utils.spec.ts | unique | should return unique items based on key selector",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the contains-json assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/client-side-base-visitor.spec.ts | when emitLegacyCommonJSImports is true | does not append `.js` to Operations import path",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the contains-json assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/client-side-base-visitor.spec.ts | when emitLegacyCommonJSImports is false | appends `.js` to Operations import path",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the function assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/client-side-base-visitor.spec.ts | when emitLegacyCommonJSImports is false | preserves `.js` on Operations import path",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the function assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/client-side-base-visitor.spec.ts | when documentMode \"documentNodeImportFragments\" | does not import FragmentDocs",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the function assertion passes - with vars",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/client-side-base-visitor.spec.ts | when documentMode \"graphQLTag\" | imports FragmentDocs",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the function does not match vars",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/time/tests/time.spec.ts | Time | Should use default comment when extension is unknown",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the not-contains assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/time/tests/time.spec.ts | Time | Should use # prefix for comment when extension is graphql",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the not-contains assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/cli-error.spec.ts | cliError | should handle an Error",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the icontains assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/cli-error.spec.ts | cliError | should handle string",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the icontains assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/cli-error.spec.ts | cliError | should handle an object",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the not-icontains assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "examples/yoga-tests/src/yoga.spec.ts | Yoga Tests | execute query operation",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the not-icontains assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "examples/yoga-tests/src/yoga.spec.ts | Yoga Tests | execute mutation operation",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the contains-any assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "examples/yoga-tests/src/yoga.spec.ts | Yoga Tests | execute mutation operation",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the contains-any assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/utils/plugins-helpers/tests/resolve-external-module-and-fn.spec.ts | Issues | #6553 - Cannot find module",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the contains-all assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-core/tests/prepend.spec.ts | sortPrependValues | Should sort and use the correct order",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the contains-all assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "examples/persisted-documents/src/yoga.spec.ts | Persisted Documents | execute document without persisted operation enabled",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the regex assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "examples/persisted-documents/src/yoga.spec.ts | Persisted Documents | can not execute arbitrary operation with persisted operations enabled",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the regex assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "examples/persisted-documents/src/yoga.spec.ts | Persisted Documents | can execute persisted operation with persisted operations enabled",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the not-regex assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "examples/persisted-documents-string-mode/src/yoga.spec.ts | Persisted Documents | execute document without persisted operation enabled",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the not-regex assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "examples/persisted-documents-string-mode/src/yoga.spec.ts | Persisted Documents | can not execute arbitrary operation with persisted operations enabled",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the webhook assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "examples/persisted-documents-string-mode/src/yoga.spec.ts | Persisted Documents | can execute persisted operation with persisted operations enabled",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the webhook assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/introspection/tests/introspection.spec.ts | Introspection template | should output a JSON file",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the webhook returns an error",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/introspection/tests/introspection.spec.ts | Introspection template | should output a JSON file minified",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the rouge-n assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/introspection/tests/introspection.spec.ts | Introspection template | should support Apollo Federation",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the rouge-n assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/typescript/typed-document-node/tests/typed-document-node.spec.ts | TypedDocumentNode | Should not output imports when there are no operations at all",
+    "name": "test/assertions.test.ts | assertionFromString | should create an equality assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/typescript/typed-document-node/tests/typed-document-node.spec.ts | addTypenameToSelectionSets | Check is add __typename to typed document",
+    "name": "test/assertions.test.ts | assertionFromString | should create an is-json assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/typescript/typed-document-node/tests/typed-document-node.spec.ts | addTypenameToSelectionSets | Check with __typename in selection set",
+    "name": "test/assertions.test.ts | assertionFromString | should create an contains-json assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/create-resolvers-fields.spec.ts | BaseResolversVisitor.createResolversFields | checks if types are actually included when Omit is applied",
+    "name": "test/assertions.test.ts | assertionFromString | should create a function assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/create-resolvers-fields.spec.ts | BaseResolversVisitor.createResolversFields | generates proper types when typesPrefix is used along with `enumPrefix: false`",
+    "name": "test/assertions.test.ts | assertionFromString | should create a similarity assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/plugins/other/visitor-plugin-common/tests/create-resolvers-fields.spec.ts | BaseResolversVisitor.createResolversFields | generates proper types when typesSuffix is used along with `enumSuffix: false`",
+    "name": "test/assertions.test.ts | assertionFromString | should create a contains assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | init | should have few default values",
+    "name": "test/assertions.test.ts | assertionFromString | should create a not-contains assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | init | should have few default values",
+    "name": "test/assertions.test.ts | assertionFromString | should create a contains-any assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | init | custom setup",
+    "name": "test/assertions.test.ts | assertionFromString | should create a contains-all assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | guessTargets() | should guess angular projects",
+    "name": "test/assertions.test.ts | assertionFromString | should create a regex assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | guessTargets() | should guess typescript projects",
+    "name": "test/assertions.test.ts | assertionFromString | should create a not-regex assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | guessTargets() | should guess react projects",
+    "name": "test/assertions.test.ts | assertionFromString | should create an icontains assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | guessTargets() | should guess stencil projects",
+    "name": "test/assertions.test.ts | assertionFromString | should create a not-icontains assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | guessTargets() | should guess flow projects",
+    "name": "test/assertions.test.ts | assertionFromString | should create a webhook assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | guessTargets() | should guess vue projects",
+    "name": "test/assertions.test.ts | assertionFromString | should create a not-webhook assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | guessTargets() | should guess graphql-request projects",
+    "name": "test/assertions.test.ts | assertionFromString | should create a rouge-n assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugins suggestions for client-side setup | should use angular related plugins when @angular/core is found",
+    "name": "test/assertions.test.ts | assertionFromString | should create a not-rouge-n assertion",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugins suggestions for client-side setup | should use react related plugins when react is found",
+    "name": "test/assertions.test.ts | matchesSimilarity | should pass when similarity is above the threshold",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugins suggestions for client-side setup | should use stencil related plugins when @stencil/core is found",
+    "name": "test/assertions.test.ts | matchesSimilarity | should fail when similarity is below the threshold",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugins suggestions non client-side setup | should use typescript related plugins when typescript is found",
+    "name": "test/assertions.test.ts | matchesSimilarity | should fail when inverted similarity is above the threshold",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugin choices | node",
+    "name": "test/assertions.test.ts | matchesSimilarity | should pass when inverted similarity is below the threshold",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugin choices | node + typescript",
+    "name": "test/assertions.test.ts | matchesLlmRubric | should pass when the grading provider returns a passing result",
     "status": "PASSED"
   },
   {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugin choices | node + flow",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugin choices | angular",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugin choices | react",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugin choices | react + flow",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/init.spec.ts | plugin choices | stencil",
-    "status": "PASSED"
-  },
-  {
-    "name": "examples/typescript-graphql-request/src/main.spec.ts | TypeScript GraphQL Request tests | works without variables",
-    "status": "PASSED"
-  },
-  {
-    "name": "examples/typescript-graphql-request/src/main.spec.ts | TypeScript GraphQL Request tests | returns first 3 entries",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.union.spec.ts | TypeScript Resolvers Plugin - Union | should generate ResolversUnionTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.union.spec.ts | TypeScript Resolvers Plugin - Union | should NOT generate ResolversUnionTypes if there is no Union",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.union.spec.ts | TypeScript Resolvers Plugin - Union | generates nested types when avoidCheckingAbstractTypesRecursively=false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.union.spec.ts | TypeScript Resolvers Plugin - Union | does not generate nested types when avoidCheckingAbstractTypesRecursively=true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.meta.spec.ts | TypeScript Resolvers Plugin - Meta | generates meta correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.avoidOptionals.spec.ts | TypeScript Resolvers Plugin - config.avoidOptionals | should generate basic type resolvers if config.avoidOptionals = true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.avoidOptionals.spec.ts | TypeScript Resolvers Plugin - config.avoidOptionals | #7005 - avoidOptionals should preserve optional resolvers",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.avoidOptionals.spec.ts | TypeScript Resolvers Plugin - config.avoidOptionals | #9438 - avoidOptionals should not wrap arguments with partial",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.avoidOptionals.spec.ts | TypeScript Resolvers Plugin - config.avoidOptionals | should keep non-optional arguments non-optional - issue #2323",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.avoidOptionals.spec.ts | TypeScript Resolvers Plugin - config.avoidOptionals - query, mutation, subscription | avoids non-optional Query fields if config.avoidOptionals.query = true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.avoidOptionals.spec.ts | TypeScript Resolvers Plugin - config.avoidOptionals - query, mutation, subscription | avoids non-optional Mutation fields if config.avoidOptionals.mutation = true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.avoidOptionals.spec.ts | TypeScript Resolvers Plugin - config.avoidOptionals - query, mutation, subscription | avoids non-optional Subscription fields if config.avoidOptionals.subscription = true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate simple module with one file",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate correctly for mutiple files",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should ignore unnamed documents",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate simple module with two documents in one file",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate module with a name as a camel case",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate module with a name as a pascal case with underscores",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate module with a name as a pascal case without underscores",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate module with a name as a contant case",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate module with prefix for a name",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate module with suffix for a name",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | Should generate simple module without graphql-tag",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts | graphql-codegen typescript-graphql-document-nodes | should contain fragment definitions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Validation | Should enforce graphql extension when its the only plugin",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Validation | Should not enforce graphql extension when its not the only plugin",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Validation | Should allow .graphql extension when its the only plugin",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Validation | Should allow .gql extension when its the only plugin",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Validation | Should allow .graphqls extension when its the only plugin",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Output | Should print schema without directives when \"includeDirectives\" is unset",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Output | Should print schema with as \"\"\" comment as default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Output | Should print schema with directives when \"includeDirectives\" is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Output | Should print schema with introspection when \"includeIntrospectionTypes\" is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Output | Should print schema without introspection when \"includeIntrospectionTypes\" is unset",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/schema-ast/tests/schema-ast.spec.ts | Output | should support Apollo Federation",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/extract-all-types.spec.ts | extractAllFieldsToTypes: true | should extract types from queries",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/extract-all-types.spec.ts | extractAllFieldsToTypes: true | should extract types from multiple fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/extract-all-types.spec.ts | extractAllFieldsToTypes: true | should extract types from multiple fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/extract-all-types.spec.ts | extractAllFieldsToTypes: true | should extract types from multiple fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/extract-all-types.spec.ts | extractAllFieldsToTypes: true | should extract types from multiple fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/extract-all-types.spec.ts | extractAllFieldsToTypes: true | should extract types from multiple fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should create basic config using new yml API",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should use different config file correctly with --config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should set --watch with new YML api",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should set watch and overwrite to default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should overwrite watch config using cli flag to true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should overwrite watch config using cli flags to false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should overwrite ignoreNoDocuments config using cli flags to false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should overwrite emitLegacyCommonJSImports config using cli flags to true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should overwrite emitLegacyCommonJSImports config using cli flags to false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should overwrite ignoreNoDocuments config using cli flags to true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should set --overwrite with new YML api",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should interpolate environmental variables in YML",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should interpolate multiple environmental variables in YML",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should interpolate environmental variables in YML and support default value",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should interpolate environmental variables in YML and support default value containing \":\"",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/cli-flags.spec.ts | CLI Flags | Should load require extensions provided by cli flags",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | excludes types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | adds non-optional typenames to implemented types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | adds non-optional typenames to ResolversUnionTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | adds non-optional typenames to ResolversUnionTypes for mappers with no placeholder",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | adds non-optional typenames to ResolversUnionTypes for mappers with placeholder",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | adds non-optional typenames to ResolversUnionTypes for default mappers with placeholder",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | does not create ResolversUnionTypes for default mappers with no placeholder",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | adds non-optional typenames to ResolversInterfaceTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | adds non-optional typenames to ResolversInterfaceTypes for mappers with no placeholder",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | adds non-optional typenames to ResolversInterfaceTypes for mappers with placeholder",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | adds non-optional typenames to ResolversInterfaceTypes for default mappers with placeholder",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts | TypeScript Resolvers Plugin - config.resolversNonOptionalTypename | does not create ResolversInterfaceTypes for default mappers with no placeholder",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.interface.spec.ts | TypeScript Resolvers Plugin - Interfaces | should generate ResolversInterfaceTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.interface.spec.ts | TypeScript Resolvers Plugin - Interfaces | should generate ResolversInterfaceTypes with transformed type names correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.interface.spec.ts | TypeScript Resolvers Plugin - Interfaces | should NOT generate ResolversInterfaceTypes if there is no Interface",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.interface.spec.ts | TypeScript Resolvers Plugin - Interfaces | Should generate valid types even when there are no implementers for an interface",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.interface.spec.ts | TypeScript Resolvers Plugin - Interfaces | generates overridden interface types for interfaces wrapped in object types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.interface.spec.ts | TypeScript Resolvers Plugin - Interfaces | correctly handles circular reference - variant 1",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.interface.spec.ts | TypeScript Resolvers Plugin - Interfaces | correctly handles circular reference - variant 2",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.interface.spec.ts | TypeScript Resolvers Plugin - Interfaces | does not generate nested types when avoidCheckingAbstractTypesRecursively=true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | client-preset \u003E babelPlugin | can imports files in the same directory",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | client-preset \u003E babelPlugin | can import files in another directory",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | Watch targets | watches the longest common prefix directory",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | watches process.cwd",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | triggers a rebuild for basic case",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | globally included paths should be included even when a local pattern negates them",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | globally negated paths should be excluded even when a local pattern matches them",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | local watchPattern negation should override local documents match",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | local negations in documents set should override match in same documents set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | local watchPattern negation should override local schema match",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | local negations in schema set should override match in same schema set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | match in one local group, negated in another group, should still match",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | output directories with presetConfig create glob patterns ignored by parcel watcher",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | output files are ignored by parcel watcher, but would not trigger rebuild anyway",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/babel.spec.ts | ✕ ignores schema URLs when detecting common prefix directory (17 ms) | all expectations also work in a big combined config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/config.spec.ts | Codegen config - Context | loads and merge multiple schemas when using GraphQL config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/config.spec.ts | Codegen config - Context | loads and merge multiple schemas when using input config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | Fragment Matcher Plugin | should support Apollo Federation",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | Fragment Matcher Plugin | should support Apollo Federation with predefined directive definitions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | Fragment Matcher Plugin | should create the result deterministically when configured to",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | validate | should not throw on tsx?, jsx?, json files, both in lower and upper case",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | validate | should throw on commonjs + ts",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | validate | should throw on unsupported extension",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | JSON | should stringify the result",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | JavaScript | should use es2015 module by default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | JavaScript | should be able to use commonjs",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | TypeScript | should use es2015 module by default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | TypeScript | should use es2015 module by default - apollo client 3",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | TypeScript | should use es2015 even though commonjs is requested",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | TypeScript | should support exportAsConst for apolloClientVersion 2",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/other/fragment-matcher/tests/plugin.spec.ts | TypeScript | should support useExplicitTyping for apolloClientVersion 3",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should support extend keyword",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should include nested fields from @provides directive",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should include fields from @requires directive",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should handle nested fields from @requires directive",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should handle nested fields from @key directive",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should not apply key/requires fields restriction for base federated types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should skip to generate resolvers of fields with @external directive",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should not include _FieldSet scalar",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should not include federation directives",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should not add directive definitions and scalars if they are already there",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should allow for duplicated directives",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | TypeScript Resolvers Plugin + Apollo Federation | should not generate unused scalars",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | adds __resolveReference | when generateInternalResolversIfNeeded.__resolveReference = false, generates optional __resolveReference for object types with @key",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | adds __resolveReference | when generateInternalResolversIfNeeded.__resolveReference = true, generates required __resolveReference for object types with resolvable @key",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | When field definition wrapping is enabled | should add the UnwrappedObject type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | When field definition wrapping is enabled | should add UnwrappedObject around ParentType for __resloveReference",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | meta - generates federation meta correctly | when generateInternalResolversIfNeeded.__resolveReference = false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts | meta - generates federation meta correctly | when generateInternalResolversIfNeeded.__resolveReference = true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes object when there are no mappers",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes with simple mappers",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should allow to map custom type that refers itself",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should allow to map custom type that refers itself",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should allow to map custom type that refers itself",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | should map to a custom type on every level",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes with defaultMapper set using {T}",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes with defaultMapper set using {T} with external identifier",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes with mapper set for concrete type using {T} with external identifier",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should map to a custom type on every level when {T} is used as default mapper",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes with mapper set for concrete type using renamed external identifier",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes with mapper set for concrete type using renamed external identifier",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes with mapper set for concrete type using renamed external identifier",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes with defaultMapper set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should build ResolversTypes with external mappers",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should handle {T} in a mapper",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | should warn about unused mappers by default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | should be able not to warn about unused mappers",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should generate basic type resolvers with external mappers",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should generate basic type resolvers with external mappers using same imported type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should generate the correct resolvers when used with mappers with interfaces",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should generate basic type resolvers with defaultMapper set to any",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should generate basic type resolvers with defaultMapper set to external identifier",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should replace using Omit when non-mapped type is pointing to mapped type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | Should not replace using Omit when non-mapped type is pointing to mapped type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | should support namespaces",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | should support namespaces in contextType",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | should support namespaces in defaultMapper",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | should support namespaces in rootValueType",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts | TypeScript Resolvers Plugin - Mapping | should support namespaces and {T} placeholder",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/generate-and-save.spec.ts | generate-and-save | allow to specify overwrite for specific output",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/generate-and-save.spec.ts | generate-and-save | allow to specify overwrite for specific output",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/generate-and-save.spec.ts | generate-and-save | should not error when ignoreNoDocuments config option is present",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/generate-and-save.spec.ts | generate-and-save | should use global overwrite option and write a file",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/generate-and-save.spec.ts | generate-and-save | should use global overwrite option and not write a file",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/generate-and-save.spec.ts | generate-and-save | should overwrite a file by default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/generate-and-save.spec.ts | generate-and-save | should override generated files",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/generate-and-save.spec.ts | generate-and-save | should extract a document from the gql tag",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/generate-and-save.spec.ts | generate-and-save | should allow to alter the content with the beforeOneFileWrite hook",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should use StitchingResolver when its active on config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | directiveResolverMappings - should generate correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should allow to override ResolverTypeWrapper signature",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should have default value for ResolverTypeWrapper signature",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should not warn when noSchemaStitching is not defined",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should disable StitchingResolver on demand",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Default values of args and compatibility with typescript plugin",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Test for enum usage in resolvers",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should allow to generate optional __resolveType",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should generate basic type resolvers",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should allow to override context with simple identifier",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should with correctly with addUnderscoreToArgsType set to true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should allow to override context with mapped context type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should allow to override context with mapped context type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should allow to override context with mapped context type as default export",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should allow to override context with mapped context type as default export with type import",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should generate named custom field level context type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should generate named custom field level context type for field with directive",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should generate named custom field level context type for field with directive and context type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should generate named custom field level context type for field with directive and field context type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should generate the correct imports when schema has scalars",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should generate the correct imports when schema has no scalars",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should generate the correct imports when customResolveInfo defined in config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | #8852 - should generate the correct imports when customResolveInfo defined in config with type import",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should not convert type names in unions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should generate the correct resolver args type names when typesPrefix is specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should make list of all-optional arguments include undefined types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should include generic wrapper type only when necessary",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should generate Resolvers interface",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should not create DirectiveResolvers if there is no directive defined in the schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should produce Resolvers compatible with graphql-tools",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should produce resolvers compatible with graphql-tools",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should use {} as default of rootValueType",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should generate ResolversParentTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should use correct value when rootValueType mapped as default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should use correct value when rootValueType mapped as default with type import",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should use rootValueType in Query, Mutation and Subscription",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should generate subscription types correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | should use MaybePromise in ResolverTypeWrapper",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | TypeScript Resolvers Plugin | Should generate resolvers with replaced internalResolversPrefix if specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Backward Compatability | should produce IResolvers compatible with graphql-tools",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Config | onlyResolveTypeForInterfaces - should allow to have only resolveType for interfaces",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Config | optionalInfoArgument - should allow to have optional info argument",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Config | allowParentTypeOverride - should allow to have less strict resolvers by overrding parent type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Config | namespacedImportName - should work correctly with imported namespaced type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Config | directiveResolverMappings - should generate correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Config | makeResolverTypeCallable - should remove ResolverWithResolve type from resolver union",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Config | makeResolverTypeCallable - adds ResolverWithResolve type to resolver union when set to false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Enums | Should not generate enum internal values resolvers when enum doesnt have enumValues set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Enums | Should generate enum internal values resolvers when enum has enumValues set as object with explicit values",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Enums | Should generate enum internal values resolvers when enum has enumValues set as external enum",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Enums | Should generate enum internal values resolvers when enum has mappers pointing to external enum",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Enums | Should generate enum internal values resolvers when enum has enumValues set on a global level of all enums",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Should generate the correct imports when customResolverFn defined in config | ./my-type#MyResolverFn",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Should generate the correct imports when customResolverFn defined in config | ./my-type#ResolverFn",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Should generate the correct imports when customResolverFn defined in config | definition directly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | Should generate the correct imports when customResolverFn defined in config | ok with default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | issues | #4687 - incorrect suffix when used with typesSuffix",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | issues | should work correctly with enumPrefix: false - issue #2679",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | issues | #3257 - should not import mapper when its already imported because of enumValues",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts | issues | #3264 - enumValues is not being applied to directive resolver",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | TypeScript | should expose Maybe",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | TypeScript | should not have [object Object]",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | TypeScript | should contain __typename",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | TypeScript | should not contain __typename",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | TypeScript | should not contain \"export\" when noExport is set to true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | TypeScript | should keep non-optional arguments non-optional - issue #2323",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | TypeScript | should respect defined enum values",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | TypeScript | should use implementing types as node type - issue #5126",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should include a description for Scalars type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should add description for input types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should add description for input fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with multiline comment",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with unions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with type fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with inteface and inteface fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with enum and enum values",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should removed underscore from enum values",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with enum as const",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with enum as const combined with enum values",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with enum and enum values",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | description to comment | Should work with directives",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should not include a description for Scalars type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should not add description for input types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should not add description for input fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should remove multiline comment",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should work with unions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should work with types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should work with type fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should work with inteface and inteface fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should work with enum and enum values",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should work with enum and enum values",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | disable comment generation | Should not work when config is false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #6815 - Generate different type for Maybe wrapper based on input variables",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #5643 - Incorrect combinations of declartionKinds leads to syntax error",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #4564 - numeric enum values set on schema level",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #4564 - numeric enum values set on schema level - complex numeric",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #7898 - falsy enum value set on schema with enumsAsTypes set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #6532 - numeric enum values with namingConvention",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #3137 - numeric enum value",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #4157 - Should generate numeric values for enums if numericEnums is set to true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #2679 - incorrect prefix for enums",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #3180 - enumValues and named default import",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #4834 - enum members should be quoted if numeric",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #2976 - Issues with mapped enumValues and type prefix in args",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #2082 - Issues with enumValues and types prefix",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #1488 - Should generate readonly also in input types when immutableTypes is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #3141 - @deprecated directive support",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #7627 - enum value @deprecated directive support",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #7766 - input value @deprecated directive support",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #1462 - Union of scalars and argument of directive",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #1954 - Duplicate type names for args type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Issues | #1980 Do not put prefix on enums in args when enumPrefix: false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should build type correctly when specified with avoidOptionals config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should build input type correctly when specified with avoidInputOptionals config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should build type correctly when specified with immutableTypes config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use const enums when constEnums is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use enum as type when enumsAsTypes is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use enum as type when enumsAsTypes is set and also enumValues",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should add `%future added value` to enum when futureProofEnums is set and also enumAsTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should add `%future added value` to enum usage when futureProofEnums is set, but not enumAsTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should add `%future added value` to enum usage when futureProofEnums is set and allowEnumStringTypes is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use custom namingConvention for enums",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use custom namingConvention for enums values as string, without specifying other type converters",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use custom namingConvention for enums",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | should handle introspection types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use class correctly when declarationKind: class is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use interface for type when declarationKind for types is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use interface for input when declarationKind for inputs is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use interface for arguments when declarationKind for arguments is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should use interface for all objects when declarationKind is interface",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should correctly render empty interfaces",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should extend one interface from another",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Config | Should extend mutiple interfaces",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should generate a scalars mapping correctly for built-in scalars",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should generate a scalars mapping correctly when using scalars as path",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should import a type of a mapped scalar",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should import a type of a mapped scalar for input/output mapping",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should generate a scalars mapping correctly for custom scalars",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should generate a scalars mapping correctly for custom scalars with mapping",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should generate a scalars mapping correctly for custom scalars with input/output mapping",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should correctly throw an error when an unknown scalar is detected while using `strictScalars`",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should allow overriding default scalar type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should add FieldWrapper when field definition wrapping is enabled",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Scalars | Should allow the FieldWrapper type to be modified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should build type correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should build type correctly when implementing interface",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should build type correctly when implementing multiple interfaces",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should build type correctly when implementing interface without adding fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should build type correctly with links between types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should build type correctly when wrapping field definitions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should build list type correctly when wrapping field definitions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should build list type correctly when wrapping entire field definitions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should build list type correctly when wrapping both field definitions and entire field definitions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Object (type) | Should not wrap input type fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Union | Should build union as type correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Union | Should add `%other` object typename to union when futureProofUnions is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Union | Should add `%other` object typename to union when futureProofUnions and immutableTypes is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Interface | Should build interface correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Directives | Should handle directive declarations correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Directives | Should handle type override",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Directives | Should allow imported types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Directives | Should use last directive override",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Directives | Should ignore unmapped directives",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | @oneOf on input types | correct output for type with single field",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | @oneOf on input types | correct output for type with multiple fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | @oneOf on input types | respects configured declaration kind with single field",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | @oneOf on input types | forces declaration kind of type with multiple fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | @oneOf on input types | raises exception for type with non-optional fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | @oneOf on input types | handles extensions properly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | @oneOf on input types | handles .isOneOf property on input object types properly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Naming Convention & Types Prefix | Should use custom namingConvention for type name and args typename",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Naming Convention & Types Prefix | Should use custom namingConvention and add custom prefix",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Naming Convention & Types Prefix | Should allow to disable typesPrefix for enums",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Naming Convention & Types Prefix | Should allow to disable typesSuffix for enums",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Naming Convention & Types Prefix | Should enable typesPrefix for enums by default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Naming Convention & Types Prefix | Should generate correct values when using links between types - lowerCase",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Naming Convention & Types Prefix | Should generate correct values when using links between types - pascalCase",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Naming Convention & Types Prefix | Should generate correct values when using links between types - pascalCase",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Arguments | Should generate correctly types for field arguments - with basic fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Arguments | Should generate correctly types for field arguments - with default value",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Arguments | Should generate correctly types for field arguments - with default value and avoidOptionals option set to true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Arguments | Should generate correctly types for field arguments - with input type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Arguments | Should add custom prefix for mutation arguments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Arguments | Should generate the correct type for a method with arguments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Arguments | Should generate correctly types for inputs with default value - #4273",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Arguments | Should generate correctly types for inputs with default value and avoidOptionals.defaultValue set to true - #5112",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Arguments | Should generate correctly types for field arguments with default value and avoidOptionals.defaultValue option set to true - #5112",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | Should build basic enum correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | Should build enum correctly with custom values",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | Should build enum correctly with custom imported enum",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | Should build enum correctly with custom imported enum from namespace with different name",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | Should build enum correctly with custom imported enum from namespace with same name",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | Should build enum correctly with custom imported enum with different name",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | Should import all enums from a single file when specified as string",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | Should re-export external enums",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | Should re-export external enums when single file option used",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/typescript/tests/typescript.spec.ts | Enum | allowEnumStringTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | TypeScript Operations Plugin | Test for omitOperationSuffix",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | TypeScript Operations Plugin | handles unnamed queries",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Config | Should not generate \"export\" when noExport is set to true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Config | Should handle \"namespacedImportName\" and add it when specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Config | Can merge an inline fragment with a spread",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Config | Should handle \"namespacedImportName\" and \"preResolveTypes\" together",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Config | Should generate the correct output when using immutableTypes config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Config | should include fragment variable definitions when experimentalFragmentVariables is set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Config | should resolve optionals according to maybeValue",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Config | should add undefined as possible value according to allowUndefinedQueryVariables",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Scalars | Should include scalars when doing pick",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Custom Operation Result Name Suffix | Should generate custom operation result name",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Naming Convention & Types Prefix | Should allow custom naming and point to the correct type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Naming Convention & Types Prefix | Should allow custom naming and point to the correct type - with custom prefix",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Naming Convention & Types Prefix | Test for dedupeOperationSuffix",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should ignore __typename for root types with skipTypeNameForRoot = true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should ignore __typename for root types with skipTypeNameForRoot = true, and with nonOptionalTypename = true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should ignore skipTypeNameForRoot = true when __typename is specified manually",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add __typename correctly with nonOptionalTypename=false,skipTypename=true,preResolveTypes=true and explicit field",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should skip __typename when skipTypename is set to true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add __typename when dealing with fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add aliased __typename correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add aliased __typename correctly with preResovleTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add __typename as non-optional when explicitly specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add __typename as non-optional when forced",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add __typename as optional when its not specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add __typename as non-optional when its explictly specified, even if skipTypename is true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add __typename correctly when unions are in use",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | Should add __typename correctly when interfaces are in use",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | should mark __typename as non optional in case it is included in the selection set of an interface field",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | __typename | should mark __typename as non optional in case it is included in the selection set of an union field",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Unnamed Documents | Should handle unnamed documents correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Unnamed Documents | Should handle unnamed documents correctly with multiple documents",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should detect invalid types as parent and notify",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should have valid __typename usage and split types according to that",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should generate the correct __typename when using fragment over type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should generate the correct __typename when using both inline fragment and spread over type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should generate the correct __typename when using fragment spread over type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should generate the correct __typename when using fragment spread over union",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should have valid fragments intersection on different types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should have valid __typename usage and split types according to that",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support fragment spread correctly with simple type with no other fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support fragment spread correctly with simple type with other fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support fragment spread correctly with multiple fragment spread",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should generate the correct intersection for fragments when using with interfaces with different type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should generate the correct intersection for fragments when type implements 2 interfaces",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should generate the correct intersection for fragments when using with interfaces with same type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support interfaces correctly when used with inline fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support union correctly when used with inline fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support union correctly when used with inline fragments on types implementing common interface",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support union correctly when used with inline fragments on types implementing common interface and also other types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support merging identical fragment union types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support computing correct names for merged fragment union types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support computing correct names for large merged fragment union types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should not create empty types when merging fragment union types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support merging identical fragment union types with skipTypename",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support computing correct names for merged fragment union types with skipTypename",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Ignores merging when enabled alongside inline fragment masking",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should support inline fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should build a basic selection set based on basic query on GitHub schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should build a basic selection set based on basic query on GitHub schema with preResolveTypes=true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should produce valid output with preResolveTypes=true and enums",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should produce valid output with preResolveTypes=true and enums with prefixes set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should produce valid output with preResolveTypes=true and enums with no suffixes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should build a basic selection set based on basic query",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should build a basic selection set based on basic query with field aliasing for basic scalar",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Selection Set | Should build a basic selection set based on a query with inner fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Fragment Definition | Should build fragment definition correctly - with name and selection set",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | Should detect Mutation correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | Should detect Query correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | Should detect Subscription correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | Should handle operation variables correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | Should handle operation variables correctly when they use custom scalars",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | Should create empty variables when there are no operation variables",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | avoid duplicates - each type name should be unique",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | should use __typename in fragments when requested",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | should handle introspection types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | should handle introspection types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | should handle introspection types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | Should generate correctly when using enums and typesPrefix",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Operation Definition | Should make arguments optional when there is a default value",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | should generate correct types for union that returns interface types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | should generate correct types for union that returns interface types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | interface with same field names",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | union returning single interface types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | duplicated fragment on type includes combined types only once",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | Should merge inline fragments fields correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | Should merge inline fragments fields correctly with fragment spread over the same type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | Should handle union selection sets with both FragmentSpreads and InlineFragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | Should handle union selection sets with both FragmentSpreads and InlineFragments with flattenGeneratedTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | #4216 - handle fragments against unions and interfaces with flattenGeneratedTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | Handles fragments across files with flattenGeneratedTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | Drops fragments with flattenGeneratedTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | Should add operation name when addOperationExport is true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Union & Interfaces | Should handle union selection sets with both FragmentSpreads and InlineFragments with flattenGeneratedTypes and directives",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #4212 - Should merge TS arrays in a more elegant way",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #5422 - Error when interface doesnt have implemeting types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #4389 - validate issues with interfaces",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #5001 - incorrect output with typeSuffix",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #3064 - fragments over interfaces causes issues with fields",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #2916 - Missing import prefix with preResolveTypes: true and near-operation-file preset",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #2699 - Issues with multiple interfaces and unions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #1624 - Should work with fragment on union type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #2407 Fragment on Fragment Spread on Union type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #2506 - inline fragment without typeCondition specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #2436 - interface with field of same name but different type is correctly handled",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #2436 - union with field of same name but different type is correctly handled",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #3950 - Invalid output with fragments and skipTypename: true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #3950 - Invalid output with fragments and skipTypename: false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #2489 - Union that only covers one possible type with selection set and no typename",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #4888 - Types for input Lists do not support coercion",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #5352 - Prevent array input coercion if arrayInputCoercion = false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #5263 - inline fragment spread on interface field results in incorrect types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #7811 - generates $fragmentName for fragment subtypes for fragment masking",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #6874 - generates types when parent type differs from spread fragment member types and preResolveTypes=true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #8793 selecting __typename should not be optional",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | Issues | #8461 - conditional directives are ignored on fields with alias",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | #6149 - operation fragment merging behavior | InlineFragmentQuery",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | #6149 - operation fragment merging behavior | SpreadFragmentQuery",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | #6149 - operation fragment merging behavior | SpreadFragmentWithSelectionQuery",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | #6149 - operation fragment merging behavior | SpreadFragmentWithSelectionQuery - flatten",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | conditional directives handling | fields with @skip, @include should pre resolve into optional",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | conditional directives handling | objects with @skip, @include should pre resolve into optional",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | conditional directives handling | fields with @skip, @include should make container resolve into MakeOptional type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | conditional directives handling | On avoidOptionals:true, fields with @skip, @include should make container resolve into MakeMaybe type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | conditional directives handling | Should handle \"preResolveTypes\" and \"avoidOptionals\" together",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | conditional directives handling | On avoidOptionals:true, optionals",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | conditional directives handling | inline fragment with conditional directives and avoidOptionals",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | conditional directives handling | resolve optionals according to maybeValue together with avoidOptionals and conditional directives",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | conditional directives handling | inline fragment with conditional directives and avoidOptionals, without preResolveTypes",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | incremental delivery directive handling | should generate an union of initial and deferred fields for fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | incremental delivery directive handling | should generate an union of initial and deferred fields for fragments using MakeEmpty",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | incremental delivery directive handling | should generate an union of initial and deferred fields for fragments MakeEmpty",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | incremental delivery directive handling | should support \"preResolveTypes: true\" and \"avoidOptionals: true\" together",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | incremental delivery directive handling | should resolve optionals according to maybeValue together with avoidOptionals and deferred fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | incremental delivery directive handling | should generate correct types with inlineFragmentTypes: \"mask\"\"",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | inlineFragmentTypes option | 'combine' yields correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | inlineFragmentTypes option | 'inline' yields correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | inlineFragmentTypes option | 'mask' yields correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | inlineFragmentTypes option | 'mask' with @unmask configured with apolloUnmask yields correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | inlineFragmentTypes option | 'mask' with @unmask without apolloUnmask yields correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | inlineFragmentTypes option | 'mask' with @unmask with apolloUnmask explicitly disabled yields correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | inlineFragmentTypes option | 'mask' with @unmask and masked fragments yields correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/plugins/typescript/operations/tests/ts-documents.spec.ts | inlineFragmentTypes option | 'mask' with @unmask and masked fragments on overlapping fields yields correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Codegen Executor | should load schema with custom fetch",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Codegen Executor | should evaluate glob expressions correctly",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Codegen Executor | Should allow plugins to extend schema with custom root",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Codegen Executor | Should allow plugin context to be accessed and modified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Codegen Executor | Should sort the input schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Codegen Executor | Handles weird errors due to invalid schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Codegen Executor | Should generate documents output even if prj1/documents and prj1/extensions/codegen/generate/xxx/documents are both definded with the same glob files",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Codegen Executor | should not run out of memory when generating very complex types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should output the correct filenames",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should load require extensions",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should throw when require extension is invalid",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should accept plugins as object",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should accept plugins as array of objects",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should throw when no output files has been specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should work with just schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should not throw when every output has a schema and there is no root schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should throw when there is no root schema and some outputs have not defined its own schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should throw when one output has no plugins or preset defined",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should throw when one output has no plugins defined",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | Should succeed when one output has no plugins but preset defined",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Generator General Options | should handle extend keyword when GraphQLSchema is used",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | Should allow to specify schema extension for specific output",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | Should allow to specify documents extension for specific output",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | Should extend existing documents",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | Should throw on duplicated names",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | should handle gql tag in ts with with nested fragment",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | should handle gql tag in ts with with multiple nested fragment",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | should handle gql tag in js with with nested fragment",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | should handle TypeScript features",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | should handle multiple fragments with the same name, but one is commented out",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | should handle graphql-tag and gatsby by default",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Per-output options | should handle custom graphql string parsers",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Plugin Configuration | Should inherit root config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Plugin Configuration | Should accept config in per-output",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Plugin Configuration | Should accept config in per-plugin",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Plugin Configuration | Should allow override of config in",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Plugin loading | Should load custom plugin from local file",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Plugin loading | Should throw when custom plugin is not valid",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Plugin loading | Should execute custom plugin validation and throw when it fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Plugin loading | Should allow plugins to extend schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Plugin loading | Should allow plugins to extend schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Schema Merging | should keep definitions of all directives",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Schema Merging | should keep directives in types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Schema Merging | should keep scalars",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Schema Merging | should keep scalars when executing codegen",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom schema loader | Should allow custom loaders to load schema on root level",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom schema loader | Should allow custom loaders to load schema on output level",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom schema loader | Should throw when invalid return value from loader",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom schema loader | Should throw when invalid module specified as loader",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom schema loader | Should throw when invalid file declaration",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom documents loader | Should allow to use custom documents loader on root level",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom documents loader | Should allow custom loaders to load documents on output level",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom documents loader | Should throw when invalid return value from custom documents loader",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom documents loader | Should throw when invalid module specified as loader",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Custom documents loader | Should throw when invalid file declaration",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Document Transform | Should transform documents",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Document Transform | Should allow users to set config",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Document Transform | Should transform documents when specifying files",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Document Transform | Should allow users to set config when specifying files",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Document Transform | Should allow plugin context to be accessed and modified",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/graphql-codegen-cli/tests/codegen.spec.ts | Document Transform | should throw an understandable error if it fails.",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | can generate simple examples uppercase names",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | can generate simple examples lowercase names",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | generates \\n regardless of whether the source contains LF or CRLF",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | follows 'useTypeImports': true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | follows 'nonOptionalTypename': true",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | supports Apollo fragment masking",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | prevent duplicate operations",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | generates correct named imports for ESM",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | should dedupe fragments - #8670",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | should dedupe fragments in a \"string\" document mode",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | embed metadata in executable document node",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | correctly handle fragment references",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | client-preset | support enumsAsConst option",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | fragment masking | fragmentMasking: false",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | fragment masking | fragmentMasking: {}",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | fragment masking | fragmentMasking.unmaskFunctionName",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | fragment masking | can accept null in useFragment",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | fragment masking | can accept list in useFragment",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | fragment masking | useFragment preserves ReadonlyArray\u003CT\u003E type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | when no operations are found | still generates the helper `graphql",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | persisted operations | apply default settings",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | persisted operations | mode=\"replaceDocumentWithHash\"",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | persisted operations | hashPropertyName=\"custom_property_name\"",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | persisted operations | embed metadata in executable document node",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | persisted operations | hashAlgorithm=\"sha256\"",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | persisted operations | custom hash remove whitespace",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | persisted operations | custom hash sha256",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | persisted operations | custom hash docs sha512",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | handles @defer directive | generates correct types and metadata",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | handles @defer directive | works with persisted documents",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | handles @defer directive | works with documentMode: string",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | handles @defer directive | works with documentMode: string and persisted documents",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | documentMode: \"string\" | generates correct types",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | documentMode: \"string\" | graphql overloads have a nice result type",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | documentMode: \"string\" | correctly resolves nested fragments",
-    "status": "PASSED"
-  },
-  {
-    "name": "packages/presets/client/tests/client-preset.spec.ts | documentMode: \"string\" | correctly skips the typename addition for the root node for subscriptions",
+    "name": "test/assertions.test.ts | matchesLlmRubric | should fail when the grading provider returns a failing result",
     "status": "PASSED"
   }
 ]
