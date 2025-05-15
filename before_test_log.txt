@@ -1,966 +1,212 @@
 Running all tests...
-PASS packages/utils/plugins-helpers/tests/is-using-types.spec.ts (5.741 s)
-  isUsingTypes
-    âœ“ Should work with __typename on fragments (29 ms)
-    âœ“ Should include fragments when they are not extenral (2 ms)
-    âœ“ Should ignore fragments when they are extenral (12 ms)
-    âœ“ Should includes types import when fragment spread is used over an optional field (17 ms)
-    âœ“ Should includes types correctly (8 ms)
-    âœ“ Should includes types correctly when used in fragment (13 ms)
-    Issues
-      âœ“ #3248 - error on missing field on type (146 ms)
-      âœ“ #3217 - complex selection set causes issues with incorrect parent type (63 ms)
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Got a `.js` file to compile while `allowJs` option is not set to `true` (file: /app/.jest/setEnvVars.js). To fix this:
+  - if you want TypeScript to process JS files, set `allowJs` to `true` in your TypeScript config (usually tsconfig.json)
+  - if you do not want TypeScript to process your `.js` files, in your Jest config change the `transform` key which value is `ts-jest` so that it does not match `.js` files anymore
+PASS test/telemetry.test.ts
+  Telemetry
+    âœ“ should not record events when telemetry is disabled (3 ms)
+    âœ“ should record events when telemetry is enabled (2 ms)
+    âœ“ should send events and clear events array when telemetry is enabled and send is called (2 ms)
+    âœ“ should not send events when telemetry is disabled and send is called (1 ms)
 
-PASS packages/plugins/other/visitor-plugin-common/tests/enum-values.spec.ts (6.317 s)
-  enumValues
-    âœ“ should work with namespaces (7 ms)
-    âœ“ should work with regular type (2 ms)
-    âœ“ should work with aliased type (1 ms)
-    âœ“ should respect enum values from schema and escape it if needed (1 ms)
-    âœ“ should ignore enum values from schema (1 ms)
-    âœ“ should respect non-string enum values (1 ms)
+FAIL examples/jest-integration/index.test.ts
+  â— Test suite failed to run
 
-PASS packages/plugins/other/visitor-plugin-common/tests/parse-mapper.spec.ts (6.625 s)
-  parseMapper
-    âœ“ Should return the correct values for a simple named mapper (10 ms)
-    âœ“ Should support a custom mapper with no imports (1 ms)
-    âœ“ Should return the correct values for a external named mapper (6 ms)
-    âœ“ Should return the correct values for a external default mapper (1 ms)
-    âœ“ Should support namespaces (8 ms)
-    âœ“ Should support aliases (1 ms)
-    âœ“ Should support aliases (default)
-    âœ“ should support generic with complex setup (9 ms)
-    âœ“ Should support generics (1 ms)
-    suffix
-      âœ“ Should not add a suffix to a simple named mapper (8 ms)
-      âœ“ Should add a suffix to an external named mapper (1 ms)
-      âœ“ Should add a suffix to an external default mapper (1 ms)
-      âœ“ Should add a suffix and support generics
-      âœ“ Should not add a suffix to a namespace (4 ms)
-      âœ“ Should add a suffix next to an alias
-      âœ“ transformMappers should apply a suffix to parseMapper (1 ms)
+    [96mexamples/jest-integration/index.test.ts[0m:[93m3[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../dist/types.js' or its corresponding type declarations.
 
-PASS packages/plugins/other/visitor-plugin-common/tests/plugins-common.spec.ts (6.816 s)
-  convertFactory
-    âœ“ Should use pascal case by default (28 ms)
-    âœ“ Should allow to override underscore behaviour directly from configuration. (4 ms)
-    âœ“ Should allow to use "keep" as root (7 ms)
-    âœ“ Should allow to use Function as root (1 ms)
-    âœ“ Should allow to use object of naming conventions (2 ms)
-    âœ“ Should allow to use function of naming conventions (1 ms)
-    âœ“ Should allow to use function of naming conventions (9 ms)
-    âœ“ Should keep underscore by default (2 ms)
-    âœ“ Should allow to override underscore behaviour (36 ms)
-    âœ“ Should allow to override transformUnderscore in config (2 ms)
-
-PASS packages/plugins/other/visitor-plugin-common/tests/utils.spec.ts
-  utils
-    flatten
-      âœ“ should flatten a nested array (7 ms)
-    groupBy
-      âœ“ should group by a property (1 ms)
-    unique
-      âœ“ should return unique items when no key selector is passed (1 ms)
-      âœ“ should return unique items based on key selector (1 ms)
-
-PASS packages/plugins/other/visitor-plugin-common/tests/client-side-base-visitor.spec.ts (7.71 s)
-  getImports
-    when documentMode "external", importDocumentNodeExternallyFrom is "near-operation-file"
-      when emitLegacyCommonJSImports is true
-        âœ“ does not append `.js` to Operations import path (59 ms)
-      when emitLegacyCommonJSImports is false
-        âœ“ appends `.js` to Operations import path (2 ms)
-    when documentMode "external", importDocumentNodeExternallyFrom is relative path
-      when emitLegacyCommonJSImports is false
-        âœ“ preserves `.js` on Operations import path (7 ms)
-    when documentMode "documentNodeImportFragments"
-      âœ“ does not import FragmentDocs (21 ms)
-    when documentMode "graphQLTag"
-      âœ“ imports FragmentDocs (9 ms)
-
-PASS packages/plugins/other/time/tests/time.spec.ts
-  Time
-    âœ“ Should use default comment when extension is unknown (14 ms)
-    âœ“ Should use # prefix for comment when extension is graphql (1 ms)
-
-PASS packages/graphql-codegen-cli/tests/cli-error.spec.ts
-  cliError
-    âœ“ should handle an Error (27 ms)
-    âœ“ should handle string (8 ms)
-    âœ“ should handle an object (5 ms)
-
-PASS examples/yoga-tests/src/yoga.spec.ts
-  Yoga Tests
-    âœ“ execute query operation (33 ms)
-    âœ“ execute mutation operation (14 ms)
-    âœ“ execute mutation operation (variant) (24 ms)
-
-PASS packages/utils/plugins-helpers/tests/resolve-external-module-and-fn.spec.ts
-  resolveExternalModuleAndFn
-    Issues
-      âœ“ #6553 - Cannot find module (6 ms)
-
-PASS packages/graphql-codegen-core/tests/prepend.spec.ts
-  sortPrependValues
-    âœ“ Should sort and use the correct order (1 ms)
-
-PASS examples/persisted-documents/src/yoga.spec.ts (9.323 s)
-  Persisted Documents
-    âœ“ execute document without persisted operation enabled (140 ms)
-    âœ“ can not execute arbitrary operation with persisted operations enabled (7 ms)
-    âœ“ can execute persisted operation with persisted operations enabled (7 ms)
-
-PASS examples/persisted-documents-string-mode/src/yoga.spec.ts (9.08 s)
-  Persisted Documents
-    âœ“ execute document without persisted operation enabled (40 ms)
-    âœ“ can not execute arbitrary operation with persisted operations enabled (7 ms)
-    âœ“ can execute persisted operation with persisted operations enabled (9 ms)
-
-PASS packages/plugins/other/introspection/tests/introspection.spec.ts (9.35 s)
-  Introspection template
-    âœ“ should output a JSON file (104 ms)
-    âœ“ should output a JSON file minified (133 ms)
-    âœ“ should support Apollo Federation (115 ms)
-
-PASS packages/plugins/typescript/typed-document-node/tests/typed-document-node.spec.ts
-  TypedDocumentNode
-    âœ“ Should not output imports when there are no operations at all (16 ms)
-    addTypenameToSelectionSets
-      âœ“ Check is add __typename to typed document (29 ms)
-      âœ“ Check with __typename in selection set (8 ms)
-
-PASS packages/plugins/other/visitor-plugin-common/tests/create-resolvers-fields.spec.ts (10.458 s)
-  BaseResolversVisitor.createResolversFields
-    âœ“ checks if types are actually included when Omit is applied (39 ms)
-    âœ“ generates proper types when typesPrefix is used along with `enumPrefix: false` (4 ms)
-    âœ“ generates proper types when typesSuffix is used along with `enumSuffix: false` (3 ms)
-
-PASS packages/graphql-codegen-cli/tests/init.spec.ts (10.981 s)
-  init
-    âœ“ should have few default values (61 ms)
-    âœ“ should have few default values (160 ms)
-    âœ“ custom setup (99 ms)
-    guessTargets()
-      âœ“ should guess angular projects (6 ms)
-      âœ“ should guess typescript projects (1 ms)
-      âœ“ should guess react projects (1 ms)
-      âœ“ should guess stencil projects (1 ms)
-      âœ“ should guess flow projects (1 ms)
-      âœ“ should guess vue projects
-      âœ“ should guess graphql-request projects (1 ms)
-    plugins suggestions for client-side setup
-      âœ“ should use angular related plugins when @angular/core is found (397 ms)
-      âœ“ should use react related plugins when react is found (87 ms)
-      âœ“ should use stencil related plugins when @stencil/core is found (96 ms)
-    plugins suggestions non client-side setup
-      âœ“ should use typescript related plugins when typescript is found (node) (82 ms)
-    plugin choices
-      âœ“ node (10 ms)
-      âœ“ node + typescript (6 ms)
-      âœ“ node + flow (2 ms)
-      âœ“ angular (2 ms)
-      âœ“ react (10 ms)
-      âœ“ react + flow (2 ms)
-      âœ“ stencil (14 ms)
-
-PASS examples/typescript-graphql-request/src/main.spec.ts
-  TypeScript GraphQL Request tests
-    âœ“ works without variables (549 ms)
-    âœ“ returns first 3 entries (236 ms)
-
-PASS packages/plugins/typescript/resolvers/tests/ts-resolvers.union.spec.ts (11.154 s)
-  TypeScript Resolvers Plugin - Union
-    âœ“ should generate ResolversUnionTypes (138 ms)
-    âœ“ should NOT generate ResolversUnionTypes if there is no Union (42 ms)
-    âœ“ generates nested types when avoidCheckingAbstractTypesRecursively=false (default) (26 ms)
-    âœ“ does not generate nested types when avoidCheckingAbstractTypesRecursively=true (47 ms)
-
-PASS packages/plugins/typescript/resolvers/tests/ts-resolvers.meta.spec.ts (11.407 s)
-  TypeScript Resolvers Plugin - Meta
-    âœ“ generates meta correctly (138 ms)
-
-PASS packages/plugins/typescript/resolvers/tests/ts-resolvers.config.avoidOptionals.spec.ts (11.273 s)
-  TypeScript Resolvers Plugin - config.avoidOptionals
-    âœ“ should generate basic type resolvers if config.avoidOptionals = true (220 ms)
-    âœ“ #7005 - avoidOptionals should preserve optional resolvers (13 ms)
-    âœ“ #9438 - avoidOptionals should not wrap arguments with partial (23 ms)
-    âœ“ should keep non-optional arguments non-optional - issue #2323 (14 ms)
-  TypeScript Resolvers Plugin - config.avoidOptionals - query, mutation, subscription
-    âœ“ avoids non-optional Query fields if config.avoidOptionals.query = true (43 ms)
-    âœ“ avoids non-optional Mutation fields if config.avoidOptionals.mutation = true (13 ms)
-    âœ“ avoids non-optional Subscription fields if config.avoidOptionals.subscription = true (10 ms)
-
-PASS packages/plugins/typescript/document-nodes/tests/graphql-document-nodes.spec.ts (11.189 s)
-  graphql-codegen typescript-graphql-document-nodes
-    âœ“ Should generate simple module with one file (35 ms)
-    âœ“ Should generate correctly for mutiple files (8 ms)
-    âœ“ Should ignore unnamed documents (2 ms)
-    âœ“ Should generate simple module with two documents in one file (4 ms)
-    âœ“ Should generate module with a name as a camel case (5 ms)
-    âœ“ Should generate module with a name as a pascal case with underscores (17 ms)
-    âœ“ Should generate module with a name as a pascal case without underscores (19 ms)
-    âœ“ Should generate module with a name as a contant case (5 ms)
-    âœ“ Should generate module with prefix for a name (7 ms)
-    âœ“ Should generate module with suffix for a name (3 ms)
-    âœ“ Should generate simple module without graphql-tag (9 ms)
-    âœ“ should contain fragment definitions (9 ms)
-
-PASS packages/plugins/other/schema-ast/tests/schema-ast.spec.ts (11.891 s)
-  Schema AST
-    Validation
-      âœ“ Should enforce graphql extension when its the only plugin (5 ms)
-      âœ“ Should not enforce graphql extension when its not the only plugin
-      âœ“ Should allow .graphql extension when its the only plugin
-      âœ“ Should allow .gql extension when its the only plugin (1 ms)
-      âœ“ Should allow .graphqls extension when its the only plugin
-    Output
-      âœ“ Should print schema without directives when "includeDirectives" is unset (7 ms)
-      âœ“ Should print schema with as """ comment as default (5 ms)
-      âœ“ Should print schema with directives when "includeDirectives" is set (3 ms)
-      âœ“ Should print schema with introspection when "includeIntrospectionTypes" is set (15 ms)
-      âœ“ Should print schema without introspection when "includeIntrospectionTypes" is unset (6 ms)
-      âœ“ should support Apollo Federation (48 ms)
-
-PASS packages/plugins/typescript/operations/tests/extract-all-types.spec.ts (11.594 s)
-  extractAllFieldsToTypes: true
-    âœ“ should extract types from queries (207 ms)
-    âœ“ should extract types from multiple fragments (180 ms)
-    âœ“ should extract types from multiple fragments (mergeFragmentTypes: true) (136 ms)
-    âœ“ should extract types from multiple fragments (inlineFragmentTypes: 'combine') (106 ms)
-    âœ“ should extract types from multiple fragments (inlineFragmentTypes: 'mask') (117 ms)
-    âœ“ should extract types from multiple fragments (preResolveTypes: false) (212 ms)
-
-PASS packages/graphql-codegen-cli/tests/cli-flags.spec.ts (12.125 s)
-  CLI Flags
-    âœ“ Should create basic config using new yml API (215 ms)
-    âœ“ Should use different config file correctly with --config (71 ms)
-    âœ“ Should set --watch with new YML api (41 ms)
-    âœ“ Should set watch and overwrite to default (false) with new YML api (71 ms)
-    âœ“ Should overwrite watch config using cli flag to true (91 ms)
-    âœ“ Should overwrite watch config using cli flags to false (58 ms)
-    âœ“ Should overwrite ignoreNoDocuments config using cli flags to false (58 ms)
-    âœ“ Should overwrite emitLegacyCommonJSImports config using cli flags to true (79 ms)
-    âœ“ Should overwrite emitLegacyCommonJSImports config using cli flags to false (64 ms)
-    âœ“ Should overwrite ignoreNoDocuments config using cli flags to true (103 ms)
-    âœ“ Should set --overwrite with new YML api (210 ms)
-    âœ“ Should interpolate environmental variables in YML (94 ms)
-    âœ“ Should interpolate multiple environmental variables in YML (58 ms)
-    âœ“ Should interpolate environmental variables in YML and support default value (24 ms)
-    âœ“ Should interpolate environmental variables in YML and support default value containing ":" (24 ms)
-    âœ“ Should load require extensions provided by cli flags (7 ms)
-
-PASS packages/plugins/typescript/resolvers/tests/ts-resolvers.config.resolversNonOptionalTypename.spec.ts (12.127 s)
-  TypeScript Resolvers Plugin - config.resolversNonOptionalTypename
-    âœ“ excludes types (49 ms)
-    âœ“ adds non-optional typenames to implemented types (21 ms)
-    âœ“ adds non-optional typenames to ResolversUnionTypes (27 ms)
-    âœ“ adds non-optional typenames to ResolversUnionTypes for mappers with no placeholder (26 ms)
-    âœ“ adds non-optional typenames to ResolversUnionTypes for mappers with placeholder (52 ms)
-    âœ“ adds non-optional typenames to ResolversUnionTypes for default mappers with placeholder (34 ms)
-    âœ“ does not create ResolversUnionTypes for default mappers with no placeholder (35 ms)
-    âœ“ adds non-optional typenames to ResolversInterfaceTypes (52 ms)
-    âœ“ adds non-optional typenames to ResolversInterfaceTypes for mappers with no placeholder (51 ms)
-    âœ“ adds non-optional typenames to ResolversInterfaceTypes for mappers with placeholder (34 ms)
-    âœ“ adds non-optional typenames to ResolversInterfaceTypes for default mappers with placeholder (25 ms)
-    âœ“ does not create ResolversInterfaceTypes for default mappers with no placeholder (17 ms)
-
-PASS packages/plugins/typescript/resolvers/tests/ts-resolvers.interface.spec.ts (11.824 s)
-  TypeScript Resolvers Plugin - Interfaces
-    âœ“ should generate ResolversInterfaceTypes (159 ms)
-    âœ“ should generate ResolversInterfaceTypes with transformed type names correctly (56 ms)
-    âœ“ should NOT generate ResolversInterfaceTypes if there is no Interface (30 ms)
-    âœ“ Should generate valid types even when there are no implementers for an interface (18 ms)
-    âœ“ generates overridden interface types for interfaces wrapped in object types (55 ms)
-    âœ“ correctly handles circular reference - variant 1 (36 ms)
-    âœ“ correctly handles circular reference - variant 2 (9 ms)
-    âœ“ does not generate nested types when avoidCheckingAbstractTypesRecursively=true (27 ms)
-
-PASS packages/presets/client/tests/babel.spec.ts (5.18 s)
-  client-preset > babelPlugin
-    âœ“ can imports files in the same directory (1075 ms)
-    âœ“ can import files in another directory (60 ms)
-
-FAIL packages/graphql-codegen-cli/tests/watcher.spec.ts (12.326 s)
-  Watch targets
-    âœ“ watches the longest common prefix directory (141 ms)
-    âœ• ignores schema URLs when detecting common prefix directory (17 ms)
-    âœ“ watches process.cwd() when longest common prefix directory is not accessible (5 ms)
-    âœ“ triggers a rebuild for basic case (27 ms)
-    âœ“ globally included paths should be included even when a local pattern negates them (76 ms)
-    âœ“ globally negated paths should be excluded even when a local pattern matches them (44 ms)
-    âœ“ local watchPattern negation should override local documents match (7 ms)
-    âœ“ local negations in documents set should override match in same documents set (11 ms)
-    âœ“ local watchPattern negation should override local schema match (20 ms)
-    âœ“ local negations in schema set should override match in same schema set (19 ms)
-    âœ“ match in one local group, negated in another group, should still match (25 ms)
-    âœ“ output directories with presetConfig create glob patterns ignored by parcel watcher (9 ms)
-    âœ“ output files are ignored by parcel watcher, but would not trigger rebuild anyway (11 ms)
-    âœ“ all expectations also work in a big combined config (176 ms)
-
-  â— Watch targets â€º ignores schema URLs when detecting common prefix directory
-
-    expect(received).toBe(expected) // Object.is equality
-
-    Expected: "/app/foo"
-    Received: "/app"
-
-      48 |     });
-      49 |
-    > 50 |     expect(watchDirectory).toBe(join(process.cwd(), 'foo'));
-         |                            ^
-      51 |     await stopWatching();
-      52 |   });
-      53 |
-
-      at Object.toBe (packages/graphql-codegen-cli/tests/watcher.spec.ts:50:28)
-
-PASS packages/graphql-codegen-cli/tests/config.spec.ts (12.276 s)
-  Codegen config - Context
-    âœ“ loads and merge multiple schemas when using GraphQL config (1076 ms)
-    âœ“ loads and merge multiple schemas when using input config (11 ms)
-
-PASS packages/plugins/other/fragment-matcher/tests/plugin.spec.ts (12.005 s)
-  Fragment Matcher Plugin
-    âœ“ should support Apollo Federation (50 ms)
-    âœ“ should support Apollo Federation with predefined directive definitions (16 ms)
-    âœ“ should create the result deterministically when configured to (40 ms)
-    validate
-      âœ“ should not throw on tsx?, jsx?, json files, both in lower and upper case (7 ms)
-      âœ“ should throw on commonjs + ts (3 ms)
-      âœ“ should throw on unsupported extension (1 ms)
-    JSON
-      âœ“ should stringify the result (14 ms)
-    JavaScript
-      âœ“ should use es2015 module by default (7 ms)
-      âœ“ should be able to use commonjs (10 ms)
-    TypeScript
-      âœ“ should use es2015 module by default (6 ms)
-      âœ“ should use es2015 module by default - apollo client 3 (9 ms)
-      âœ“ should use es2015 even though commonjs is requested (12 ms)
-      âœ“ should support exportAsConst for apolloClientVersion 2 (11 ms)
-      âœ“ should support useExplicitTyping for apolloClientVersion 3 (5 ms)
-
-PASS packages/presets/graphql-modules/tests/builder.spec.ts (12.4 s)
-  âœ“ should generate interface field resolvers (22 ms)
-  âœ“ should not generate graphql-modules code when useGraphQLModules=false (4 ms)
-  âœ“ should generate interface extensions field resolvers  (9 ms)
-  âœ“ should include import statement (4 ms)
-  âœ“ should include import type statement (3 ms)
-  âœ“ should work with naming conventions (2 ms)
-  âœ“ encapsulate: should wrap correctly with namespace (4 ms)
-  âœ“ encapsulate: should wrap correctly with a declared namespace (3 ms)
-  âœ“ encapsulate: should wrap correctly with prefix (11 ms)
-  âœ“ should pick fields from defined and extended types (3 ms)
-  âœ“ should reexport used types but not defined in module (4 ms)
-  âœ“ should export partial types, only those defined in module or root types (5 ms)
-  âœ“ should export partial types of scalars, only those defined in module or root types (2 ms)
-  âœ“ should use and export resolver signatures of types defined or extended in a module (6 ms)
-  âœ“ should not generate resolver signatures of types that are not defined or extened by a module (4 ms)
-  âœ“ should generate an aggregation of individual resolver signatures (3 ms)
-  âœ“ should generate a signature for ResolveMiddleware (with widlcards) (3 ms)
-
-PASS packages/plugins/typescript/resolvers/tests/ts-resolvers.federation.spec.ts (12.21 s)
-  TypeScript Resolvers Plugin + Apollo Federation
-    âœ“ should support extend keyword (21 ms)
-    âœ“ should include nested fields from @provides directive (41 ms)
-    âœ“ should include fields from @requires directive (28 ms)
-    âœ“ should handle nested fields from @requires directive (23 ms)
-    âœ“ should handle nested fields from @key directive (13 ms)
-    âœ“ should not apply key/requires fields restriction for base federated types (18 ms)
-    âœ“ should skip to generate resolvers of fields with @external directive (16 ms)
-    âœ“ should not include _FieldSet scalar (12 ms)
-    âœ“ should not include federation directives (18 ms)
-    âœ“ should not add directive definitions and scalars if they are already there (11 ms)
-    âœ“ should allow for duplicated directives (12 ms)
-    âœ“ should not generate unused scalars (9 ms)
-    â—‹ skipped should handle interface types
-    â—‹ skipped should only extend an original type by a mapped type
-    adds __resolveReference
-      âœ“ when generateInternalResolversIfNeeded.__resolveReference = false, generates optional __resolveReference for object types with @key (125 ms)
-      âœ“ when generateInternalResolversIfNeeded.__resolveReference = true, generates required __resolveReference for object types with resolvable @key (40 ms)
-    When field definition wrapping is enabled
-      âœ“ should add the UnwrappedObject type (14 ms)
-      âœ“ should add UnwrappedObject around ParentType for __resloveReference (8 ms)
-    meta - generates federation meta correctly
-      âœ“ when generateInternalResolversIfNeeded.__resolveReference = false (37 ms)
-      âœ“ when generateInternalResolversIfNeeded.__resolveReference = true (25 ms)
-
-PASS packages/plugins/typescript/resolvers/tests/ts-resolvers.mapping.spec.ts (12.768 s)
-  TypeScript Resolvers Plugin - Mapping
-    âœ“ Should build ResolversTypes object when there are no mappers (123 ms)
-    âœ“ Should build ResolversTypes with simple mappers (42 ms)
-    âœ“ Should allow to map custom type that refers itself (issue #1770) (36 ms)
-    âœ“ Should allow to map custom type that refers itself (issue #1770, attempt #2) (14 ms)
-    âœ“ Should allow to map custom type that refers itself (issue #1770, attempt #3 - circular) (9 ms)
-    âœ“ should map to a custom type on every level (+ actual usage in code) (203 ms)
-    âœ“ Should build ResolversTypes with defaultMapper set using {T} (43 ms)
-    âœ“ Should build ResolversTypes with defaultMapper set using {T} with external identifier (56 ms)
-    âœ“ Should build ResolversTypes with mapper set for concrete type using {T} with external identifier (37 ms)
-    âœ“ Should map to a custom type on every level when {T} is used as default mapper (37 ms)
-    âœ“ Should build ResolversTypes with mapper set for concrete type using renamed external identifier (13 ms)
-    âœ“ Should build ResolversTypes with mapper set for concrete type using renamed external identifier (with default) (12 ms)
-    âœ“ Should build ResolversTypes with mapper set for concrete type using renamed external identifier (with default) and type import (61 ms)
-    âœ“ Should build ResolversTypes with defaultMapper set (65 ms)
-    âœ“ Should build ResolversTypes with external mappers (19 ms)
-    âœ“ Should handle {T} in a mapper (20 ms)
-    âœ“ should warn about unused mappers by default (9 ms)
-    âœ“ should be able not to warn about unused mappers (10 ms)
-    âœ“ Should generate basic type resolvers with external mappers (101 ms)
-    âœ“ Should generate basic type resolvers with external mappers using same imported type (67 ms)
-    âœ“ Should generate the correct resolvers when used with mappers with interfaces (50 ms)
-    âœ“ Should generate basic type resolvers with defaultMapper set to any (34 ms)
-    âœ“ Should generate basic type resolvers with defaultMapper set to external identifier (43 ms)
-    âœ“ Should replace using Omit when non-mapped type is pointing to mapped type (46 ms)
-    âœ“ Should not replace using Omit when non-mapped type is pointing to mapped type (41 ms)
-    âœ“ should support namespaces (17 ms)
-    âœ“ should support namespaces in contextType (16 ms)
-    âœ“ should support namespaces in defaultMapper (13 ms)
-    âœ“ should support namespaces in rootValueType (13 ms)
-    âœ“ should support namespaces and {T} placeholder (10 ms)
-
-PASS packages/graphql-codegen-cli/tests/generate-and-save.spec.ts (13.061 s)
-  generate-and-save
-    âœ“ allow to specify overwrite for specific output (should write file) (98 ms)
-    âœ“ allow to specify overwrite for specific output (should not write file) (35 ms)
-    âœ“ should not error when ignoreNoDocuments config option is present (49 ms)
-    âœ“ should use global overwrite option and write a file (43 ms)
-    âœ“ should use global overwrite option and not write a file (22 ms)
-    âœ“ should overwrite a file by default (25 ms)
-    âœ“ should override generated files (194 ms)
-    âœ“ should extract a document from the gql tag (imported from apollo-server) (46 ms)
-    âœ“ should allow to alter the content with the beforeOneFileWrite hook (28 ms)
-
-PASS packages/plugins/typescript/resolvers/tests/ts-resolvers.spec.ts (12.962 s)
-  TypeScript Resolvers Plugin
-    âœ“ Should use StitchingResolver when its active on config (211 ms)
-    âœ“ directiveResolverMappings - should generate correct types (import definition) (29 ms)
-    âœ“ Should allow to override ResolverTypeWrapper signature (19 ms)
-    âœ“ Should have default value for ResolverTypeWrapper signature (17 ms)
-    âœ“ Should not warn when noSchemaStitching is not defined (45 ms)
-    âœ“ Should disable StitchingResolver on demand (49 ms)
-    âœ“ Default values of args and compatibility with typescript plugin (5 ms)
-    âœ“ Test for enum usage in resolvers (to verify compatibility with enumValues) (19 ms)
-    âœ“ Should allow to generate optional __resolveType (12 ms)
-    âœ“ Should generate basic type resolvers (40 ms)
-    âœ“ Should allow to override context with simple identifier (37 ms)
-    âœ“ Should with correctly with addUnderscoreToArgsType set to true (46 ms)
-    âœ“ Should allow to override context with mapped context type (54 ms)
-    âœ“ Should allow to override context with mapped context type (38 ms)
-    âœ“ Should allow to override context with mapped context type as default export (40 ms)
-    âœ“ Should allow to override context with mapped context type as default export with type import (33 ms)
-    âœ“ should generate named custom field level context type (11 ms)
-    âœ“ should generate named custom field level context type for field with directive (11 ms)
-    âœ“ should generate named custom field level context type for field with directive and context type (10 ms)
-    âœ“ should generate named custom field level context type for field with directive and field context type (10 ms)
-    âœ“ Should generate the correct imports when schema has scalars (19 ms)
-    âœ“ Should generate the correct imports when schema has no scalars (14 ms)
-    âœ“ Should generate the correct imports when customResolveInfo defined in config (12 ms)
-    âœ“ #8852 - should generate the correct imports when customResolveInfo defined in config with type import (14 ms)
-    âœ“ Should not convert type names in unions (14 ms)
-    âœ“ Should generate the correct resolver args type names when typesPrefix is specified (12 ms)
-    âœ“ should make list of all-optional arguments include undefined types (14 ms)
-    âœ“ should include generic wrapper type only when necessary (12 ms)
-    âœ“ should generate Resolvers interface (8 ms)
-    âœ“ should not create DirectiveResolvers if there is no directive defined in the schema (4 ms)
-    âœ“ should produce Resolvers compatible with graphql-tools (18 ms)
-    âœ“ should produce resolvers compatible with graphql-tools (15 ms)
-    âœ“ should use {} as default of rootValueType (5 ms)
-    âœ“ should generate ResolversParentTypes (5 ms)
-    âœ“ should use correct value when rootValueType mapped as default (5 ms)
-    âœ“ should use correct value when rootValueType mapped as default with type import (5 ms)
-    âœ“ should use rootValueType in Query, Mutation and Subscription (5 ms)
-    âœ“ should generate subscription types correctly (20 ms)
-    âœ“ should use MaybePromise in ResolverTypeWrapper (5 ms)
-    âœ“ Should generate resolvers with replaced internalResolversPrefix if specified (29 ms)
-    â—‹ skipped should support all use-cases of subscription resolvers
-    Backward Compatability
-      âœ“ should produce IResolvers compatible with graphql-tools (289 ms)
-    Config
-      âœ“ onlyResolveTypeForInterfaces - should allow to have only resolveType for interfaces (115 ms)
-      âœ“ optionalInfoArgument - should allow to have optional info argument (150 ms)
-      âœ“ allowParentTypeOverride - should allow to have less strict resolvers by overrding parent type (88 ms)
-      âœ“ namespacedImportName - should work correctly with imported namespaced type (18 ms)
-      âœ“ directiveResolverMappings - should generate correct types (inline definition) (20 ms)
-      âœ“ makeResolverTypeCallable - should remove ResolverWithResolve type from resolver union (121 ms)
-      âœ“ makeResolverTypeCallable - adds ResolverWithResolve type to resolver union when set to false (75 ms)
-    Enums
-      âœ“ Should not generate enum internal values resolvers when enum doesnt have enumValues set (38 ms)
-      âœ“ Should generate enum internal values resolvers when enum has enumValues set as object with explicit values (33 ms)
-      âœ“ Should generate enum internal values resolvers when enum has enumValues set as external enum (37 ms)
-      âœ“ Should generate enum internal values resolvers when enum has mappers pointing to external enum (33 ms)
-      âœ“ Should generate enum internal values resolvers when enum has enumValues set on a global level of all enums (28 ms)
-    Should generate the correct imports when customResolverFn defined in config
-      âœ“ ./my-type#MyResolverFn (16 ms)
-      âœ“ ./my-type#ResolverFn (15 ms)
-      âœ“ definition directly (14 ms)
-      âœ“ ok with default (13 ms)
-    issues
-      âœ“ #4687 - incorrect suffix when used with typesSuffix (18 ms)
-      âœ“ should work correctly with enumPrefix: false - issue #2679 (16 ms)
-      âœ“ #3257 - should not import mapper when its already imported because of enumValues (16 ms)
-      âœ“ #3264 - enumValues is not being applied to directive resolver (8 ms)
-
-PASS packages/plugins/typescript/typescript/tests/typescript.spec.ts (13.32 s)
-  TypeScript
-    âœ“ should expose Maybe (82 ms)
-    âœ“ should not have [object Object] (14 ms)
-    âœ“ should contain __typename (11 ms)
-    âœ“ should not contain __typename (11 ms)
-    âœ“ should not contain "export" when noExport is set to true (12 ms)
-    âœ“ should keep non-optional arguments non-optional - issue #2323 (12 ms)
-    âœ“ should respect defined enum values (7 ms)
-    âœ“ should use implementing types as node type - issue #5126 (16 ms)
-    description to comment
-      âœ“ Should include a description for Scalars type (26 ms)
-      âœ“ Should add description for input types (48 ms)
-      âœ“ Should add description for input fields (38 ms)
-      âœ“ Should work with multiline comment (19 ms)
-      âœ“ Should work with unions (31 ms)
-      âœ“ Should work with types (29 ms)
-      âœ“ Should work with type fields (13 ms)
-      âœ“ Should work with inteface and inteface fields (14 ms)
-      âœ“ Should work with enum and enum values (16 ms)
-      âœ“ Should removed underscore from enum values (12 ms)
-      âœ“ Should work with enum as const (11 ms)
-      âœ“ Should work with enum as const combined with enum values (13 ms)
-      âœ“ Should work with enum and enum values (enumsAsTypes) (13 ms)
-      âœ“ Should work with directives (49 ms)
-    disable comment generation
-      âœ“ Should not include a description for Scalars type (25 ms)
-      âœ“ Should not add description for input types (33 ms)
-      âœ“ Should not add description for input fields (32 ms)
-      âœ“ Should remove multiline comment (93 ms)
-      âœ“ Should work with unions (20 ms)
-      âœ“ Should work with types (16 ms)
-      âœ“ Should work with type fields (20 ms)
-      âœ“ Should work with inteface and inteface fields (86 ms)
-      âœ“ Should work with enum and enum values (39 ms)
-      âœ“ Should work with enum and enum values (enumsAsTypes) (29 ms)
-      âœ“ Should not work when config is false (22 ms)
-    Issues
-      âœ“ #6815 - Generate different type for Maybe wrapper based on input variables (37 ms)
-      âœ“ #5643 - Incorrect combinations of declartionKinds leads to syntax error (24 ms)
-      âœ“ #4564 - numeric enum values set on schema level (18 ms)
-      âœ“ #4564 - numeric enum values set on schema level - complex numeric (19 ms)
-      âœ“ #7898 - falsy enum value set on schema with enumsAsTypes set (16 ms)
-      âœ“ #6532 - numeric enum values with namingConvention (21 ms)
-      âœ“ #3137 - numeric enum value (16 ms)
-      âœ“ #4157 - Should generate numeric values for enums if numericEnums is set to true (93 ms)
-      âœ“ #2679 - incorrect prefix for enums (62 ms)
-      âœ“ #3180 - enumValues and named default import (16 ms)
-      âœ“ #4834 - enum members should be quoted if numeric (42 ms)
-      âœ“ #2976 - Issues with mapped enumValues and type prefix in args (27 ms)
-      âœ“ #2082 - Issues with enumValues and types prefix (47 ms)
-      âœ“ #1488 - Should generate readonly also in input types when immutableTypes is set (31 ms)
-      âœ“ #3141 - @deprecated directive support (33 ms)
-      âœ“ #7627 - enum value @deprecated directive support (44 ms)
-      âœ“ #7766 - input value @deprecated directive support (25 ms)
-      âœ“ #1462 - Union of scalars and argument of directive (31 ms)
-      âœ“ #1954 - Duplicate type names for args type (25 ms)
-      âœ“ #1980 Do not put prefix on enums in args when enumPrefix: false (31 ms)
-    Config
-      âœ“ Should build type correctly when specified with avoidOptionals config (42 ms)
-      âœ“ Should build input type correctly when specified with avoidInputOptionals config (29 ms)
-      âœ“ Should build type correctly when specified with immutableTypes config (44 ms)
-      âœ“ Should use const enums when constEnums is set (36 ms)
-      âœ“ Should use enum as type when enumsAsTypes is set (43 ms)
-      âœ“ Should use enum as type when enumsAsTypes is set and also enumValues (21 ms)
-      âœ“ Should add `%future added value` to enum when futureProofEnums is set and also enumAsTypes (23 ms)
-      âœ“ Should add `%future added value` to enum usage when futureProofEnums is set, but not enumAsTypes (33 ms)
-      âœ“ Should add `%future added value` to enum usage when futureProofEnums is set and allowEnumStringTypes is set (42 ms)
-      âœ“ Should use custom namingConvention for enums (keep) (30 ms)
-      âœ“ Should use custom namingConvention for enums values as string, without specifying other type converters (34 ms)
-      âœ“ Should use custom namingConvention for enums (26 ms)
-      âœ“ should handle introspection types (like __TypeKind) (34 ms)
-      âœ“ Should use class correctly when declarationKind: class is set (30 ms)
-      âœ“ Should use interface for type when declarationKind for types is set (17 ms)
-      âœ“ Should use interface for input when declarationKind for inputs is set (17 ms)
-      âœ“ Should use interface for arguments when declarationKind for arguments is set (14 ms)
-      âœ“ Should use interface for all objects when declarationKind is interface (20 ms)
-      âœ“ Should correctly render empty interfaces (22 ms)
-      âœ“ Should extend one interface from another (15 ms)
-      âœ“ Should extend mutiple interfaces (13 ms)
-    Scalars
-      âœ“ Should generate a scalars mapping correctly for built-in scalars (11 ms)
-      âœ“ Should generate a scalars mapping correctly when using scalars as path (18 ms)
-      âœ“ Should import a type of a mapped scalar (17 ms)
-      âœ“ Should import a type of a mapped scalar for input/output mapping (17 ms)
-      âœ“ Should generate a scalars mapping correctly for custom scalars (13 ms)
-      âœ“ Should generate a scalars mapping correctly for custom scalars with mapping (23 ms)
-      âœ“ Should generate a scalars mapping correctly for custom scalars with input/output mapping (15 ms)
-      âœ“ Should correctly throw an error when an unknown scalar is detected while using `strictScalars` (123 ms)
-      âœ“ Should allow overriding default scalar type (14 ms)
-      âœ“ Should add FieldWrapper when field definition wrapping is enabled (13 ms)
-      âœ“ Should allow the FieldWrapper type to be modified (12 ms)
-    Object (type)
-      âœ“ Should build type correctly (14 ms)
-      âœ“ Should build type correctly when implementing interface (13 ms)
-      âœ“ Should build type correctly when implementing multiple interfaces (17 ms)
-      âœ“ Should build type correctly when implementing interface without adding fields (13 ms)
-      âœ“ Should build type correctly with links between types (12 ms)
-      âœ“ Should build type correctly when wrapping field definitions (13 ms)
-      âœ“ Should build list type correctly when wrapping field definitions (12 ms)
-      âœ“ Should build list type correctly when wrapping entire field definitions (13 ms)
-      âœ“ Should build list type correctly when wrapping both field definitions and entire field definitions (13 ms)
-      âœ“ Should not wrap input type fields (13 ms)
-    Union
-      âœ“ Should build union as type correctly (24 ms)
-      âœ“ Should add `%other` object typename to union when futureProofUnions is set (14 ms)
-      âœ“ Should add `%other` object typename to union when futureProofUnions and immutableTypes is set (12 ms)
-    Interface
-      âœ“ Should build interface correctly (12 ms)
-    Directives
-      âœ“ Should handle directive declarations correctly (12 ms)
-      âœ“ Should handle type override (14 ms)
-      âœ“ Should allow imported types (14 ms)
-      âœ“ Should use last directive override (9 ms)
-      âœ“ Should ignore unmapped directives (11 ms)
-      @oneOf on input types
-        âœ“ correct output for type with single field (12 ms)
-        âœ“ correct output for type with multiple fields (12 ms)
-        âœ“ respects configured declaration kind with single field (10 ms)
-        âœ“ forces declaration kind of type with multiple fields (10 ms)
-        âœ“ raises exception for type with non-optional fields (4 ms)
-        âœ“ handles extensions properly (8 ms)
-        âœ“ handles .isOneOf property on input object types properly (9 ms)
-    Naming Convention & Types Prefix
-      âœ“ Should use custom namingConvention for type name and args typename (9 ms)
-      âœ“ Should use custom namingConvention and add custom prefix (8 ms)
-      âœ“ Should allow to disable typesPrefix for enums (11 ms)
-      âœ“ Should allow to disable typesSuffix for enums (9 ms)
-      âœ“ Should enable typesPrefix for enums by default (9 ms)
-      âœ“ Should generate correct values when using links between types - lowerCase (12 ms)
-      âœ“ Should generate correct values when using links between types - pascalCase (default) (10 ms)
-      âœ“ Should generate correct values when using links between types - pascalCase (default) with custom prefix (12 ms)
-    Arguments
-      âœ“ Should generate correctly types for field arguments - with basic fields (8 ms)
-      âœ“ Should generate correctly types for field arguments - with default value (9 ms)
-      âœ“ Should generate correctly types for field arguments - with default value and avoidOptionals option set to true (10 ms)
-      âœ“ Should generate correctly types for field arguments - with input type (9 ms)
-      âœ“ Should add custom prefix for mutation arguments (11 ms)
-      âœ“ Should generate the correct type for a method with arguments (interface object) (9 ms)
-      âœ“ Should generate correctly types for inputs with default value - #4273 (10 ms)
-      âœ“ Should generate correctly types for inputs with default value and avoidOptionals.defaultValue set to true - #5112 (7 ms)
-      âœ“ Should generate correctly types for field arguments with default value and avoidOptionals.defaultValue option set to true - #5112 (9 ms)
-    Enum
-      âœ“ Should build basic enum correctly (9 ms)
-      âœ“ Should build enum correctly with custom values (8 ms)
-      âœ“ Should build enum correctly with custom imported enum (8 ms)
-      âœ“ Should build enum correctly with custom imported enum from namespace with different name (9 ms)
-      âœ“ Should build enum correctly with custom imported enum from namespace with same name (9 ms)
-      âœ“ Should build enum correctly with custom imported enum with different name (8 ms)
-      âœ“ Should import all enums from a single file when specified as string (8 ms)
-      âœ“ Should re-export external enums (12 ms)
-      âœ“ Should re-export external enums when single file option used (11 ms)
-      âœ“ allowEnumStringTypes (12 ms)
-
-PASS packages/plugins/typescript/operations/tests/ts-documents.spec.ts (13.902 s)
-  TypeScript Operations Plugin
-    âœ“ Test for omitOperationSuffix (38 ms)
-    âœ“ handles unnamed queries (1 ms)
-    Config
-      âœ“ Should not generate "export" when noExport is set to true (175 ms)
-      âœ“ Should handle "namespacedImportName" and add it when specified (65 ms)
-      âœ“ Can merge an inline fragment with a spread (10 ms)
-      âœ“ Should handle "namespacedImportName" and "preResolveTypes" together (107 ms)
-      âœ“ Should generate the correct output when using immutableTypes config (40 ms)
-      âœ“ should include fragment variable definitions when experimentalFragmentVariables is set (10 ms)
-      âœ“ should resolve optionals according to maybeValue (5 ms)
-      âœ“ should add undefined as possible value according to allowUndefinedQueryVariables (5 ms)
-    Scalars
-      âœ“ Should include scalars when doing pick (24 ms)
-    Custom Operation Result Name Suffix
-      âœ“ Should generate custom operation result name (50 ms)
-    Naming Convention & Types Prefix
-      âœ“ Should allow custom naming and point to the correct type (32 ms)
-      âœ“ Should allow custom naming and point to the correct type - with custom prefix (25 ms)
-      âœ“ Test for dedupeOperationSuffix (65 ms)
-    __typename
-      âœ“ Should ignore __typename for root types with skipTypeNameForRoot = true (25 ms)
-      âœ“ Should ignore __typename for root types with skipTypeNameForRoot = true, and with nonOptionalTypename = true (23 ms)
-      âœ“ Should ignore skipTypeNameForRoot = true when __typename is specified manually (26 ms)
-      âœ“ Should add __typename correctly with nonOptionalTypename=false,skipTypename=true,preResolveTypes=true and explicit field (50 ms)
-      âœ“ Should skip __typename when skipTypename is set to true (75 ms)
-      âœ“ Should add __typename when dealing with fragments (42 ms)
-      âœ“ Should add aliased __typename correctly (55 ms)
-      âœ“ Should add aliased __typename correctly with preResovleTypes (30 ms)
-      âœ“ Should add __typename as non-optional when explicitly specified (49 ms)
-      âœ“ Should add __typename as non-optional when forced (41 ms)
-      âœ“ Should add __typename as optional when its not specified (31 ms)
-      âœ“ Should add __typename as non-optional when its explictly specified, even if skipTypename is true (28 ms)
-      âœ“ Should add __typename correctly when unions are in use (20 ms)
-      âœ“ Should add __typename correctly when interfaces are in use (26 ms)
-      âœ“ should mark __typename as non optional in case it is included in the selection set of an interface field (31 ms)
-      âœ“ should mark __typename as non optional in case it is included in the selection set of an union field (18 ms)
-    Unnamed Documents
-      âœ“ Should handle unnamed documents correctly (24 ms)
-      âœ“ Should handle unnamed documents correctly with multiple documents (22 ms)
-    Selection Set
-      âœ“ Should detect invalid types as parent and notify (3 ms)
-      âœ“ Should have valid __typename usage and split types according to that (with usage) (22 ms)
-      âœ“ Should generate the correct __typename when using fragment over type (14 ms)
-      âœ“ Should generate the correct __typename when using both inline fragment and spread over type (19 ms)
-      âœ“ Should generate the correct __typename when using fragment spread over type (20 ms)
-      âœ“ Should generate the correct __typename when using fragment spread over union (22 ms)
-      âœ“ Should have valid fragments intersection on different types (with usage) #2498 (21 ms)
-      âœ“ Should have valid __typename usage and split types according to that (with usage) (18 ms)
-      âœ“ Should support fragment spread correctly with simple type with no other fields (18 ms)
-      âœ“ Should support fragment spread correctly with simple type with other fields (18 ms)
-      âœ“ Should support fragment spread correctly with multiple fragment spread (30 ms)
-      âœ“ Should generate the correct intersection for fragments when using with interfaces with different type (20 ms)
-      âœ“ Should generate the correct intersection for fragments when type implements 2 interfaces (18 ms)
-      âœ“ Should generate the correct intersection for fragments when using with interfaces with same type (6 ms)
-      âœ“ Should support interfaces correctly when used with inline fragments (19 ms)
-      âœ“ Should support union correctly when used with inline fragments (18 ms)
-      âœ“ Should support union correctly when used with inline fragments on types implementing common interface (16 ms)
-      âœ“ Should support union correctly when used with inline fragments on types implementing common interface and also other types (19 ms)
-      âœ“ Should support merging identical fragment union types (16 ms)
-      âœ“ Should support computing correct names for merged fragment union types (14 ms)
-      âœ“ Should support computing correct names for large merged fragment union types (18 ms)
-      âœ“ Should not create empty types when merging fragment union types (18 ms)
-      âœ“ Should support merging identical fragment union types with skipTypename (25 ms)
-      âœ“ Should support computing correct names for merged fragment union types with skipTypename (17 ms)
-      âœ“ Ignores merging when enabled alongside inline fragment masking (20 ms)
-      âœ“ Should support inline fragments (19 ms)
-      âœ“ Should build a basic selection set based on basic query on GitHub schema (24 ms)
-      âœ“ Should build a basic selection set based on basic query on GitHub schema with preResolveTypes=true (20 ms)
-      âœ“ Should produce valid output with preResolveTypes=true and enums (22 ms)
-      âœ“ Should produce valid output with preResolveTypes=true and enums with prefixes set (19 ms)
-      âœ“ Should produce valid output with preResolveTypes=true and enums with no suffixes (18 ms)
-      âœ“ Should build a basic selection set based on basic query (22 ms)
-      âœ“ Should build a basic selection set based on basic query with field aliasing for basic scalar (14 ms)
-      âœ“ Should build a basic selection set based on a query with inner fields (13 ms)
-    Fragment Definition
-      âœ“ Should build fragment definition correctly - with name and selection set (18 ms)
-    Operation Definition
-      âœ“ Should detect Mutation correctly (12 ms)
-      âœ“ Should detect Query correctly (16 ms)
-      âœ“ Should detect Subscription correctly (12 ms)
-      âœ“ Should handle operation variables correctly (12 ms)
-      âœ“ Should handle operation variables correctly when they use custom scalars (13 ms)
-      âœ“ Should create empty variables when there are no operation variables (12 ms)
-      âœ“ avoid duplicates - each type name should be unique (3 ms)
-      âœ“ should use __typename in fragments when requested (3 ms)
-      âœ“ should handle introspection types (__schema) (3 ms)
-      âœ“ should handle introspection types (__type) (3 ms)
-      âœ“ should handle introspection types (like __TypeKind) (19 ms)
-      âœ“ Should generate correctly when using enums and typesPrefix (4 ms)
-      âœ“ Should make arguments optional when there is a default value (3 ms)
-    Union & Interfaces
-      âœ“ should generate correct types for union that returns interface types (4 ms)
-      âœ“ should generate correct types for union that returns interface types (variant __typename in fragment) (3 ms)
-      âœ“ interface with same field names (3 ms)
-      âœ“ union returning single interface types (3 ms)
-      âœ“ duplicated fragment on type includes combined types only once (5 ms)
-      âœ“ Should merge inline fragments fields correctly (9 ms)
-      âœ“ Should merge inline fragments fields correctly with fragment spread over the same type (9 ms)
-      âœ“ Should handle union selection sets with both FragmentSpreads and InlineFragments (17 ms)
-      âœ“ Should handle union selection sets with both FragmentSpreads and InlineFragments with flattenGeneratedTypes (38 ms)
-      âœ“ #4216 - handle fragments against unions and interfaces with flattenGeneratedTypes (17 ms)
-      âœ“ Handles fragments across files with flattenGeneratedTypes (16 ms)
-      âœ“ Drops fragments with flattenGeneratedTypes (13 ms)
-      âœ“ Should add operation name when addOperationExport is true (3 ms)
-      âœ“ Should handle union selection sets with both FragmentSpreads and InlineFragments with flattenGeneratedTypes and directives (26 ms)
-    Issues
-      âœ“ #4212 - Should merge TS arrays in a more elegant way (14 ms)
-      âœ“ #5422 - Error when interface doesnt have implemeting types (3 ms)
-      âœ“ #4389 - validate issues with interfaces (3 ms)
-      âœ“ #5001 - incorrect output with typeSuffix (4 ms)
-      âœ“ #3064 - fragments over interfaces causes issues with fields (14 ms)
-      âœ“ #2916 - Missing import prefix with preResolveTypes: true and near-operation-file preset (2 ms)
-      âœ“ #2699 - Issues with multiple interfaces and unions (22 ms)
-      âœ“ #1624 - Should work with fragment on union type (3 ms)
-      âœ“ #2407 Fragment on Fragment Spread on Union type (2 ms)
-      âœ“ #2506 - inline fragment without typeCondition specified (2 ms)
-      âœ“ #2436 - interface with field of same name but different type is correctly handled (2 ms)
-      âœ“ #2436 - union with field of same name but different type is correctly handled (2 ms)
-      âœ“ #3950 - Invalid output with fragments and skipTypename: true (3 ms)
-      âœ“ #3950 - Invalid output with fragments and skipTypename: false (4 ms)
-      âœ“ #2489 - Union that only covers one possible type with selection set and no typename (3 ms)
-      âœ“ #4888 - Types for input Lists do not support coercion (15 ms)
-      âœ“ #5352 - Prevent array input coercion if arrayInputCoercion = false (11 ms)
-      âœ“ #5263 - inline fragment spread on interface field results in incorrect types (3 ms)
-      âœ“ #7811 - generates $fragmentName for fragment subtypes for fragment masking (2 ms)
-      âœ“ #6874 - generates types when parent type differs from spread fragment member types and preResolveTypes=true (3 ms)
-      âœ“ #8793 selecting __typename should not be optional (2 ms)
-      âœ“ #8461 - conditional directives are ignored on fields with alias (2 ms)
-      #6149 - operation fragment merging behavior
-        âœ“ InlineFragmentQuery (2 ms)
-        âœ“ SpreadFragmentQuery (2 ms)
-        âœ“ SpreadFragmentWithSelectionQuery (1 ms)
-        âœ“ SpreadFragmentWithSelectionQuery - flatten (2 ms)
-    conditional directives handling
-      âœ“ fields with @skip, @include should pre resolve into optional (2 ms)
-      âœ“ objects with @skip, @include should pre resolve into optional (2 ms)
-      âœ“ fields with @skip, @include should make container resolve into MakeOptional type (3 ms)
-      âœ“ On avoidOptionals:true, fields with @skip, @include should make container resolve into MakeMaybe type (2 ms)
-      âœ“ Should handle "preResolveTypes" and "avoidOptionals" together (2 ms)
-      âœ“ On avoidOptionals:true, optionals (?) on types should be avoided (2 ms)
-      âœ“ inline fragment with conditional directives and avoidOptionals (2 ms)
-      âœ“ resolve optionals according to maybeValue together with avoidOptionals and conditional directives (3 ms)
-      âœ“ inline fragment with conditional directives and avoidOptionals, without preResolveTypes (3 ms)
-    incremental delivery directive handling
-      âœ“ should generate an union of initial and deferred fields for fragments (preResolveTypes: true) (5 ms)
-      âœ“ should generate an union of initial and deferred fields for fragments using MakeEmpty (preResolveTypes: false) (4 ms)
-      âœ“ should generate an union of initial and deferred fields for fragments MakeEmpty (avoidOptionals: true) (4 ms)
-      âœ“ should support "preResolveTypes: true" and "avoidOptionals: true" together (3 ms)
-      âœ“ should resolve optionals according to maybeValue together with avoidOptionals and deferred fragments (4 ms)
-      âœ“ should generate correct types with inlineFragmentTypes: "mask"" (5 ms)
-    inlineFragmentTypes option
-      âœ“ 'combine' yields correct types (1 ms)
-      âœ“ 'inline' yields correct types (2 ms)
-      âœ“ 'mask' yields correct types (2 ms)
-      âœ“ 'mask' with @unmask configured with apolloUnmask yields correct types (5 ms)
-      âœ“ 'mask' with @unmask without apolloUnmask yields correct types (2 ms)
-      âœ“ 'mask' with @unmask with apolloUnmask explicitly disabled yields correct types (2 ms)
-      âœ“ 'mask' with @unmask and masked fragments yields correct types (3 ms)
-      âœ“ 'mask' with @unmask and masked fragments on overlapping fields yields correct types (2 ms)
-
-PASS packages/graphql-codegen-cli/tests/codegen.spec.ts (17.46 s)
-  Codegen Executor
-    âœ“ should load schema with custom fetch (17 ms)
-    âœ“ should evaluate glob expressions correctly (34 ms)
-    âœ“ Should allow plugins to extend schema with custom root (13 ms)
-    âœ“ Should allow plugin context to be accessed and modified (12 ms)
-    âœ“ Should sort the input schema (8 ms)
-    âœ“ Handles weird errors due to invalid schema (12 ms)
-    âœ“ Should generate documents output even if prj1/documents and prj1/extensions/codegen/generate/xxx/documents are both definded with the same glob files (245 ms)
-    âœ“ should not run out of memory when generating very complex types (issue #7720) (2402 ms)
-    Generator General Options
-      âœ“ Should output the correct filenames (78 ms)
-      âœ“ Should load require extensions (81 ms)
-      âœ“ Should throw when require extension is invalid (8 ms)
-      âœ“ Should accept plugins as object (42 ms)
-      âœ“ Should accept plugins as array of objects (21 ms)
-      âœ“ Should throw when no output files has been specified (30 ms)
-      âœ“ Should work with just schema (25 ms)
-      âœ“ Should not throw when every output has a schema and there is no root schema (25 ms)
-      âœ“ Should throw when there is no root schema and some outputs have not defined its own schema (3 ms)
-      âœ“ Should throw when one output has no plugins or preset defined (3 ms)
-      âœ“ Should throw when one output has no plugins defined (2 ms)
-      âœ“ Should succeed when one output has no plugins but preset defined (11 ms)
-      âœ“ should handle extend keyword when GraphQLSchema is used (35 ms)
-    Per-output options
-      âœ“ Should allow to specify schema extension for specific output (26 ms)
-      âœ“ Should allow to specify documents extension for specific output (29 ms)
-      âœ“ Should extend existing documents (28 ms)
-      âœ“ Should throw on duplicated names (44 ms)
-      âœ“ should handle gql tag in ts with with nested fragment (64 ms)
-      âœ“ should handle gql tag in ts with with multiple nested fragment (52 ms)
-      âœ“ should handle gql tag in js with with nested fragment (40 ms)
-      âœ“ should handle TypeScript features (38 ms)
-      âœ“ should handle multiple fragments with the same name, but one is commented out (27 ms)
-      âœ“ should handle graphql-tag and gatsby by default (documents) (28 ms)
-      âœ“ should handle custom graphql string parsers (documents) (31 ms)
-      â—‹ skipped should handle graphql-tag and gatsby by default (schema)
-      â—‹ skipped should handle custom graphql string parsers (schema)
-    Plugin Configuration
-      âœ“ Should inherit root config (17 ms)
-      âœ“ Should accept config in per-output (override) (27 ms)
-      âœ“ Should accept config in per-plugin (9 ms)
-      âœ“ Should allow override of config in (10 ms)
-    Plugin loading
-      âœ“ Should load custom plugin from local file (12 ms)
-      âœ“ Should throw when custom plugin is not valid (12 ms)
-      âœ“ Should execute custom plugin validation and throw when it fails (11 ms)
-      âœ“ Should allow plugins to extend schema (21 ms)
-      âœ“ Should allow plugins to extend schema (using a function) (13 ms)
-    Schema Merging
-      âœ“ should keep definitions of all directives (6 ms)
-      âœ“ should keep directives in types (5 ms)
-      âœ“ should keep scalars (4 ms)
-      âœ“ should keep scalars when executing codegen (17 ms)
-    Custom schema loader
-      âœ“ Should allow custom loaders to load schema on root level (19 ms)
-      âœ“ Should allow custom loaders to load schema on output level (20 ms)
-      âœ“ Should throw when invalid return value from loader (9 ms)
-      âœ“ Should throw when invalid module specified as loader (5 ms)
-      âœ“ Should throw when invalid file declaration (8 ms)
-    Custom documents loader
-      âœ“ Should allow to use custom documents loader on root level (31 ms)
-      âœ“ Should allow custom loaders to load documents on output level (28 ms)
-      âœ“ Should throw when invalid return value from custom documents loader (12 ms)
-      âœ“ Should throw when invalid module specified as loader (10 ms)
-      âœ“ Should throw when invalid file declaration (9 ms)
-    Document Transform
-      âœ“ Should transform documents (20 ms)
-      âœ“ Should allow users to set config (19 ms)
-      âœ“ Should transform documents when specifying files (29 ms)
-      âœ“ Should allow users to set config when specifying files (38 ms)
-      âœ“ Should allow plugin context to be accessed and modified (20 ms)
-      âœ“ should throw an understandable error if it fails. (14 ms)
-      â—‹ skipped Should transform documents with client-preset
-
-PASS packages/presets/client/tests/client-preset.spec.ts (21.47 s)
-  client-preset
-    âœ“ can generate simple examples uppercase names (167 ms)
-    âœ“ can generate simple examples lowercase names (52 ms)
-    âœ“ generates \n regardless of whether the source contains LF or CRLF (49 ms)
-    âœ“ follows 'useTypeImports': true (41 ms)
-    âœ“ follows 'nonOptionalTypename': true (37 ms)
-    âœ“ supports Apollo fragment masking (37 ms)
-    âœ“ prevent duplicate operations (33 ms)
-    âœ“ generates correct named imports for ESM (29 ms)
-    âœ“ should dedupe fragments - #8670 (493 ms)
-    âœ“ should dedupe fragments in a "string" document mode (132 ms)
-    âœ“ embed metadata in executable document node (23 ms)
-    âœ“ correctly handle fragment references (36 ms)
-    âœ“ support enumsAsConst option (27 ms)
-    fragment masking
-      âœ“ fragmentMasking: false (36 ms)
-      âœ“ fragmentMasking: {} (30 ms)
-      âœ“ fragmentMasking.unmaskFunctionName (31 ms)
-      âœ“ can accept null in useFragment (2567 ms)
-      âœ“ can accept list in useFragment (1702 ms)
-      âœ“ useFragment preserves ReadonlyArray<T> type (1525 ms)
-    when no operations are found
-      âœ“ still generates the helper `graphql()` (or under another `presetConfig.gqlTagName` name) function (24 ms)
-    persisted operations
-      âœ“ apply default settings (35 ms)
-      âœ“ mode="replaceDocumentWithHash" (39 ms)
-      âœ“ hashPropertyName="custom_property_name" (34 ms)
-      âœ“ embed metadata in executable document node (25 ms)
-      âœ“ hashAlgorithm="sha256" (37 ms)
-      âœ“ custom hash remove whitespace (31 ms)
-      âœ“ custom hash sha256 (32 ms)
-      âœ“ custom hash docs sha512 (29 ms)
-    handles @defer directive
-      âœ“ generates correct types and metadata (33 ms)
-      âœ“ works with persisted documents (36 ms)
-      âœ“ works with documentMode: string (34 ms)
-      âœ“ works with documentMode: string and persisted documents (40 ms)
-    documentMode: "string"
-      âœ“ generates correct types (39 ms)
-      âœ“ graphql overloads have a nice result type (56 ms)
-      âœ“ correctly resolves nested fragments (61 ms)
-      âœ“ correctly skips the typename addition for the root node for subscriptions (33 ms)
-
-Summary of all failing tests
-FAIL packages/graphql-codegen-cli/tests/watcher.spec.ts (12.326 s)
-  â— Watch targets â€º ignores schema URLs when detecting common prefix directory
-
-    expect(received).toBe(expected) // Object.is equality
-
-    Expected: "/app/foo"
-    Received: "/app"
-
-      48 |     });
-      49 |
-    > 50 |     expect(watchDirectory).toBe(join(process.cwd(), 'foo'));
-         |                            ^
-      51 |     await stopWatching();
-      52 |   });
-      53 |
-
-      at Object.toBe (packages/graphql-codegen-cli/tests/watcher.spec.ts:50:28)
+    [7m3[0m import type { GradingConfig } from '../../dist/types.js';
+    [7m [0m [91m                                   ~~~~~~~~~~~~~~~~~~~~~[0m
 
 
-Test Suites: 1 failed, 39 passed, 40 total
-Tests:       1 failed, 6 skipped, 719 passed, 726 total
-Snapshots:   90 passed, 90 total
-Time:        22.877 s
-npm notice
-npm notice New major version of npm available! 10.9.2 -> 11.3.0
-npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.3.0
-npm notice To update run: npm install -g npm@11.3.0
-npm notice
+
+âš ï¸ The current version of promptfoo 0.11.0 is lower than the latest available version 0.12.0.
+
+Please run npx promptfoo@latest or npm install -g promptfoo@latest to update.
+
+
+
+
+âš ï¸ The current version of promptfoo 0.11.0 is lower than the latest available version 1.1.0.
+
+Please run npx promptfoo@latest or npm install -g promptfoo@latest to update.
+
+
+PASS test/updates.test.ts
+  getLatestVersion
+    âœ“ should return the latest version of the package (3 ms)
+    âœ“ should throw an error if the response is not ok (10 ms)
+  checkForUpdates
+    âœ“ should log an update message if a newer version is available - minor ver (5 ms)
+    âœ“ should log an update message if a newer version is available - major ver (2 ms)
+    âœ“ should not log an update message if the current version is up to date (1 ms)
+
+Creating cache folder at /root/.promptfoo/cache.
+Cache is disabled.
+Cache is disabled.
+PASS test/cache.test.ts (5.563 s)
+  fetchJsonWithCache
+    âœ“ should not cache data with failed request (8 ms)
+    âœ“ should fetch data with cache enabled (2 ms)
+    âœ“ should fetch data with cache enabled after previous test (11 ms)
+    âœ“ should fetch data without cache for a single test (2 ms)
+    âœ“ should still fetch data without cache for a single test (1 ms)
+
+Cache is disabled.
+Using unknown OpenAI chat model: abc123
+Using unknown OpenAI completion model: def456
+PASS test/providers.test.ts (5.585 s)
+  providers
+    âœ“ OpenAiCompletionProvider callApi (12 ms)
+    âœ“ OpenAiChatCompletionProvider callApi (2 ms)
+    âœ“ OpenAiChatCompletionProvider callApi with cache disabled (2 ms)
+    âœ“ loadApiProvider with openai:chat (1 ms)
+    âœ“ loadApiProvider with openai:completion
+    âœ“ loadApiProvider with openai:chat:modelName
+    âœ“ loadApiProvider with openai:completion:modelName (1 ms)
+    âœ“ loadApiProvider with RawProviderConfig
+    âœ“ loadApiProviders with RawProviderConfig[] (2 ms)
+
+FAIL test/util.test.ts (5.7 s)
+  util
+    âœ“ readPrompts with single prompt file (5 ms)
+    âœ“ readPrompts with multiple prompt files (2 ms)
+    âœ“ readPrompts with directory (2 ms)
+    âœ“ readPrompts with empty input (1 ms)
+    âœ“ readPrompts with map input
+    âœ• readPrompts with JSONL file (8 ms)
+    âœ“ readVars with CSV input (6 ms)
+    âœ“ readVars with JSON input (1 ms)
+    âœ“ readVars with YAML input (5 ms)
+    âœ“ writeOutput with CSV output (3 ms)
+    âœ“ writeOutput with JSON output
+    âœ“ writeOutput with YAML output (4 ms)
+  readTests
+    âœ“ readTests with no input (1 ms)
+    âœ“ readTests with string input (CSV file path) (3 ms)
+    âœ“ readTests with array input (TestCase[]) (1 ms)
+
+  â— util â€º readPrompts with JSONL file
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 6
+    + Received  + 4
+
+      Array [
+        Object {
+    -     "display": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"Who won the world series in {{ year }}?\"}]",
+    -     "raw": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"Who won the world series in {{ year }}?\"}]",
+    -   },
+    -   Object {
+    -     "display": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"Who won the superbowl in {{ year }}?\"}]",
+    -     "raw": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"Who won the superbowl in {{ year }}?\"}]",
+    +     "display": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"Who won the world series in {{ year }}?\"}]
+    + [{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"Who won the superbowl in {{ year }}?\"}]",
+    +     "raw": "[{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"Who won the world series in {{ year }}?\"}]
+    + [{\"role\":\"system\",\"content\":\"You are a helpful assistant.\"},{\"role\":\"user\",\"content\":\"Who won the superbowl in {{ year }}?\"}]",
+        },
+      ]
+
+      120 |
+      121 |     expect(fs.readFileSync).toHaveBeenCalledTimes(1);
+    > 122 |     expect(result).toEqual([toPrompt(JSON.stringify(data[0])), toPrompt(JSON.stringify(data[1]))]);
+          |                    ^
+      123 |   });
+      124 |
+      125 |   test('readVars with CSV input', async () => {
+
+      at Object.<anonymous> (test/util.test.ts:122:20)
+
+PASS test/assertions.test.ts (5.687 s)
+  runAssertions
+    âœ“ should pass when all assertions pass (3 ms)
+    âœ“ should fail when any assertion fails (1 ms)
+  runAssertion
+    âœ“ should pass when the equality assertion passes (1 ms)
+    âœ“ should fail when the equality assertion fails (1 ms)
+    âœ“ should pass when the is-json assertion passes (1 ms)
+    âœ“ should fail when the is-json assertion fails (1 ms)
+    âœ“ should pass when the contains-json assertion passes (1 ms)
+    âœ“ should fail when the contains-json assertion fails
+    âœ“ should pass when the function assertion passes
+    âœ“ should fail when the function assertion fails
+    âœ“ should pass when the function assertion passes - with vars
+    âœ“ should fail when the function does not match vars (1 ms)
+    âœ“ should pass when the not-contains assertion passes
+    âœ“ should fail when the not-contains assertion fails (1 ms)
+    âœ“ should pass when the icontains assertion passes
+    âœ“ should fail when the icontains assertion fails (1 ms)
+    âœ“ should pass when the not-icontains assertion passes
+    âœ“ should fail when the not-icontains assertion fails (1 ms)
+    âœ“ should pass when the contains-any assertion passes
+    âœ“ should fail when the contains-any assertion fails (1 ms)
+    âœ“ should pass when the contains-all assertion passes
+    âœ“ should fail when the contains-all assertion fails (1 ms)
+    âœ“ should pass when the regex assertion passes (1 ms)
+    âœ“ should fail when the regex assertion fails
+    âœ“ should pass when the not-regex assertion passes
+    âœ“ should fail when the not-regex assertion fails
+    âœ“ should pass when the webhook assertion passes (3 ms)
+    âœ“ should fail when the webhook assertion fails
+    âœ“ should fail when the webhook returns an error (1 ms)
+    âœ“ should pass when the rouge-n assertion passes (1 ms)
+    âœ“ should fail when the rouge-n assertion fails
+  assertionFromString
+    âœ“ should create an equality assertion (1 ms)
+    âœ“ should create an is-json assertion
+    âœ“ should create an contains-json assertion
+    âœ“ should create a function assertion
+    âœ“ should create a similarity assertion (1 ms)
+    âœ“ should create a contains assertion
+    âœ“ should create a not-contains assertion (1 ms)
+    âœ“ should create a contains-any assertion (1 ms)
+    âœ“ should create a contains-all assertion
+    âœ“ should create a regex assertion (1 ms)
+    âœ“ should create a not-regex assertion
+    âœ“ should create an icontains assertion
+    âœ“ should create a not-icontains assertion
+    âœ“ should create a webhook assertion (1 ms)
+    âœ“ should create a not-webhook assertion
+    âœ“ should create a rouge-n assertion (1 ms)
+    âœ“ should create a not-rouge-n assertion
+  matchesSimilarity
+    âœ“ should pass when similarity is above the threshold (1 ms)
+    âœ“ should fail when similarity is below the threshold (1 ms)
+    âœ“ should fail when inverted similarity is above the threshold
+    âœ“ should pass when inverted similarity is below the threshold (1 ms)
+  matchesLlmRubric
+    âœ“ should pass when the grading provider returns a passing result (5 ms)
+    âœ“ should fail when the grading provider returns a failing result (1 ms)
+
+Test Suites: 2 failed, 5 passed, 7 total
+Tests:       1 failed, 91 passed, 92 total
+Snapshots:   0 total
+Time:        6.349 s
