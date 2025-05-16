@@ -27,33 +27,60 @@ ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is d
 transform: {
     <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
 },
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
+ts-jest[ts-jest-transformer] (WARN) Define `ts-jest` config under `globals` is deprecated. Please do
+transform: {
+    <transform_regex>: ['ts-jest', { /* ts-jest config goes here in Jest */ }],
+},
 ts-jest[ts-jest-transformer] (WARN) Got a `.js` file to compile while `allowJs` option is not set to `true` (file: /app/.jest/setEnvVars.js). To fix this:
   - if you want TypeScript to process JS files, set `allowJs` to `true` in your TypeScript config (usually tsconfig.json)
   - if you do not want TypeScript to process your `.js` files, in your Jest config change the `transform` key which value is `ts-jest` so that it does not match `.js` files anymore
-ts-jest[ts-jest-transformer] (WARN) Got a `.js` file to compile while `allowJs` option is not set to `true` (file: /app/.jest/setEnvVars.js). To fix this:
-  - if you want TypeScript to process JS files, set `allowJs` to `true` in your TypeScript config (usually tsconfig.json)
-  - if you do not want TypeScript to process your `.js` files, in your Jest config change the `transform` key which value is `ts-jest` so that it does not match `.js` files anymore
-ts-jest[ts-jest-transformer] (WARN) Got a `.js` file to compile while `allowJs` option is not set to `true` (file: /app/.jest/setEnvVars.js). To fix this:
-  - if you want TypeScript to process JS files, set `allowJs` to `true` in your TypeScript config (usually tsconfig.json)
-  - if you do not want TypeScript to process your `.js` files, in your Jest config change the `transform` key which value is `ts-jest` so that it does not match `.js` files anymore
-FAIL examples/jest-integration/index.test.ts
-  â— Test suite failed to run
+Error running Python script: Error: Test Error
+Error running Python script: Error: Execution Error
+Error executing Python code: Error: Execution Error
+PASS test/pythonWrapper.test.ts (8.943 s)
+  Python Wrapper
+    runPython
+      âœ“ should correctly run a Python script with provided arguments (31 ms)
+      âœ“ should throw an error if the Python script execution fails (18 ms)
+    runPythonCode
+      âœ“ should execute Python code from a string (3 ms)
+      âœ“ should clean up the temporary file after execution (2 ms)
+      âœ“ should throw an error if Python code execution fails (4 ms)
 
-    [96mexamples/jest-integration/index.test.ts[0m:[93m3[0m:[93m36[0m - [91merror[0m[90m TS2307: [0mCannot find module '../../dist/types.js' or its corresponding type declarations.
+PASS test/prompts.test.ts (9.071 s)
+  prompts
+    âœ“ readPrompts with single prompt file (21 ms)
+    âœ“ readPrompts with multiple prompt files (3 ms)
+    âœ“ readPrompts with directory (4 ms)
+    âœ“ readPrompts with empty input (3 ms)
+    âœ“ readPrompts with map input (4 ms)
+    âœ“ readPrompts with JSONL file (2 ms)
+    âœ“ readPrompts with .py file (2 ms)
+    âœ“ readPrompts with .js file (2 ms)
+    âœ“ readPrompts with glob pattern for .txt files (3 ms)
 
-    [7m3[0m import type { GradingConfig } from '../../dist/types.js';
-    [7m [0m [91m                                   ~~~~~~~~~~~~~~~~~~~~~[0m
-
-PASS test/telemetry.test.ts
+PASS test/telemetry.test.ts (9.911 s)
   Telemetry
-    âœ“ should not record events when telemetry is disabled (4 ms)
+    âœ“ should not record events when telemetry is disabled (13 ms)
     âœ“ should record events when telemetry is enabled (3 ms)
     âœ“ should send events and clear events array when telemetry is enabled and send is called (3 ms)
     âœ“ should not send events when telemetry is disabled and send is called (1 ms)
 
 
 
-âš ï¸ The current version of promptfoo 0.11.0 is lower than the latest available version 0.12.0.
+âš ï¸ The current version of promptfoo 0.11.0 is lower than the latest available version 1.1.0.
 
 Please run npx promptfoo@latest or npm install -g promptfoo@latest to update.
 
@@ -65,104 +92,275 @@ Please run npx promptfoo@latest or npm install -g promptfoo@latest to update.
 Please run npx promptfoo@latest or npm install -g promptfoo@latest to update.
 
 
-PASS test/updates.test.ts (5.044 s)
+PASS test/updates.test.ts (9.98 s)
   getLatestVersion
-    âœ“ should return the latest version of the package (3 ms)
-    âœ“ should throw an error if the response is not ok (10 ms)
+    âœ“ should return the latest version of the package (15 ms)
+    âœ“ should throw an error if the response is not ok (19 ms)
   checkForUpdates
-    âœ“ should log an update message if a newer version is available - minor ver (5 ms)
-    âœ“ should log an update message if a newer version is available - major ver (1 ms)
-    âœ“ should not log an update message if the current version is up to date (1 ms)
+    âœ“ should log an update message if a newer version is available - minor ver (7 ms)
+    âœ“ should log an update message if a newer version is available - major ver (2 ms)
+    âœ“ should not log an update message if the current version is up to date (2 ms)
 
 Creating cache folder at /root/.promptfoo/cache.
-Cache is disabled.
-Cache is disabled.
-PASS test/cache.test.ts (5.605 s)
-  fetchJsonWithCache
-    âœ“ should not cache data with failed request (9 ms)
-    âœ“ should fetch data with cache enabled (2 ms)
-    âœ“ should fetch data with cache enabled after previous test (1 ms)
-    âœ“ should fetch data without cache for a single test (2 ms)
-    âœ“ should still fetch data without cache for a single test (1 ms)
-
-PASS test/util.test.ts (5.595 s)
-  util
-    âœ“ readPrompts with single prompt file (5 ms)
-    âœ“ readPrompts with multiple prompt files (2 ms)
-    âœ“ readPrompts with directory (1 ms)
-    âœ“ readPrompts with empty input (1 ms)
-    âœ“ readPrompts with map input (1 ms)
-    âœ“ readPrompts with JSONL file (1 ms)
-    âœ“ readVars with CSV input (6 ms)
-    âœ“ readVars with JSON input (1 ms)
-    âœ“ readVars with YAML input (5 ms)
-    âœ“ writeOutput with CSV output (3 ms)
-    âœ“ writeOutput with JSON output
-    âœ“ writeOutput with YAML output (3 ms)
+PASS test/testCases.test.ts (13.663 s)
+  readStandaloneTestsFile
+    âœ“ readStandaloneTestsFile with CSV input (21 ms)
+    âœ“ readStandaloneTestsFile with JSON input (3 ms)
+    âœ“ readStandaloneTestsFile with YAML input (7 ms)
+  readTest
+    âœ“ readTest with string input (path to test config) (6 ms)
+    âœ“ readTest with TestCase input (1 ms)
+    âœ“ readTest with invalid input (31 ms)
+    âœ“ readTest with TestCase that contains a vars glob input (2 ms)
   readTests
-    âœ“ readTests with no input
-    âœ“ readTests with string input (CSV file path) (2 ms)
+    âœ“ readTests with string input (CSV file path) (3 ms)
+    âœ“ readTests with multiple __expected in CSV (3 ms)
     âœ“ readTests with array input (TestCase[]) (1 ms)
+    âœ“ readTests with string array input (paths to test configs) (2 ms)
+    âœ“ readTests with vars glob input (paths to vars configs) (1 ms)
+  testCaseFromCsvRow
+    âœ“ should convert a CSV row to a TestCase object
 
-Cache is disabled.
+PASS test/cache.test.ts (13.669 s)
+  fetchWithCache
+    âœ“ should not cache data with failed request (18 ms)
+    âœ“ should fetch data with cache enabled (2 ms)
+    âœ“ should fetch data with cache enabled after previous test (2 ms)
+    âœ“ should fetch data without cache for a single test (2 ms)
+    âœ“ should still fetch data without cache for a single test (2 ms)
+
+PASS test/util.test.ts (14.244 s)
+  util
+    âœ“ writeOutput with CSV output (17 ms)
+    âœ“ writeOutput with JSON output (2 ms)
+    âœ“ writeOutput with YAML output (9 ms)
+    âœ“ writeOutput with json and txt output (2 ms)
+    âœ“ readFilters (1 ms)
+    readCliConfig
+      âœ“ reads from existing config (8 ms)
+      âœ“ creates new config if none exists (2 ms)
+    maybeRecordFirstRun
+      âœ“ returns true if it is the first run (2 ms)
+      âœ“ returns false if it is not the first run (1 ms)
+    readConfigs
+      âœ“ reads from existing configs (16 ms)
+      âœ“ throws error for unsupported configuration file format (75 ms)
+      âœ“ makeAbsolute should resolve file:// syntax and plaintext prompts (3 ms)
+      âœ“ dedupes prompts when reading configs (3 ms)
+    dereferenceConfig
+      âœ“ should dereference a config with no $refs (1 ms)
+      âœ“ should dereference a config with $refs (4 ms)
+      âœ“ should preserve regular functions when dereferencing (2 ms)
+      âœ“ should preserve tools with references and definitions when dereferencing (3 ms)
+    transformOutput
+      âœ“ transforms output using a direct function (1 ms)
+      âœ“ transforms output using an imported function from a file (1 ms)
+      âœ“ throws error if transform function does not return a value (1 ms)
+      âœ“ throws error if file does not export a function (1 ms)
+
+Creating cache folder at /root/.promptfoo/cache.
+Loaded provider openai:gpt-4 from path/to/mock-provider-file.yaml
+Using unknown OpenAI chat model: ft:gpt-3.5-turbo-0613:company-name::ID:
 Using unknown OpenAI chat model: abc123
-Using unknown OpenAI completion model: def456
-PASS test/providers.test.ts (5.672 s)
-  providers
-    âœ“ OpenAiCompletionProvider callApi (13 ms)
-    âœ“ OpenAiChatCompletionProvider callApi (2 ms)
-    âœ“ OpenAiChatCompletionProvider callApi with cache disabled (3 ms)
+FYI: Using unknown OpenAI completion model: def456
+PASS test/providers.test.ts (15.478 s)
+  call provider apis
+    âœ“ OpenAiCompletionProvider callApi (16 ms)
+    âœ“ OpenAiChatCompletionProvider callApi (3 ms)
+    âœ“ OpenAiChatCompletionProvider callApi with caching (7 ms)
+    âœ“ OpenAiChatCompletionProvider callApi with cache disabled (2 ms)
+    âœ“ OpenAiChatCompletionProvider constructor with config (3 ms)
+    âœ“ AzureOpenAiCompletionProvider callApi (2 ms)
+    âœ“ AzureOpenAiChatCompletionProvider callApi (2 ms)
+    âœ“ AzureOpenAiChatCompletionProvider callApi with dataSources (1 ms)
+    âœ“ AzureOpenAiChatCompletionProvider callApi with cache disabled (2 ms)
+    âœ“ AnthropicCompletionProvider callApi (2 ms)
+    âœ“ AnthropicCompletionProvider callApi with caching (1 ms)
+    âœ“ AnthropicCompletionProvider callApi with caching disabled (2 ms)
+    âœ“ LlamaProvider callApi
+    âœ“ OllamaCompletionProvider callApi (1 ms)
+    âœ“ OllamaChatProvider callApi (1 ms)
+    âœ“ WebhookProvider callApi (1 ms)
+    âœ“ HuggingfaceFeatureExtractionProvider callEmbeddingApi
+    âœ“ HuggingfaceTextClassificationProvider callClassificationApi
+    HuggingfaceTextGenerationProvider callApi with Array format
+      âœ“ returns expected output (1 ms)
+    HuggingfaceTextGenerationProvider callApi with Object format
+      âœ“ returns expected output
+    ScriptCompletionProvider callApi with script python rag.py
+      âœ“ returns expected output (7 ms)
+    ScriptCompletionProvider callApi with script echo "hello world"
+      âœ“ returns expected output (1 ms)
+    ScriptCompletionProvider callApi with script ./path/to/file.py run
+      âœ“ returns expected output (1 ms)
+    ScriptCompletionProvider callApi with script "/Path/To/My File.py"
+      âœ“ returns expected output (1 ms)
+  loadApiProvider
+    âœ“ loadApiProvider with filepath (6 ms)
     âœ“ loadApiProvider with openai:chat (1 ms)
-    âœ“ loadApiProvider with openai:completion (12 ms)
-    âœ“ loadApiProvider with openai:chat:modelName (1 ms)
-    âœ“ loadApiProvider with openai:completion:modelName (1 ms)
-    âœ“ loadApiProvider with RawProviderConfig (1 ms)
-    âœ“ loadApiProviders with RawProviderConfig[] (2 ms)
+    âœ“ loadApiProvider with openai:completion
+    âœ“ loadApiProvider with openai:assistant (1 ms)
+    âœ“ loadApiProvider with openai:chat:modelName
+    âœ“ loadApiProvider with openai:completion:modelName
+    âœ“ loadApiProvider with OpenAI finetuned model (1 ms)
+    âœ“ loadApiProvider with azureopenai:completion:modelName
+    âœ“ loadApiProvider with azureopenai:chat:modelName (1 ms)
+    âœ“ loadApiProvider with anthropic:completion
+    âœ“ loadApiProvider with anthropic:completion:modelName
+    âœ“ loadApiProvider with ollama:modelName
+    âœ“ loadApiProvider with ollama:completion:modelName
+    âœ“ loadApiProvider with ollama:chat:modelName (1 ms)
+    âœ“ loadApiProvider with llama:modelName
+    âœ“ loadApiProvider with webhook
+    âœ“ loadApiProvider with huggingface:text-generation
+    âœ“ loadApiProvider with huggingface:feature-extraction
+    âœ“ loadApiProvider with huggingface:text-classification (1 ms)
+    âœ“ loadApiProvider with hf:text-classification
+    âœ“ loadApiProvider with bedrock:completion (1 ms)
+    âœ“ loadApiProvider with RawProviderConfig
+    âœ“ loadApiProviders with ProviderFunction (1 ms)
+    âœ“ loadApiProviders with RawProviderConfig[] (1 ms)
 
-PASS test/assertions.test.ts (5.747 s)
+FYI: Using unknown OpenAI completion model: foo
+You are using model-graded assertions of types llm-rubric while testing an Azure provider. You may need to override these to use your Azure deployment. To learn more, see https://promptfoo.dev/docs/providers/azure/#model-graded-tests
+You are using model-graded assertions of types llm-rubric while testing an Azure provider. You may need to override these to use your Azure deployment. To learn more, see https://promptfoo.dev/docs/providers/azure/#model-graded-tests
+FYI: Using unknown OpenAI completion model: bar
+PASS test/providers.azure.test.ts (15.481 s)
+  maybeEmitAzureOpenAiWarning
+    âœ“ should not emit warning when no Azure providers are used (11 ms)
+    âœ“ should not emit warning when Azure provider is used alone, but no model graded eval (1 ms)
+    âœ“ should emit warning when Azure provider is used alone, but with model graded eval (1 ms)
+    âœ“ should emit warning when Azure provider used with non-OpenAI provider (1 ms)
+    âœ“ should not emit warning when Azure providers are used with a default provider set
+    âœ“ should not emit warning when both Azure and OpenAI providers are used
+
+Using unknown OpenAI chat model: foo
+Using unknown OpenAI chat model: foo
+Using unknown OpenAI chat model: foo
+Using unknown OpenAI chat model: foo
+PASS test/assertions.test.ts (15.835 s)
   runAssertions
-    âœ“ should pass when all assertions pass (3 ms)
-    âœ“ should fail when any assertion fails
+    âœ“ should pass when all assertions pass (16 ms)
+    âœ“ should fail when any assertion fails (2 ms)
+    âœ“ should handle output as an object (1 ms)
+    âœ“ should fail when combined score is less than threshold (2 ms)
+    âœ“ should pass when combined score is greater than threshold (2 ms)
   runAssertion
-    âœ“ should pass when the equality assertion passes
-    âœ“ should fail when the equality assertion fails (1 ms)
+    âœ“ should pass when the equality assertion passes (1 ms)
+    âœ“ should fail when the equality assertion fails (2 ms)
+    âœ“ should handle output as an object (1 ms)
     âœ“ should pass when the is-json assertion passes (1 ms)
     âœ“ should fail when the is-json assertion fails (1 ms)
-    âœ“ should pass when the contains-json assertion passes
-    âœ“ should fail when the contains-json assertion fails
-    âœ“ should pass when the function assertion passes (1 ms)
-    âœ“ should fail when the function assertion fails (1 ms)
-    âœ“ should pass when the function assertion passes - with vars
-    âœ“ should fail when the function does not match vars (1 ms)
+    âœ“ should pass when the is-json assertion passes with schema (53 ms)
+    âœ“ should fail when the is-json assertion fails with schema (1 ms)
+    âœ“ should pass when the is-json assertion passes with schema YAML string (14 ms)
+    âœ“ should fail when the is-json assertion fails with schema YAML string (5 ms)
+    âœ“ should validate JSON with formats using ajv-formats (3 ms)
+    âœ“ should validate JSON with formats using ajv-formats - failure (2 ms)
+    âœ“ should pass when the is-json assertion passes with external schema (6 ms)
+    âœ“ should fail when the is-json assertion fails with external schema (4 ms)
+    âœ“ should pass when the contains-json assertion passes (1 ms)
+    âœ“ should pass when the contains-json assertion passes with multiple json values
+    âœ“ should pass when the contains-json assertion passes with valid and invalid json (1 ms)
+    âœ“ should fail when the contains-json assertion fails (1 ms)
+    âœ“ should pass when the contains-json assertion passes with schema (2 ms)
+    âœ“ should pass when the contains-json assertion passes with schema with YAML string (1 ms)
+    âœ“ should pass when the contains-json assertion passes with external schema (3 ms)
+    âœ“ should fail when the contains-json assertion fails with external schema (3 ms)
+    âœ“ should fail when the contains-json assertion fails with external schema (1 ms)
+    âœ“ should pass when the javascript assertion passes (1 ms)
+    âœ“ should pass a score through when the javascript returns a number (1 ms)
+    âœ“ should pass when javascript returns a number above threshold (1 ms)
+    âœ“ should fail when javascript returns a number below threshold (1 ms)
+    âœ“ should set score when javascript returns false (2 ms)
+    âœ“ should fail when the javascript assertion fails (1 ms)
+    âœ“ should pass when assertion passes - with vars (2 ms)
+    âœ“ should pass when javascript function assertion passes - with vars (1 ms)
+    âœ“ should fail when the javascript does not match vars (1 ms)
+    âœ“ should pass when the function returns pass (1 ms)
+    âœ“ should fail when the function returns fail
+    âœ“ should pass when the multiline javascript assertion passes
+    âœ“ should pass when the multiline javascript assertion fails
     âœ“ should pass when the not-contains assertion passes
     âœ“ should fail when the not-contains assertion fails (1 ms)
-    âœ“ should pass when the icontains assertion passes
+    âœ“ should pass when the icontains assertion passes (1 ms)
     âœ“ should fail when the icontains assertion fails (1 ms)
-    âœ“ should pass when the not-icontains assertion passes
+    âœ“ should pass when the not-icontains assertion passes (1 ms)
     âœ“ should fail when the not-icontains assertion fails
-    âœ“ should pass when the contains-any assertion passes (1 ms)
-    âœ“ should fail when the contains-any assertion fails
-    âœ“ should pass when the contains-all assertion passes
+    âœ“ should pass when the contains-any assertion passes (2 ms)
+    âœ“ should fail when the contains-any assertion fails (1 ms)
+    âœ“ should pass when the icontains-any assertion passes (1 ms)
+    âœ“ should fail when the icontains-any assertion fails
+    âœ“ should pass when the contains-all assertion passes (1 ms)
     âœ“ should fail when the contains-all assertion fails (1 ms)
+    âœ“ should pass when the icontains-all assertion passes (1 ms)
+    âœ“ should fail when the icontains-all assertion fails (1 ms)
     âœ“ should pass when the regex assertion passes
     âœ“ should fail when the regex assertion fails
-    âœ“ should pass when the not-regex assertion passes
+    âœ“ should pass when the not-regex assertion passes (1 ms)
     âœ“ should fail when the not-regex assertion fails (1 ms)
-    âœ“ should pass when the webhook assertion passes (3 ms)
-    âœ“ should fail when the webhook assertion fails
-    âœ“ should fail when the webhook returns an error
+    âœ“ should pass when the webhook assertion passes (2 ms)
+    âœ“ should fail when the webhook assertion fails (1 ms)
+    âœ“ should fail when the webhook returns an error (1 ms)
     âœ“ should pass when the rouge-n assertion passes (1 ms)
     âœ“ should fail when the rouge-n assertion fails (1 ms)
+    âœ“ should pass when the starts-with assertion passes (1 ms)
+    âœ“ should fail when the starts-with assertion fails (1 ms)
+    âœ“ should use the provider from the assertion if it exists (2 ms)
+    âœ“ should pass when the levenshtein assertion passes (1 ms)
+    âœ“ should fail when the levenshtein assertion fails (3 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a boolean (4 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a number (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a GradingResult (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a boolean (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a number (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a GradingResult (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a boolean Promise (1 ms)
+    âœ“ should handle output strings with both single and double quotes correctly in python assertion (2 ms)
+    âœ“ should handle inline return type boolean with return value: false (2 ms)
+    âœ“ should handle inline return type number with return value: 0 (1 ms)
+    âœ“ should handle inline return type GradingResult with return value: "{\"pass\": false, \"score\": 0, \"reason\": \"Custom error\"}" (1 ms)
+    âœ“ should handle inline return type boolean with return value: true (1 ms)
+    âœ“ should handle inline return type number with return value: 1 (2 ms)
+    âœ“ should handle inline return type GradingResult with return value: "{\"pass\": true, \"score\": 1, \"reason\": \"Custom success\"}" (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a boolean (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a number (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a boolean (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a number (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a GradingResult (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a boolean (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a number (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a GradingResult
+    latency assertion
+      âœ“ should pass when the latency assertion passes
+      âœ“ should fail when the latency assertion fails (1 ms)
+      âœ“ should throw an error when grading result is missing latencyMs (70 ms)
+    perplexity assertion
+      âœ“ should pass when the perplexity assertion passes
+      âœ“ should fail when the perplexity assertion fails
+    perplexity-score assertion
+      âœ“ should pass when the perplexity-score assertion passes (1 ms)
+      âœ“ should fail when the perplexity-score assertion fails
+    cost assertion
+      âœ“ should pass when the cost is below the threshold (1 ms)
+      âœ“ should fail when the cost exceeds the threshold (1 ms)
+    is-valid-openai-function-call assertion
+      âœ“ should pass for a valid function call with correct arguments (28 ms)
+      âœ“ should fail for an invalid function call with incorrect arguments (2 ms)
+    is-valid-openai-tools-call assertion
+      âœ“ should pass for a valid tools call with correct arguments (3 ms)
+      âœ“ should fail for an invalid tools call with incorrect arguments (2 ms)
   assertionFromString
     âœ“ should create an equality assertion (1 ms)
     âœ“ should create an is-json assertion
+    âœ“ should create an is-json assertion with value
     âœ“ should create an contains-json assertion
-    âœ“ should create a function assertion (1 ms)
-    âœ“ should create a similarity assertion
-    âœ“ should create a contains assertion (1 ms)
-    âœ“ should create a not-contains assertion
-    âœ“ should create a contains-any assertion (2 ms)
-    âœ“ should create a contains-all assertion
+    âœ“ should create a function assertion
+    âœ“ should create a similarity assertion (1 ms)
+    âœ“ should create a contains assertion
+    âœ“ should create a not-contains assertion (1 ms)
+    âœ“ should create a contains-any assertion
+    âœ“ should create a contains-all assertion (1 ms)
     âœ“ should create a regex assertion (1 ms)
     âœ“ should create a not-regex assertion
     âœ“ should create an icontains assertion (1 ms)
@@ -170,17 +368,220 @@ PASS test/assertions.test.ts (5.747 s)
     âœ“ should create a webhook assertion (1 ms)
     âœ“ should create a not-webhook assertion
     âœ“ should create a rouge-n assertion (1 ms)
-    âœ“ should create a not-rouge-n assertion
+    âœ“ should create a not-rouge-n assertion (1 ms)
+    âœ“ should create a starts-with assertion
+    âœ“ should create a levenshtein assertion (1 ms)
+    âœ“ should create a classifier assertion
+    âœ“ should create a latency assertion
+    âœ“ should create a perplexity assertion
+    âœ“ should create a perplexity-score assertion
+    âœ“ should create a cost assertion (1 ms)
+    âœ“ should create an openai function call assertion
+
+Using unknown OpenAI chat model: foo
+Using unknown OpenAI chat model: foo
+Using unknown OpenAI chat model: foo
+Using unknown OpenAI chat model: foo
+Using unknown OpenAI chat model: gpt-3.5-turbo-foobar
+Using unknown OpenAI chat model: gpt-3.5-turbo-foobar
+Provider test-provider is not a valid embedding provider for 'test check', falling back to default
+Using unknown OpenAI chat model: foo
+Using unknown OpenAI chat model: foo
+Using unknown OpenAI chat model: foo
+PASS test/matchers.test.ts (16.104 s)
+  runAssertions
+    âœ“ should pass when all assertions pass (14 ms)
+    âœ“ should fail when any assertion fails (1 ms)
+    âœ“ should handle output as an object (2 ms)
+    âœ“ should fail when combined score is less than threshold (2 ms)
+    âœ“ should pass when combined score is greater than threshold (1 ms)
+  runAssertion
+    âœ“ should pass when the equality assertion passes
+    âœ“ should fail when the equality assertion fails (2 ms)
+    âœ“ should handle output as an object (1 ms)
+    âœ“ should pass when the is-json assertion passes (1 ms)
+    âœ“ should fail when the is-json assertion fails (1 ms)
+    âœ“ should pass when the is-json assertion passes with schema (49 ms)
+    âœ“ should fail when the is-json assertion fails with schema (1 ms)
+    âœ“ should pass when the is-json assertion passes with schema YAML string (7 ms)
+    âœ“ should fail when the is-json assertion fails with schema YAML string (4 ms)
+    âœ“ should validate JSON with formats using ajv-formats (2 ms)
+    âœ“ should validate JSON with formats using ajv-formats - failure (2 ms)
+    âœ“ should pass when the is-json assertion passes with external schema (5 ms)
+    âœ“ should fail when the is-json assertion fails with external schema (3 ms)
+    âœ“ should pass when the contains-json assertion passes (1 ms)
+    âœ“ should pass when the contains-json assertion passes with multiple json values (1 ms)
+    âœ“ should pass when the contains-json assertion passes with valid and invalid json
+    âœ“ should fail when the contains-json assertion fails (1 ms)
+    âœ“ should pass when the contains-json assertion passes with schema (3 ms)
+    âœ“ should pass when the contains-json assertion passes with schema with YAML string
+    âœ“ should pass when the contains-json assertion passes with external schema (7 ms)
+    âœ“ should fail when the contains-json assertion fails with external schema (3 ms)
+    âœ“ should fail when the contains-json assertion fails with external schema
+    âœ“ should pass when the javascript assertion passes
+    âœ“ should pass a score through when the javascript returns a number
+    âœ“ should pass when javascript returns a number above threshold (1 ms)
+    âœ“ should fail when javascript returns a number below threshold (1 ms)
+    âœ“ should set score when javascript returns false (1 ms)
+    âœ“ should fail when the javascript assertion fails (1 ms)
+    âœ“ should pass when assertion passes - with vars (3 ms)
+    âœ“ should pass when javascript function assertion passes - with vars (1 ms)
+    âœ“ should fail when the javascript does not match vars (1 ms)
+    âœ“ should pass when the function returns pass
+    âœ“ should fail when the function returns fail (1 ms)
+    âœ“ should pass when the multiline javascript assertion passes (1 ms)
+    âœ“ should pass when the multiline javascript assertion fails (1 ms)
+    âœ“ should pass when the not-contains assertion passes (1 ms)
+    âœ“ should fail when the not-contains assertion fails (1 ms)
+    âœ“ should pass when the icontains assertion passes (1 ms)
+    âœ“ should fail when the icontains assertion fails (1 ms)
+    âœ“ should pass when the not-icontains assertion passes
+    âœ“ should fail when the not-icontains assertion fails
+    âœ“ should pass when the contains-any assertion passes (2 ms)
+    âœ“ should fail when the contains-any assertion fails (1 ms)
+    âœ“ should pass when the icontains-any assertion passes (1 ms)
+    âœ“ should fail when the icontains-any assertion fails (1 ms)
+    âœ“ should pass when the contains-all assertion passes
+    âœ“ should fail when the contains-all assertion fails
+    âœ“ should pass when the icontains-all assertion passes (1 ms)
+    âœ“ should fail when the icontains-all assertion fails (1 ms)
+    âœ“ should pass when the regex assertion passes (1 ms)
+    âœ“ should fail when the regex assertion fails (1 ms)
+    âœ“ should pass when the not-regex assertion passes (1 ms)
+    âœ“ should fail when the not-regex assertion fails
+    âœ“ should pass when the webhook assertion passes (2 ms)
+    âœ“ should fail when the webhook assertion fails (1 ms)
+    âœ“ should fail when the webhook returns an error (1 ms)
+    âœ“ should pass when the rouge-n assertion passes (1 ms)
+    âœ“ should fail when the rouge-n assertion fails (1 ms)
+    âœ“ should pass when the starts-with assertion passes (1 ms)
+    âœ“ should fail when the starts-with assertion fails (1 ms)
+    âœ“ should use the provider from the assertion if it exists (2 ms)
+    âœ“ should pass when the levenshtein assertion passes (1 ms)
+    âœ“ should fail when the levenshtein assertion fails
+    âœ“ should pass when the file:// assertion with .js file returns a boolean (4 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a number (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a GradingResult (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a boolean (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a number (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a GradingResult (1 ms)
+    âœ“ should pass when the file:// assertion with .js file returns a boolean Promise (1 ms)
+    âœ“ should handle output strings with both single and double quotes correctly in python assertion (2 ms)
+    âœ“ should handle inline return type boolean with return value: false (1 ms)
+    âœ“ should handle inline return type number with return value: 0 (2 ms)
+    âœ“ should handle inline return type GradingResult with return value: "{\"pass\": false, \"score\": 0, \"reason\": \"Custom error\"}" (1 ms)
+    âœ“ should handle inline return type boolean with return value: true (1 ms)
+    âœ“ should handle inline return type number with return value: 1 (5 ms)
+    âœ“ should handle inline return type GradingResult with return value: "{\"pass\": true, \"score\": 1, \"reason\": \"Custom success\"}" (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a boolean (2 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a number (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a boolean (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a number (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a GradingResult (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a boolean (1 ms)
+    âœ“ should handle when the file:// assertion with .py file returns a number
+    âœ“ should handle when the file:// assertion with .py file returns a GradingResult
+    latency assertion
+      âœ“ should pass when the latency assertion passes (1 ms)
+      âœ“ should fail when the latency assertion fails (1 ms)
+      âœ“ should throw an error when grading result is missing latencyMs (88 ms)
+    perplexity assertion
+      âœ“ should pass when the perplexity assertion passes (1 ms)
+      âœ“ should fail when the perplexity assertion fails (1 ms)
+    perplexity-score assertion
+      âœ“ should pass when the perplexity-score assertion passes
+      âœ“ should fail when the perplexity-score assertion fails (1 ms)
+    cost assertion
+      âœ“ should pass when the cost is below the threshold (1 ms)
+      âœ“ should fail when the cost exceeds the threshold (1 ms)
+    is-valid-openai-function-call assertion
+      âœ“ should pass for a valid function call with correct arguments (29 ms)
+      âœ“ should fail for an invalid function call with incorrect arguments (2 ms)
+    is-valid-openai-tools-call assertion
+      âœ“ should pass for a valid tools call with correct arguments (3 ms)
+      âœ“ should fail for an invalid tools call with incorrect arguments (3 ms)
+  assertionFromString
+    âœ“ should create an equality assertion (1 ms)
+    âœ“ should create an is-json assertion (1 ms)
+    âœ“ should create an is-json assertion with value (1 ms)
+    âœ“ should create an contains-json assertion
+    âœ“ should create a function assertion (1 ms)
+    âœ“ should create a similarity assertion (1 ms)
+    âœ“ should create a contains assertion
+    âœ“ should create a not-contains assertion (1 ms)
+    âœ“ should create a contains-any assertion (1 ms)
+    âœ“ should create a contains-all assertion (1 ms)
+    âœ“ should create a regex assertion
+    âœ“ should create a not-regex assertion (1 ms)
+    âœ“ should create an icontains assertion
+    âœ“ should create a not-icontains assertion (5 ms)
+    âœ“ should create a webhook assertion (1 ms)
+    âœ“ should create a not-webhook assertion (1 ms)
+    âœ“ should create a rouge-n assertion (1 ms)
+    âœ“ should create a not-rouge-n assertion (1 ms)
+    âœ“ should create a starts-with assertion
+    âœ“ should create a levenshtein assertion (1 ms)
+    âœ“ should create a classifier assertion
+    âœ“ should create a latency assertion
+    âœ“ should create a perplexity assertion (1 ms)
+    âœ“ should create a perplexity-score assertion
+    âœ“ should create a cost assertion (1 ms)
+    âœ“ should create an openai function call assertion
   matchesSimilarity
     âœ“ should pass when similarity is above the threshold (1 ms)
     âœ“ should fail when similarity is below the threshold (1 ms)
-    âœ“ should fail when inverted similarity is above the threshold
-    âœ“ should pass when inverted similarity is below the threshold (1 ms)
+    âœ“ should fail when inverted similarity is above the threshold (1 ms)
+    âœ“ should pass when inverted similarity is below the threshold
+    âœ“ should use the overridden simmilarity grading config (2 ms)
+    âœ“ should throw an error when API call fails (11 ms)
   matchesLlmRubric
-    âœ“ should pass when the grading provider returns a passing result (5 ms)
-    âœ“ should fail when the grading provider returns a failing result (2 ms)
+    âœ“ should pass when the grading provider returns a passing result (1 ms)
+    âœ“ should fail when the grading provider returns a failing result (1 ms)
+    âœ“ should use the overridden llm rubric grading config (1 ms)
+  matchesFactuality
+    âœ“ should pass when the factuality check passes (2 ms)
+    âœ“ should fail when the factuality check fails (2 ms)
+    âœ“ should use the overridden factuality grading config (2 ms)
+    âœ“ should throw an error when an error occurs (11 ms)
+  matchesClosedQa
+    âœ“ should pass when the closed QA check passes (1 ms)
+    âœ“ should fail when the closed QA check fails (1 ms)
+    âœ“ should throw an error when an error occurs (2 ms)
+    âœ“ should handle input, criteria, and completion that need escaping (1 ms)
+  getGradingProvider
+    âœ“ should return the correct provider when provider is a string (1 ms)
+    âœ“ should return the correct provider when provider is an ApiProvider
+    âœ“ should return the correct provider when provider is ProviderOptions (1 ms)
+    âœ“ should return the default provider when provider is not provided
+    âœ“ should return the default provider when no provider is specified
+    âœ“ should return a specific provider when a provider id is specified (1 ms)
+    âœ“ should return a provider from ApiProvider when specified
+    âœ“ should return a provider from ProviderTypeMap when specified
+    âœ“ should return a provider from ProviderTypeMap with basic strings (1 ms)
+    âœ“ should throw an error when the provider does not match the type (1 ms)
+  getAndCheckProvider
+    âœ“ should return the default provider when provider is not defined (1 ms)
+    âœ“ should return the default provider when provider does not support type
+    âœ“ should return the provider if it implements the required method (1 ms)
+  matchesAnswerRelevance
+    âœ“ should pass when the relevance score is above the threshold (1 ms)
+    âœ“ should fail when the relevance score is below the threshold (1 ms)
+  matchesClassification
+    âœ“ should pass when the classification score is above the threshold
+    âœ“ should fail when the classification score is below the threshold (1 ms)
+    âœ“ should pass when the maximum classification score is above the threshold with undefined expected (1 ms)
+    âœ“ should use the overridden classification grading config
+  matchesContextRelevance
+    âœ“ should pass when the relevance score is above the threshold (5 ms)
+    âœ“ should fail when the relevance score is below the threshold (1 ms)
+  matchesContextFaithfulness
+    âœ“ should pass when the faithfulness score is above the threshold (2 ms)
+    âœ“ should fail when the faithfulness score is below the threshold (2 ms)
+  matchesContextRecall
+    âœ“ should pass when the recall score is above the threshold (3 ms)
+    âœ“ should fail when the recall score is below the threshold (1 ms)
 
-Test Suites: 1 failed, 6 passed, 7 total
-Tests:       92 passed, 92 total
+Test Suites: 11 passed, 11 total
+Tests:       416 passed, 416 total
 Snapshots:   0 total
-Time:        6.389 s
+Time:        16.854 s
