@@ -1,166 +1,82 @@
 [
   {
-    "name": "test/pythonWrapper.test.ts | runPython | should correctly run a Python script with provided arguments",
+    "name": "test/providers.test.ts | providers | OpenAiCompletionProvider callApi",
     "status": "PASSED"
   },
   {
-    "name": "test/pythonWrapper.test.ts | runPython | should throw an error if the Python script execution fails",
+    "name": "test/providers.test.ts | providers | OpenAiChatCompletionProvider callApi",
     "status": "PASSED"
   },
   {
-    "name": "test/pythonWrapper.test.ts | runPythonCode | should execute Python code from a string",
+    "name": "test/providers.test.ts | providers | OpenAiChatCompletionProvider callApi with cache disabled",
     "status": "PASSED"
   },
   {
-    "name": "test/pythonWrapper.test.ts | runPythonCode | should clean up the temporary file after execution",
+    "name": "test/providers.test.ts | providers | loadApiProvider with openai:chat",
     "status": "PASSED"
   },
   {
-    "name": "test/pythonWrapper.test.ts | runPythonCode | should throw an error if Python code execution fails",
+    "name": "test/providers.test.ts | providers | loadApiProvider with openai:completion",
     "status": "PASSED"
   },
   {
-    "name": "test/prompts.test.ts | prompts | readPrompts with single prompt file",
+    "name": "test/providers.test.ts | providers | loadApiProvider with openai:chat:modelName",
     "status": "PASSED"
   },
   {
-    "name": "test/prompts.test.ts | prompts | readPrompts with multiple prompt files",
+    "name": "test/providers.test.ts | providers | loadApiProvider with openai:completion:modelName",
     "status": "PASSED"
   },
   {
-    "name": "test/prompts.test.ts | prompts | readPrompts with directory",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should not cache data with failed request",
     "status": "PASSED"
   },
   {
-    "name": "test/prompts.test.ts | prompts | readPrompts with empty input",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should fetch data with cache enabled",
     "status": "PASSED"
   },
   {
-    "name": "test/prompts.test.ts | prompts | readPrompts with map input",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should fetch data with cache enabled after previous test",
     "status": "PASSED"
   },
   {
-    "name": "test/prompts.test.ts | prompts | readPrompts with JSONL file",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should fetch data without cache for a single test",
     "status": "PASSED"
   },
   {
-    "name": "test/prompts.test.ts | prompts | readPrompts with .py file",
+    "name": "test/cache.test.ts | fetchJsonWithCache | should still fetch data without cache for a single test",
     "status": "PASSED"
   },
   {
-    "name": "test/prompts.test.ts | prompts | readPrompts with .js file",
+    "name": "test/util.test.ts | util | readPrompts with single prompt file",
     "status": "PASSED"
   },
   {
-    "name": "test/prompts.test.ts | prompts | readPrompts with glob pattern for .txt files",
+    "name": "test/util.test.ts | util | readPrompts with multiple prompt files",
     "status": "PASSED"
   },
   {
-    "name": "test/telemetry.test.ts | Telemetry | should not record events when telemetry is disabled",
+    "name": "test/util.test.ts | util | readPrompts with directory",
     "status": "PASSED"
   },
   {
-    "name": "test/telemetry.test.ts | Telemetry | should record events when telemetry is enabled",
+    "name": "test/util.test.ts | util | readPrompts with empty input",
     "status": "PASSED"
   },
   {
-    "name": "test/telemetry.test.ts | Telemetry | should send events and clear events array when telemetry is enabled and send is called",
+    "name": "test/util.test.ts | util | readPrompts with map input",
     "status": "PASSED"
   },
   {
-    "name": "test/telemetry.test.ts | Telemetry | should not send events when telemetry is disabled and send is called",
+    "name": "test/util.test.ts | util | readVars with CSV input",
     "status": "PASSED"
   },
   {
-    "name": "test/updates.test.ts | getLatestVersion | should return the latest version of the package",
+    "name": "test/util.test.ts | util | readVars with JSON input",
     "status": "PASSED"
   },
   {
-    "name": "test/updates.test.ts | getLatestVersion | should throw an error if the response is not ok",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/updates.test.ts | checkForUpdates | should log an update message if a newer version is available - minor ver",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/updates.test.ts | checkForUpdates | should log an update message if a newer version is available - major ver",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/updates.test.ts | checkForUpdates | should not log an update message if the current version is up to date",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readStandaloneTestsFile | readStandaloneTestsFile with CSV input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readStandaloneTestsFile | readStandaloneTestsFile with JSON input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readStandaloneTestsFile | readStandaloneTestsFile with YAML input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readTest | readTest with string input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readTest | readTest with TestCase input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readTest | readTest with invalid input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readTest | readTest with TestCase that contains a vars glob input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readTests | readTests with string input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readTests | readTests with multiple __expected in CSV",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readTests | readTests with array input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readTests | readTests with string array input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | readTests | readTests with vars glob input",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/testCases.test.ts | testCaseFromCsvRow | should convert a CSV row to a TestCase object",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/cache.test.ts | fetchWithCache | should not cache data with failed request",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/cache.test.ts | fetchWithCache | should fetch data with cache enabled",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/cache.test.ts | fetchWithCache | should fetch data with cache enabled after previous test",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/cache.test.ts | fetchWithCache | should fetch data without cache for a single test",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/cache.test.ts | fetchWithCache | should still fetch data without cache for a single test",
+    "name": "test/util.test.ts | util | readVars with YAML input",
     "status": "PASSED"
   },
   {
@@ -176,291 +92,15 @@
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | writeOutput with json and txt output",
+    "name": "test/util.test.ts | readTests | readTests with no input",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | readFilters",
+    "name": "test/util.test.ts | readTests | readTests with string input",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | readCliConfig | reads from existing config",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | readCliConfig | creates new config if none exists",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | maybeRecordFirstRun | returns true if it is the first run",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | maybeRecordFirstRun | returns false if it is not the first run",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | readConfigs | reads from existing configs",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | readConfigs | throws error for unsupported configuration file format",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | readConfigs | makeAbsolute should resolve file:// syntax and plaintext prompts",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | readConfigs | dedupes prompts when reading configs",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | dereferenceConfig | should dereference a config with no $refs",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | dereferenceConfig | should dereference a config with $refs",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | dereferenceConfig | should preserve regular functions when dereferencing",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | dereferenceConfig | should preserve tools with references and definitions when dereferencing",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | transformOutput | transforms output using a direct function",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | transformOutput | transforms output using an imported function from a file",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | transformOutput | throws error if transform function does not return a value",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/util.test.ts | transformOutput | throws error if file does not export a function",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | OpenAiCompletionProvider callApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | OpenAiChatCompletionProvider callApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | OpenAiChatCompletionProvider callApi with caching",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | OpenAiChatCompletionProvider callApi with cache disabled",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | OpenAiChatCompletionProvider constructor with config",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | AzureOpenAiCompletionProvider callApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | AzureOpenAiChatCompletionProvider callApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | AzureOpenAiChatCompletionProvider callApi with dataSources",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | AzureOpenAiChatCompletionProvider callApi with cache disabled",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | AnthropicCompletionProvider callApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | AnthropicCompletionProvider callApi with caching",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | AnthropicCompletionProvider callApi with caching disabled",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | LlamaProvider callApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | OllamaCompletionProvider callApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | OllamaChatProvider callApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | WebhookProvider callApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | HuggingfaceFeatureExtractionProvider callEmbeddingApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | call provider apis | HuggingfaceTextClassificationProvider callClassificationApi",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | HuggingfaceTextGenerationProvider callApi with Array format | returns expected output",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | HuggingfaceTextGenerationProvider callApi with Object format | returns expected output",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | ScriptCompletionProvider callApi with script python rag.py | returns expected output",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | ScriptCompletionProvider callApi with script echo \"hello world\" | returns expected output",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | ScriptCompletionProvider callApi with script ./path/to/file.py run | returns expected output",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | ScriptCompletionProvider callApi with script \"/Path/To/My File.py\" | returns expected output",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with filepath",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with openai:chat",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with openai:completion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with openai:assistant",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with openai:chat:modelName",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with openai:completion:modelName",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with OpenAI finetuned model",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with azureopenai:completion:modelName",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with azureopenai:chat:modelName",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with anthropic:completion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with anthropic:completion:modelName",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with ollama:modelName",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with ollama:completion:modelName",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with ollama:chat:modelName",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with llama:modelName",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with webhook",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with huggingface:text-generation",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with huggingface:feature-extraction",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with huggingface:text-classification",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with hf:text-classification",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with bedrock:completion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProvider with RawProviderConfig",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProviders with ProviderFunction",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.test.ts | loadApiProvider | loadApiProviders with RawProviderConfig[]",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.azure.test.ts | maybeEmitAzureOpenAiWarning | should not emit warning when no Azure providers are used",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.azure.test.ts | maybeEmitAzureOpenAiWarning | should not emit warning when Azure provider is used alone, but no model graded eval",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.azure.test.ts | maybeEmitAzureOpenAiWarning | should emit warning when Azure provider is used alone, but with model graded eval",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.azure.test.ts | maybeEmitAzureOpenAiWarning | should emit warning when Azure provider used with non-OpenAI provider",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.azure.test.ts | maybeEmitAzureOpenAiWarning | should not emit warning when Azure providers are used with a default provider set",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/providers.azure.test.ts | maybeEmitAzureOpenAiWarning | should not emit warning when both Azure and OpenAI providers are used",
+    "name": "test/util.test.ts | readTests | readTests with array input",
     "status": "PASSED"
   },
   {
@@ -472,27 +112,11 @@
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | runAssertions | should handle output as an object",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertions | should fail when combined score is less than threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertions | should pass when combined score is greater than threshold",
-    "status": "PASSED"
-  },
-  {
     "name": "test/assertions.test.ts | runAssertion | should pass when the equality assertion passes",
     "status": "PASSED"
   },
   {
     "name": "test/assertions.test.ts | runAssertion | should fail when the equality assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle output as an object",
     "status": "PASSED"
   },
   {
@@ -504,47 +128,7 @@
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the is-json assertion passes with schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the is-json assertion fails with schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the is-json assertion passes with schema YAML string",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the is-json assertion fails with schema YAML string",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should validate JSON with formats using ajv-formats",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should validate JSON with formats using ajv-formats - failure",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the is-json assertion passes with external schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the is-json assertion fails with external schema",
-    "status": "PASSED"
-  },
-  {
     "name": "test/assertions.test.ts | runAssertion | should pass when the contains-json assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the contains-json assertion passes with multiple json values",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the contains-json assertion passes with valid and invalid json",
     "status": "PASSED"
   },
   {
@@ -552,75 +136,19 @@
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the contains-json assertion passes with schema",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the function assertion passes",
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the contains-json assertion passes with schema with YAML string",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the function assertion fails",
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the contains-json assertion passes with external schema",
+    "name": "test/assertions.test.ts | runAssertion | should pass when the function assertion passes - with vars",
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the contains-json assertion fails with external schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the contains-json assertion fails with external schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the javascript assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass a score through when the javascript returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when javascript returns a number above threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when javascript returns a number below threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should set score when javascript returns false",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the javascript assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when assertion passes - with vars",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when javascript function assertion passes - with vars",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the javascript does not match vars",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the function returns pass",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the function returns fail",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the multiline javascript assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the multiline javascript assertion fails",
+    "name": "test/assertions.test.ts | runAssertion | should fail when the function does not match vars",
     "status": "PASSED"
   },
   {
@@ -656,27 +184,11 @@
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the icontains-any assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the icontains-any assertion fails",
-    "status": "PASSED"
-  },
-  {
     "name": "test/assertions.test.ts | runAssertion | should pass when the contains-all assertion passes",
     "status": "PASSED"
   },
   {
     "name": "test/assertions.test.ts | runAssertion | should fail when the contains-all assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the icontains-all assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the icontains-all assertion fails",
     "status": "PASSED"
   },
   {
@@ -696,195 +208,11 @@
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the webhook assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the webhook assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the webhook returns an error",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the rouge-n assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the rouge-n assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the starts-with assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the starts-with assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should use the provider from the assertion if it exists",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the levenshtein assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should fail when the levenshtein assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a GradingResult",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a GradingResult",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a boolean Promise",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle output strings with both single and double quotes correctly in python assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle inline return type boolean with return value: false",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle inline return type number with return value: 0",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle inline return type GradingResult with return value: \"{\\\"pass\\\": false, \\\"score\\\": 0, \\\"reason\\\": \\\"Custom error\\\"}\"",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle inline return type boolean with return value: true",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle inline return type number with return value: 1",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle inline return type GradingResult with return value: \"{\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"Custom success\\\"}\"",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a GradingResult",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a GradingResult",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | latency assertion | should pass when the latency assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | latency assertion | should fail when the latency assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | latency assertion | should throw an error when grading result is missing latencyMs",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | perplexity assertion | should pass when the perplexity assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | perplexity assertion | should fail when the perplexity assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | perplexity-score assertion | should pass when the perplexity-score assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | perplexity-score assertion | should fail when the perplexity-score assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | cost assertion | should pass when the cost is below the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | cost assertion | should fail when the cost exceeds the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | is-valid-openai-function-call assertion | should pass for a valid function call with correct arguments",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | is-valid-openai-function-call assertion | should fail for an invalid function call with incorrect arguments",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | is-valid-openai-tools-call assertion | should pass for a valid tools call with correct arguments",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | is-valid-openai-tools-call assertion | should fail for an invalid tools call with incorrect arguments",
-    "status": "PASSED"
-  },
-  {
     "name": "test/assertions.test.ts | assertionFromString | should create an equality assertion",
     "status": "PASSED"
   },
   {
     "name": "test/assertions.test.ts | assertionFromString | should create an is-json assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | assertionFromString | should create an is-json assertion with value",
     "status": "PASSED"
   },
   {
@@ -932,735 +260,27 @@
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | assertionFromString | should create a webhook assertion",
+    "name": "test/assertions.test.ts | matchesSimilarity | should pass when similarity is above the threshold",
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | assertionFromString | should create a not-webhook assertion",
+    "name": "test/assertions.test.ts | matchesSimilarity | should fail when similarity is below the threshold",
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | assertionFromString | should create a rouge-n assertion",
+    "name": "test/assertions.test.ts | matchesSimilarity | should fail when inverted similarity is above the threshold",
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | assertionFromString | should create a not-rouge-n assertion",
+    "name": "test/assertions.test.ts | matchesSimilarity | should pass when inverted similarity is below the threshold",
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | assertionFromString | should create a starts-with assertion",
+    "name": "test/assertions.test.ts | matchesLlmRubric | should pass when the grading provider returns a passing result",
     "status": "PASSED"
   },
   {
-    "name": "test/assertions.test.ts | assertionFromString | should create a levenshtein assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | assertionFromString | should create a classifier assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | assertionFromString | should create a latency assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | assertionFromString | should create a perplexity assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | assertionFromString | should create a perplexity-score assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | assertionFromString | should create a cost assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/assertions.test.ts | assertionFromString | should create an openai function call assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertions | should pass when all assertions pass",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertions | should fail when any assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertions | should handle output as an object",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertions | should fail when combined score is less than threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertions | should pass when combined score is greater than threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the equality assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the equality assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle output as an object",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the is-json assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the is-json assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the is-json assertion passes with schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the is-json assertion fails with schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the is-json assertion passes with schema YAML string",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the is-json assertion fails with schema YAML string",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should validate JSON with formats using ajv-formats",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should validate JSON with formats using ajv-formats - failure",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the is-json assertion passes with external schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the is-json assertion fails with external schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the contains-json assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the contains-json assertion passes with multiple json values",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the contains-json assertion passes with valid and invalid json",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the contains-json assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the contains-json assertion passes with schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the contains-json assertion passes with schema with YAML string",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the contains-json assertion passes with external schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the contains-json assertion fails with external schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the contains-json assertion fails with external schema",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the javascript assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass a score through when the javascript returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when javascript returns a number above threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when javascript returns a number below threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should set score when javascript returns false",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the javascript assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when assertion passes - with vars",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when javascript function assertion passes - with vars",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the javascript does not match vars",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the function returns pass",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the function returns fail",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the multiline javascript assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the multiline javascript assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the not-contains assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the not-contains assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the icontains assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the icontains assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the not-icontains assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the not-icontains assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the contains-any assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the contains-any assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the icontains-any assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the icontains-any assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the contains-all assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the contains-all assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the icontains-all assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the icontains-all assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the regex assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the regex assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the not-regex assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the not-regex assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the webhook assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the webhook assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the webhook returns an error",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the rouge-n assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the rouge-n assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the starts-with assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the starts-with assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should use the provider from the assertion if it exists",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the levenshtein assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should fail when the levenshtein assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a GradingResult",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a GradingResult",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should pass when the file:// assertion with .js file returns a boolean Promise",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle output strings with both single and double quotes correctly in python assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle inline return type boolean with return value: false",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle inline return type number with return value: 0",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle inline return type GradingResult with return value: \"{\\\"pass\\\": false, \\\"score\\\": 0, \\\"reason\\\": \\\"Custom error\\\"}\"",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle inline return type boolean with return value: true",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle inline return type number with return value: 1",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle inline return type GradingResult with return value: \"{\\\"pass\\\": true, \\\"score\\\": 1, \\\"reason\\\": \\\"Custom success\\\"}\"",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a GradingResult",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a boolean",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a number",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | runAssertion | should handle when the file:// assertion with .py file returns a GradingResult",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | latency assertion | should pass when the latency assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | latency assertion | should fail when the latency assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | latency assertion | should throw an error when grading result is missing latencyMs",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | perplexity assertion | should pass when the perplexity assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | perplexity assertion | should fail when the perplexity assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | perplexity-score assertion | should pass when the perplexity-score assertion passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | perplexity-score assertion | should fail when the perplexity-score assertion fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | cost assertion | should pass when the cost is below the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | cost assertion | should fail when the cost exceeds the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | is-valid-openai-function-call assertion | should pass for a valid function call with correct arguments",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | is-valid-openai-function-call assertion | should fail for an invalid function call with incorrect arguments",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | is-valid-openai-tools-call assertion | should pass for a valid tools call with correct arguments",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | is-valid-openai-tools-call assertion | should fail for an invalid tools call with incorrect arguments",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create an equality assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create an is-json assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create an is-json assertion with value",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create an contains-json assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a function assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a similarity assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a contains assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a not-contains assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a contains-any assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a contains-all assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a regex assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a not-regex assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create an icontains assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a not-icontains assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a webhook assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a not-webhook assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a rouge-n assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a not-rouge-n assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a starts-with assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a levenshtein assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a classifier assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a latency assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a perplexity assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a perplexity-score assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create a cost assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | assertionFromString | should create an openai function call assertion",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesSimilarity | should pass when similarity is above the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesSimilarity | should fail when similarity is below the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesSimilarity | should fail when inverted similarity is above the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesSimilarity | should pass when inverted similarity is below the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesSimilarity | should use the overridden simmilarity grading config",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesSimilarity | should throw an error when API call fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesLlmRubric | should pass when the grading provider returns a passing result",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesLlmRubric | should fail when the grading provider returns a failing result",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesLlmRubric | should use the overridden llm rubric grading config",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesFactuality | should pass when the factuality check passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesFactuality | should fail when the factuality check fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesFactuality | should use the overridden factuality grading config",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesFactuality | should throw an error when an error occurs",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesClosedQa | should pass when the closed QA check passes",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesClosedQa | should fail when the closed QA check fails",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesClosedQa | should throw an error when an error occurs",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesClosedQa | should handle input, criteria, and completion that need escaping",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should return the correct provider when provider is a string",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should return the correct provider when provider is an ApiProvider",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should return the correct provider when provider is ProviderOptions",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should return the default provider when provider is not provided",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should return the default provider when no provider is specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should return a specific provider when a provider id is specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should return a provider from ApiProvider when specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should return a provider from ProviderTypeMap when specified",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should return a provider from ProviderTypeMap with basic strings",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getGradingProvider | should throw an error when the provider does not match the type",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getAndCheckProvider | should return the default provider when provider is not defined",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getAndCheckProvider | should return the default provider when provider does not support type",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | getAndCheckProvider | should return the provider if it implements the required method",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesAnswerRelevance | should pass when the relevance score is above the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesAnswerRelevance | should fail when the relevance score is below the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesClassification | should pass when the classification score is above the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesClassification | should fail when the classification score is below the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesClassification | should pass when the maximum classification score is above the threshold with undefined expected",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesClassification | should use the overridden classification grading config",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesContextRelevance | should pass when the relevance score is above the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesContextRelevance | should fail when the relevance score is below the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesContextFaithfulness | should pass when the faithfulness score is above the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesContextFaithfulness | should fail when the faithfulness score is below the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesContextRecall | should pass when the recall score is above the threshold",
-    "status": "PASSED"
-  },
-  {
-    "name": "test/matchers.test.ts | matchesContextRecall | should fail when the recall score is below the threshold",
+    "name": "test/assertions.test.ts | matchesLlmRubric | should fail when the grading provider returns a failing result",
     "status": "PASSED"
   }
 ]
