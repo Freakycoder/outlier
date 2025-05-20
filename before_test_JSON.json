@@ -1,278 +1,6790 @@
 [
   {
-    "name": "test/cache.test.ts | fetchJsonWithCache | should not cache data with failed request",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | pipeables | traverse",
     "status": "PASSED"
   },
   {
-    "name": "test/cache.test.ts | fetchJsonWithCache | should fetch data with cache enabled",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | pipeables | sequence",
     "status": "PASSED"
   },
   {
-    "name": "test/cache.test.ts | fetchJsonWithCache | should fetch data with cache enabled after previous test",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | pipeables | traverseWithIndex",
     "status": "PASSED"
   },
   {
-    "name": "test/cache.test.ts | fetchJsonWithCache | should fetch data without cache for a single test",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | head",
     "status": "PASSED"
   },
   {
-    "name": "test/cache.test.ts | fetchJsonWithCache | should still fetch data without cache for a single test",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | tail",
     "status": "PASSED"
   },
   {
-    "name": "test/providers.test.ts | providers | OpenAiCompletionProvider callApi",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | map",
     "status": "PASSED"
   },
   {
-    "name": "test/providers.test.ts | providers | OpenAiChatCompletionProvider callApi",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | mapWithIndex",
     "status": "PASSED"
   },
   {
-    "name": "test/providers.test.ts | providers | OpenAiChatCompletionProvider callApi with cache disabled",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | of",
     "status": "PASSED"
   },
   {
-    "name": "test/providers.test.ts | providers | loadApiProvider with openai:chat",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | ap",
     "status": "PASSED"
   },
   {
-    "name": "test/providers.test.ts | providers | loadApiProvider with openai:completion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | flatMap",
     "status": "PASSED"
   },
   {
-    "name": "test/providers.test.ts | providers | loadApiProvider with openai:chat:modelName",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | chain",
     "status": "PASSED"
   },
   {
-    "name": "test/providers.test.ts | providers | loadApiProvider with openai:completion:modelName",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | extend",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | readPrompts with single prompt file",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | extract",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | readPrompts with multiple prompt files",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | min",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | readPrompts with directory",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | max",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | readPrompts with empty input",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | reduce",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | readPrompts with map input",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | foldMap",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | readVars with CSV input",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | reduceRight",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | readVars with JSON input",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | fromReadonlyArray",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | readVars with YAML input",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | getSemigroup",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | writeOutput with CSV output",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | getEq",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | writeOutput with JSON output",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | group",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | util | writeOutput with YAML output",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | groupSort",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | readTests | readTests with no input",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | last",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | readTests | readTests with string input",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | init",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | readTests | readTests with array input",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | sort",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertions | should pass when all assertions pass",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | prependAll",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertions | should fail when any assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | intersperse",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertion | should pass when the equality assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | intercalate",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertion | should fail when the equality assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | reverse",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertion | should pass when the is-json assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | groupBy",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertion | should fail when the is-json assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | insertAt",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertion | should pass when the contains-json assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | updateAt",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertion | should fail when the contains-json assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | modifyAt",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertion | should pass when the function assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | filter",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | runAssertion | should fail when the function assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | filterWithIndex",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should pass when the not-contains assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | reduceWithIndex",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should fail when the not-contains assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | foldMapWithIndex",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should pass when the icontains assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | reduceRightWithIndex",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should fail when the icontains assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | cons",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should pass when the not-icontains assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | snoc",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should fail when the not-icontains assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | unprepend",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should pass when the contains-any assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | unappend",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should fail when the contains-any assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | getShow",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should pass when the contains-all assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | alt",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should fail when the contains-all assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | foldMap",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should pass when the regex assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | foldMapWithIndex",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should fail when the regex assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | fromArray",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should pass when the not-regex assertion passes",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | fromReadonlyArray",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | ✕ should fail when the function does not match vars (7 ms) | should fail when the not-regex assertion fails",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | concatAll",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create an equality assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | do notation",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create an is-json assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | apS",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create an contains-json assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | zipWith",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create a function assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | zip",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create a similarity assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | unzip",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create a contains assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | splitAt",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create a not-contains assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | chunksOf",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create a contains-any assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | rotate",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create a contains-all assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | uniq",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create a regex assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | sortBy",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create a not-regex assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | union",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create an icontains assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | matchLeft",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | assertionFromString | should create a not-icontains assertion",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | matchRight",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | matchesSimilarity | should pass when similarity is above the threshold",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | modifyHead",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | matchesSimilarity | should fail when similarity is below the threshold",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | modifyLast",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | matchesSimilarity | should fail when inverted similarity is above the threshold",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | makeBy",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | matchesSimilarity | should pass when inverted similarity is below the threshold",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | range",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | matchesLlmRubric | should pass when the grading provider returns a passing result",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | replicate",
     "status": "PASSED"
   },
   {
-    "name": "test/util.test.ts | matchesLlmRubric | should fail when the grading provider returns a failing result",
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | updateHead",
     "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | updateLast",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | concatW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyNonEmptyArray.ts | ReadonlyNonEmptyArray | isOutOfBound",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | pipeables | traverseWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | head",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | tail",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | mapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | of",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | extract",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | min",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | max",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | fromArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | getSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | group",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | groupSort",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | last",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | init",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | sort",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | prependAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | intersperse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | intercalate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | groupBy",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | union",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | insertAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | updateAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | modifyAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | copy",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | filterWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | reduceWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | foldMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | reduceRightWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | cons",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | snoc",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | unprepend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | unappend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | foldMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | concatAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | zipWith",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | zip",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | unzip",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | splitAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | chunksOf",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | matchLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | matchRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | modifyHead",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | modifyLast",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | replicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | updateHead",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | updateLast",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | concatW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/NonEmptyArray.ts | NonEmptyArray | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | flip",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | not",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | unsafeCoerce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | constTrue",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | constFalse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | constNull",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | constUndefined",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | constVoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | increment",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | decrement",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | absurd",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | flow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | tupled",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | untupled",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | pipe",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | getBooleanAlgebra",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | getSemiring",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | getRing",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | getEndomorphismMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/function.ts | function | apply",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | apFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | apSecondW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | chainFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | flattenW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | compose",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | pipeables | promap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | of",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | local",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | id",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | compose",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | getSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | ask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | asks",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Reader.ts | Reader | asksReader",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Traced.ts | Traced | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Traced.ts | Traced | getComonad",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Traced.ts | Traced | tracks",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Traced.ts | Traced | listen",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Traced.ts | Traced | listens",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Traced.ts | Traced | censor",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | apFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | apSecondW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | chainFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | duplicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | flattenW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | filterOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | isLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | isRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | orElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | swap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | parseJSON",
+    "status": "ERROR"
+  },
+  {
+    "name": "test/Either.ts | Either | stringifyJSON",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | fromPredicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | fromNullable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | tryCatch",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getEq | equals",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | ChainRec | chainRec",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getWitherable | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getWitherable | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getWitherable | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getWitherable | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getWitherable | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getWitherable | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getWitherable | wither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getWitherable | wilt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getSemigroup | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getApplySemigroup | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getApplyMonoid | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getShow | show",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getApplicativeValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getAltValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getValidationSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getValidationMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | fromOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | fromOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | chainOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | exists",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | fromNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | chainNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getCompactable | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | getCompactable | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | toUnion",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Either.ts | Either | tryCatchK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | collect",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | reduceWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | foldMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | reduceRightWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | partitionMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | partitionWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | filterMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | filterWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | getTraversable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | traverseWithIndex | simple Traversal",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | traverseWithIndex | should not modify arrays in place",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | getTraversableWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | wither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pipeables | wilt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | lookup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | fromFoldable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | toReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | toUnfoldable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | toEntries",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | fromEntries",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | traverseWithIndex should sort the keys",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | size",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | isEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | insertAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | deleteAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | pop",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | every",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | some",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | fromFoldableMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | singleton",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | has",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | updateAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | modifyAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | fromRecord",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | toRecord",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | getUnionMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | getIntersectionSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | getDifferenceMagma",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyRecord.ts | ReadonlyRecord | mapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | flap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | duplicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | wither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | pipeables | wilt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | constructors | fromEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | zero",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | toNullable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | toUndefined",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | equals",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getOrd",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | chainNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | fromNullable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | fromPredicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getApplySemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getApplyMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getFirstMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getLastMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | isNone",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | isSome",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | exists",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | tryCatch",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getRefinement",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | getRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | throwError",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | fromNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | tryCatchK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | guard",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Option.ts | Option | chainFirstEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | tuple",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | clamp",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | between",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | leq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | geq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | fromCompare",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | min",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | max",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | equals",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | trivial",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ord.ts | Ord | ordDate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | fromIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | applicativeTaskSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | applicativeTaskPar",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | getRaceMonoid | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | getRaceMonoid | empty (right)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | getRaceMonoid | empty (left)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | getRaceMonoid | concat (rejected)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | chainIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | chainFirstIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | array utils | traverseReadonlyArrayWithIndexSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | array utils | sequenceReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | traverseWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | lookup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | unfold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | wither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | wilt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | mapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | chainWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | filterWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | foldMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | filterMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | partitionMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | partitionWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | reduceWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | reduceRightWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | pipeables | duplicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | getOrd",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | isEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | isNotEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | cons",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | snoc",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | head",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | last",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | tail",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | takeLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | takeRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | spanLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | takeLeftWhile",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | dropLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | dropRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | dropLeftWhile",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | init",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | findIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | findFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | findFirstMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | findLast",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | findLastMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | findLastIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | insertAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | unsafeUpdateAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | updateAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | deleteAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | modifyAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | sort",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | zipWith",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | zip",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | unzip",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | rights",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | lefts",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | prependAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | intersperse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | intercalate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | rotate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | foldLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | foldRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | scanLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | scanRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | uniq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | sortBy",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | chop",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | splitAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | chunksOf | should split a `ReadonlyArray` into length-n pieces",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | chunksOf | returns an empty array if provided an empty array",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | chunksOf | should respect the law: chunksOf(n)(xs).concat(chunksOf(n)(ys)) == chunksOf(n)(xs.concat(ys)))",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | prepend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | append",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | makeBy",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | replicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | range",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | comprehension",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | union",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | intersection",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | difference",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | getUnionMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | getIntersectionSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | getDifferenceMagma",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | should be safe when calling map with a binary function",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | fromArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | toArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | empty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | every",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | some",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | size",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | chainRec | depth-first",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | chainRec | breadth-first",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | fromPredicate | can create an array from a Refinement",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | fromPredicate | can create an array from a Predicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | fromOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | fromEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | match",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | concatW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | fromOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyArray.ts | ReadonlyArray | isOutOfBound",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | traverseWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | lookup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | unfold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | wither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | wilt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | mapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | chainWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | filterWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | foldMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | filterMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | partitionMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | partitionWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | reduceWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | reduceRightWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | pipeables | duplicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | getOrd",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | isEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | isNotEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | cons",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | snoc",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | head",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | last",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | tail",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | takeLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | takeRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | spanLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | takeLeftWhile",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | dropLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | dropRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | dropLeftWhile",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | init",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | findIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | findFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | findFirstMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | findLast",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | findLastMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | findLastIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | insertAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | unsafeUpdateAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | updateAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | deleteAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | modifyAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | sort",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | prependAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | intersperse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | intercalate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | zipWith",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | zip",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | unzip",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | rights",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | lefts",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | rotate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | foldLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | foldRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | scanLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | scanRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | uniq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | sortBy",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | chop",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | splitAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | chunksOf | should split an array into length-n pieces",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | chunksOf | returns an empty array if provided an empty array",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | chunksOf | should respect the law: RA.chunksOf(n)(xs).concat(RA.chunksOf(n)(ys)) == RA.chunksOf(n)(xs.concat(ys)))",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | prepend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | append",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | makeBy",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | range",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | replicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | comprehension",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | union",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | intersection",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | difference",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | getUnionMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | getIntersectionSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | getDifferenceMagma",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | should be safe when calling map with a binary function",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | size",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | every",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | some",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | copy",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | fromPredicate | can create an array from a Refinement",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | fromPredicate | can create an array from a Predicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | fromOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | fromEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | match",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | concatW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | fromOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Array.ts | Array | isOutOfBound",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | array utils | sequenceReadonlyArraySeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Task.ts | Task | array utils | sequenceSeqArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Apply.ts | Apply | sequenceT",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Apply.ts | Apply | sequenceS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | pipeables | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | getApplicative",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | getMonad",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | getSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | toTuple",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | getLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | getRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | leftOrBoth",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | rightOrBoth",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | getLeftOnly",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | getRightOnly",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | fromOptions",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | isLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | isRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | isBoth",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | swap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | exists",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/These.ts | These | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | toReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | some",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | every",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | isSubset",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | union",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | intersection",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | getUnionMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | getIntersectionSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | getDifferenceMagma",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | difference",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | singleton",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | insert",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | remove",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | fromArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | fromSet",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | toSet",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | isEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | size",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlySet.ts | ReadonlySet | toggle",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | toArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | some",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | every",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | isSubset",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | union",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | intersection",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | getUnionMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | getIntersectionSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | getDifferenceMagma",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | difference",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | singleton",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | insert",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | remove",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | toggle",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | fromArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | isEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Set.ts | Set | size",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | {}",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Functor",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Contravariant",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | FunctorWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Apply",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Bifunctor",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Foldable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | FoldableWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Filterable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | FilterableWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Profunctor",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | Semigroupoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/pipeable.ts | pipeable | MonadThrow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | collect",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | mapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | reduceWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | foldMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | reduceRightWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | partitionMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | partitionWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | filterMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | filterWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | getTraversable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | traverseWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | getTraversableWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | wither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pipeables | wilt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | lookup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | fromFoldable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | toUnfoldable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | toEntries",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | fromEntries",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | traverseWithIndex should sort the keys",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | size",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | isEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | insertAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | deleteAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | pop",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | every",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | some",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | fromFoldableMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | singleton",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | has",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | updateAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | modifyAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | getUnionMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | getIntersectionSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Record.ts | Record | getDifferenceMagma",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | pipeables | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | pipeables | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | pipeables | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | pipeables | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | size",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | isEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | member",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | keys",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | values",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | collect",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | toReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | toUnfoldable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | insertAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | deleteAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | pop",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | lookupWithKey",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | lookup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | isSubmap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | empty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | singleton",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | readonlyMap | compactable | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | readonlyMap | compactable | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getTraversable | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getTraversable | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | traverseWithIndex should sort the keys",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | reduceWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | foldMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | reduceRightWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | traverseWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | wither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getWitherable | wilt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getFilterableWithIndex | partitionMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getFilterableWithIndex | partitionWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getFilterableWithIndex | filterMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getFilterableWithIndex | filterWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | fromFoldable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | updateAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | modifyAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | fromMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | toMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | mapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getFunctorWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getUnionMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getIntersectionSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyMap.ts | ReadonlyMap | getDifferenceMagma",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | URI",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | size",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | isEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | member",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | keys",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | values",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | collect",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | toArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | toUnfoldable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | insertAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | deleteAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | pop",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | lookupWithKey",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | lookup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | isSubmap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | singleton",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | map_ | functor | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | map_ | filterable | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | map_ | filterable | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | map_ | filterable | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | map_ | filterable | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | map_ | filterable | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | map_ | filterable | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getFoldable | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getFoldable | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getFoldable | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getWitherable | mapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getWitherable | reduceWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getWitherable | foldMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getWitherable | reduceRightWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getWitherable | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getWitherable | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getWitherable | traverseWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getWitherable | wither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getWitherable | wilt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getFilterableWithIndex | partitionMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getFilterableWithIndex | partitionWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getFilterableWithIndex | filterMapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getFilterableWithIndex | filterWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | fromFoldable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | updateAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | modifyAt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | mapWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getUnionMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getIntersectionSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Map.ts | Map | getDifferenceMagma",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | duplicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | extract",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | drawTree",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | unfoldTree",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | unfoldTreeM",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | elem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tree.ts | Tree | exists",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | chainFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | flattenW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | of",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | fromIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | ask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | asks",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | fromReader",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | local",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | chainIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | fromIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderIO.ts | ReaderIO | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | apFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | apSecondW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | chainFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | flattenW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | fromOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | fromPredicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | pipeables | filterOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | orElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | orElseW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | orElseFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | orElseFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | orLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getSemigroup | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getApplyMonoid | concat (right)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getApplyMonoid | concat (left)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getApplyMonoid | empty (right)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getApplyMonoid | empty (left)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | ask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | asks",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | local",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getApplicativeReaderValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getAltReaderValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | chainEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getCompactable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | getFilterable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | match",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | matchE",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | fromReaderK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | chainReaderK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | chainReaderKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | chainFirstReaderK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | chainFirstReaderKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderEither.ts | ReaderEither | chainFirstEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | ApplicativePar",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | ApplicativeSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | apFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | apSecondW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | chainFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | flattenW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | filterOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | fromOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | fromOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | chainOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | chainEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | fromEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | pipeables | fromPredicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | orElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | orElseW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | orElseFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | orElseFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | orElseFirstIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | orLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | tryCatch",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getSemigroup | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getApplyMonoid | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | bracket | should return the acquire error if acquire fails",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | bracket | body and release must not be called if acquire fails",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | bracket | should return the use error if use fails and release does not",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | bracket | should return the release error if both use and release fail",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | bracket | release must be called if the body returns",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | bracket | release must be called if the body throws",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | bracket | should return the release error if release fails",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | bracketW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getApplicativeIOValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getAltIOValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getCompactable | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getCompactable | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getFilterable | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getFilterable | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getFilterable | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | getFilterable | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | array utils | sequenceReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | array utils | sequenceReadonlyArraySeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | array utils | sequenceSeqArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | tryCatchK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | toUnion",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | match",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | matchE",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOEither.ts | IOEither | chainFirstEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chainFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | flattenW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | of",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | fromIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | ask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | asks",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | fromTask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | fromReader",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | fromReaderIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | local",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chainIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chainTaskK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chainFirstTaskK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | fromIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | fromTaskK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | fromReaderIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chainReaderIOKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chainReaderIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chainFirstReaderIOKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | chainFirstReaderIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | getSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | getApplicative | Par",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | applicativeTaskEitherSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | applicativeTaskEitherPar",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | flatMap",
+    "status": "ERROR"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | zero",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | fromIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | apFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | apSecondW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | chainFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | flattenW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getApplicativeTaskValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getAltTaskValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getTaskValidation | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getTaskValidation | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getCompactable | compact",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getCompactable | separate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getFilterable | filter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getFilterable | filterMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getFilterable | partition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getFilterable | partitionMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getSemigroup | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getApplyMonoid | concat (right)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getApplyMonoid | concat (left)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getApplyMonoid | empty (right)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | getApplyMonoid | empty (left)",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | getApplicative | Seq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | getSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | getMonad | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | getMonad | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | getMonad | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | right",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | left",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | both",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | rightIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | leftIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | rightTask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | leftTask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | swap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | toTuple",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | match",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | matchE",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | fromTheseK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | traverseReadonlyArrayWithIndexSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | sequenceReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskThese.ts | TaskThese | sequenceReadonlyArraySeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | array utils | sequenceReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | applicativeTaskEitherSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | applicativeTaskEitherPar",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | taskify",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | composed taskify",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | bracket | should return the acquire error if acquire fails",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | bracket | body and release must not be called if acquire fails",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | bracket | should return the use error if use fails and release does not",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | bracket | should return the release error if both use and release fail",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | bracket | release must be called if the body returns",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | bracket | release must be called if the body throws",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | bracket | should return the release error if release fails",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | bracketW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | filterOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | orElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | orElseW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | orElseFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | orElseFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | orElseFirstIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | orElseFirstTaskK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | orLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | swap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | chainEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | chainFirstEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | chainIOEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | tryCatchK | with a resolved promise",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | tryCatchK | with a rejected promise",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | tryCatchK | with a thrown error",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | rightIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | leftIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | tryCatch | with a resolving promise",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | tryCatch | with a rejected promise",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | tryCatch | with a thrown error",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | fromNullable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | fromNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | chainNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | fromIOEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | fromOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | fromTaskOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | fromPredicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | array utils | traverseReadonlyArrayWithIndexSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | array utils | sequenceReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | array utils | sequenceReadonlyArraySeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | array utils | sequenceSeqArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | match",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | matchE",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskEither.ts | TaskEither | chainTaskOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | apFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | apSecondW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | chainFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | flattenW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | fromPredicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | fromEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | fromOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | pipeables | filterOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | ApplicativeSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | zero",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | fromIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | fromNullable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | fromNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | chainNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | fromPredicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | fromIOEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | getOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | fromOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | chainOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | array utils | sequenceReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | match",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | matchE",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | fromEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | chainEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IOOption.ts | IOOption | chainFirstEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | applicativeReaderTaskEitherSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | array utils | sequenceReadonlyArraySeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | applicativeReaderTaskEitherPar",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | ask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | asks",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | local",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | leftTask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | rightTask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | leftReaderTask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | rightReaderTask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | rightReader",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | leftReader",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | fromTaskEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | leftIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | rightReaderIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | leftReaderIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | fromIOEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | getOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | orElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | orElseW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | orElseFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | orElseFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | orLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | MonadIO | fromIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | swap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | getSemigroup | concat",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | getApplyMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | fromReaderEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | getApplicativeReaderTaskValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | getAltReaderTaskValidation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | bracket | should return the acquire error if acquire fails",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | bracket | body and release must not be called if acquire fails",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | bracket | should return the use error if use fails and release does not",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | bracket | should return the release error if both use and release fail",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | bracket | release must be called if the body returns",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | bracket | release must be called if the body throws",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | bracket | should return the release error if release fails",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | bracketW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainFirstEitherKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainIOEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainTaskEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainFirstTaskEitherKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainReaderTaskK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainReaderTaskKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainFirstReaderTaskKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainReaderEitherKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainFirstReaderEitherKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | fromReaderIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainReaderIOKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainReaderIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainFirstReaderIOKW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainFirstReaderIOK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | array utils | traverseReadonlyArrayWithIndexSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | array utils | sequenceReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | array utils | sequenceReadonlyArraySeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | array utils | sequenceSeqArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | getCompactable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | getFilterable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | match",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | matchE",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | fromNullable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | fromNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTaskEither.ts | ReaderTaskEither | chainNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | ApplicativePar",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | tryCatch | with a resolving promise",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | tryCatch | with a rejected promise",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | tryCatch | with a thrown error",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | fromNullable",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | fromNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | chainNullableK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | fromPredicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | fromTaskEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | getOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | fromOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | chainOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | array utils | traverseReadonlyArrayWithIndexSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | array utils | sequenceReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | array utils | sequenceReadonlyArraySeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | array utils | sequenceSeqArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | tryCatchK | with a resolved promise",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | tryCatchK | with a rejected promise",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | tryCatchK | with a thrown error",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | match",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | matchE",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | fromEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | chainEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/TaskOption.ts | TaskOption | chainFirstEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderTask.ts | ReaderTask | array utils | sequenceSeqArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Eq.ts | Eq | pipeables | contramap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Eq.ts | Eq | tuple",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Eq.ts | Eq | fromEquals",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Eq.ts | Eq | struct",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Eq.ts | Eq | eqStrict",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Eq.ts | Eq | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Eq.ts | Eq | eqDate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | tuple",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | concatAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | min",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | max",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | first",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | semigroupVoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | intercalate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | struct",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | semigroupAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | semigroupAny",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | semigroupSum",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | semigroupProduct",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Semigroup.ts | Semigroup | getObjectSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | Show",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | empty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | isEmpty",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | isString",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | size",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | toUpperCase",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | toLowerCase",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | replace",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | split",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | trim",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | trimLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | trimRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | includes",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | startsWith",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | endsWith",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/string.ts | string | slice",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | getSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | chainRec",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IO.ts | IO | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/boolean.ts | boolean | Eq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/boolean.ts | boolean | Ord",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/boolean.ts | boolean | Show",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/boolean.ts | boolean | BooleanAlgebra",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/boolean.ts | boolean | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | evalState",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | execState",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | evaluate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | execute",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | put",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | get",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | modify",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | gets",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/State.ts | State | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ordering.ts | Ordering | Eq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ordering.ts | Ordering | Monoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ordering.ts | Ordering | sign",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ordering.ts | Ordering | sign",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ordering.ts | Ordering | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/BooleanAlgebra.ts | BooleanAlgebra | booleanAlgebraBoolean",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/BooleanAlgebra.ts | BooleanAlgebra | booleanAlgebraVoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/BooleanAlgebra.ts | BooleanAlgebra | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | extract",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | duplicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | ChainRec",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Identity.ts | Identity | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Predicate.ts | Predicate | contramap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Predicate.ts | Predicate | Contravariant.contramap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Predicate.ts | Predicate | not",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Predicate.ts | Predicate | getMonoidAny",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Predicate.ts | Predicate | getMonoidAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Refinement.ts | Refinement | not",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Refinement.ts | Refinement | or",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Refinement.ts | Refinement | and",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Refinement.ts | Refinement | fromOptionK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Refinement.ts | Refinement | zero",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Refinement.ts | Refinement | id",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Refinement.ts | Refinement | compose",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Refinement.ts | Refinement | fromEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Foldable.ts | Foldable | getFoldableComposition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Foldable.ts | Foldable | intercalate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Foldable.ts | Foldable | toReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Foldable.ts | Foldable | traverse_",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Foldable.ts | Foldable | foldM",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Foldable.ts | Foldable | reduceM",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/OptionT.ts | OptionT | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/OptionT.ts | OptionT | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/OptionT.ts | OptionT | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/OptionT.ts | OptionT | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/OptionT.ts | OptionT | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/OptionT.ts | OptionT | getOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/OptionT.ts | OptionT | fromM",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/OptionT.ts | OptionT | none",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Separated.ts | Separated | pipeables | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Separated.ts | Separated | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Separated.ts | Separated | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | apFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | apFirstW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | apSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | apSecondW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | flatMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | chainFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | flatten",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | flattenW",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | fromPredicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | pipeables | filterOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Monoid.ts | Monoid | tuple",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Monoid.ts | Monoid | concatAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Monoid.ts | Monoid | getEndomorphismMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Monoid.ts | Monoid | min",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Monoid.ts | Monoid | max",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Monoid.ts | Monoid | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Monoid.ts | Monoid | struct",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | applicativeStateReaderTaskEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | run",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | applicativeReaderTaskEitherSeq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | execute",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | rightState",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | leftState",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | fromReaderTaskEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | left",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | rightTask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | leftTask",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | fromTaskEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | rightReader",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | leftReader",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | fromIOEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | fromEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | fromOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | rightIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | leftIO",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | fromOption",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | fromReaderEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | chainEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | chainIOEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | chainTaskEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | chainReaderTaskEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | put",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | get",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | modify",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | gets",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | do notation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | apS",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | array utils | traverseReadonlyArrayWithIndex",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | array utils | sequenceReadonlyArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | array utils | sequenceArray",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | array utils | #1486",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | fromState",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | fromStateK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | chainStateK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | local",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | asksStateReaderTaskEither",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/StateReaderTaskEither.ts | StateReaderTaskEither | chainFirstEitherK",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | evalWriter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | execWriter",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | evaluate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | execute",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | tell",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | listen",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | pass",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | listens",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | censor",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | getMonad | of",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | getMonad | ap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Writer.ts | Writer | getMonad | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | compose",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | mapFst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | extract",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | mapSnd",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | duplicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | swap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | getApply",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | getApplicative",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | getMonad",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Tuple.ts | Tuple | chainRec",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | compose",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | mapFst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | extract",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | mapSnd",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | duplicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | reduce",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | foldMap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | reduceRight",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | pipeables | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | swap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | getApply",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | getApplicative",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | getMonad",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReadonlyTuple.ts | ReadonlyTuple | chainRec",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Const.ts | Const | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Const.ts | Const | pipeables | contramap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Const.ts | Const | pipeables | bimap",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Const.ts | Const | pipeables | mapLeft",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Const.ts | Const | getApplicative",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Const.ts | Const | getEq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Const.ts | Const | getApplicative",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Const.ts | Const | getShow",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Date.ts | Date | Eq",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Date.ts | Date | eqDate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Date.ts | Date | eqMonth",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Date.ts | Date | eqYear",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Date.ts | Date | Ord",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Date.ts | Date | create",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Date.ts | Date | now",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Store.ts | Store | pipeables | map",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Store.ts | Store | pipeables | extend",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Store.ts | Store | pipeables | duplicate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Store.ts | Store | seek",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Store.ts | Store | seeks",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Store.ts | Store | peeks",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Store.ts | Store | experiment",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Alternative.ts | Alternative | altAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Alternative.ts | Alternative | getAlternativeMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Filterable.ts | Filterable | getFilterableComposition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Magma.ts | Magma | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Magma.ts | Magma | filterFirst",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Magma.ts | Magma | filterSecond",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Magma.ts | Magma | endo",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Magma.ts | Magma | concatAll",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Traversable.ts | Traversable | getTraversableComposition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Traversable.ts | Traversable | traverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Traversable.ts | Traversable | sequence",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Json.ts | Json | parse",
+    "status": "ERROR"
+  },
+  {
+    "name": "test/Json.ts | Json | stringify",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Console.ts | Console | log",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Console.ts | Console | info",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Console.ts | Console | error",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Console.ts | Console | warn",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Choice.ts | Choice | splitChoice",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Choice.ts | Choice | fanin",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Field.ts | Field | gcd",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Field.ts | Field | lcm",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Field.ts | Field | fieldNumber",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Show.ts | Show | struct",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Show.ts | Show | tuple",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Show.ts | Show | showBoolean",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Show.ts | Show | showNumber",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Show.ts | Show | showString",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/struct.ts | struct | getAssignSemigroup",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/struct.ts | struct | evolve",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IORef.ts | IORef | read",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IORef.ts | IORef | write",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IORef.ts | IORef | modify",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IORef.ts | IORef | newIORef",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/IORef.ts | IORef | pipe",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Random.ts | Random | random",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Random.ts | Random | randomInt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Random.ts | Random | randomRange",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Random.ts | Random | randomBool",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Random.ts | Random | randomElem",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ValidationT.ts | ValidationT | getValidationM | chain",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ValidationT.ts | ValidationT | getValidationM | alt",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/EitherT.ts | EitherT | fold",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/EitherT.ts | EitherT | getOrElse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/FoldableWithIndex.ts | FoldableWithIndex | getFoldableWithIndexComposition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Strong.ts | Strong | splitStrong",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Strong.ts | Strong | fanout",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Witherable.ts | Witherable | filterE | Applicative1",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Witherable.ts | Witherable | filterE | Applicative2",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Compactable.ts | Compactable | getCompactableComposition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Applicative.ts | Applicative | getApplicativeComposition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/number.ts | string | Ord",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/number.ts | string | Field",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/number.ts | string | Show",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/number.ts | string | SemigroupProduct",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/number.ts | string | MagmaSub",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Bounded.ts | Bounded | clamp",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Bounded.ts | Bounded | reverse",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ring.ts | Ring | tuple",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Ring.ts | Ring | negate",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/BoundedDistributiveLattice.ts | BoundedDistributiveLattice | getMinMaxBoundedDistributiveLattice",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Endomorphism.ts | Endomorphism | getMonoid",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/FunctorWithIndex.ts | FunctorWithIndex | getFunctorComposition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/Functor.ts | Functor | getFunctorComposition",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/ReaderT.ts | ReaderT | fromNaturalTransformation",
+    "status": "PASSED"
+  },
+  {
+    "name": "test/index.ts | index | check exported modules",
+    "status": "PASSED"
+  },
+  {
+    "name": "FAIL  test/Either.ts | Either | parseJSON",
+    "status": "ERROR"
+  },
+  {
+    "name": "FAIL  test/TaskOption.ts | TaskOption | flatMap",
+    "status": "ERROR"
+  },
+  {
+    "name": "FAIL  test/Json.ts | Json | parse",
+    "status": "ERROR"
   }
 ]
