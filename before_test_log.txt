@@ -1,1024 +1,126 @@
-Starting WXT demo extension in dev mode in the background...
-WXT dev server started with PID: 18
-Waiting for dev server to initialize (15 seconds)...
-
-> wxt-demo@1.0.0 dev /app/packages/wxt-demo
-> buildc --deps-only -- wxt
-
-â— wxt: pnpm -s run build
-âœ” wxt: Cached!
-â— @wxt-dev/auto-icons: pnpm -s run build
-âœ” @wxt-dev/auto-icons: Cached!
-â„¹ wxt-demo: wxt
-
-WXT 0.19.1
-â„¹ Example module with options: { a: 'a', c: 'c' }
-âœ” Started dev server @ http://localhost:3000
-â„¹ Pre-rendering chrome-mv3 for development with Vite 5.3.5
 Running all tests...
-âœ” Built extension in 18.3 s
-  â”œâ”€ .output/chrome-mv3/manifest.json                       1.61 kB  
-  â”œâ”€ .output/chrome-mv3/example.html                        540 B    
-  â”œâ”€ .output/chrome-mv3/iframe-src.html                     594 B    
-  â”œâ”€ .output/chrome-mv3/options.html                        687 B    
-  â”œâ”€ .output/chrome-mv3/popup.html                          558 B    
-  â”œâ”€ .output/chrome-mv3/sandbox.html                        540 B    
-  â”œâ”€ .output/chrome-mv3/sidepanel.html                      477 B    
-  â”œâ”€ .output/chrome-mv3/background.js                       106.36 kB
-  â”œâ”€ .output/chrome-mv3/chunks/reload-html-BxzUToPe.js      8.17 kB  
-  â”œâ”€ .output/chrome-mv3/chunks/reload-html-BxzUToPe.js      8.17 kB  
-  â”œâ”€ .output/chrome-mv3/content-scripts/example-tsx.js      3.25 MB  
-  â”œâ”€ .output/chrome-mv3/content-scripts/iframe.js           40.69 kB 
-  â”œâ”€ .output/chrome-mv3/content-scripts/location-change.js  27.35 kB 
-  â”œâ”€ .output/chrome-mv3/content-scripts/main-world.js       2.04 kB  
-  â”œâ”€ .output/chrome-mv3/content-scripts/ui.js               52.41 kB 
-  â”œâ”€ .output/chrome-mv3/unlisted.js                         1.9 kB   
-  â”œâ”€ .output/chrome-mv3/content-scripts/injected.css        24 B     
-  â”œâ”€ .output/chrome-mv3/content-scripts/ui.css              150 B    
-  â”œâ”€ .output/chrome-mv3/_locales/en/messages.json           594 B    
-  â”œâ”€ .output/chrome-mv3/icons/128.png                       1.55 kB  
-  â”œâ”€ .output/chrome-mv3/icons/16.png                        568 B    
-  â”œâ”€ .output/chrome-mv3/icons/32.png                        1.24 kB  
-  â””â”€ .output/chrome-mv3/icons/48.png                        1.99 kB  
-Î£ Total size: 3.51 MB                                     
-âœ– Command failed after 45.8 s
-â€‰ELIFECYCLEâ€‰ Command failed with exit code 1.
-Scope: 7 of 8 workspace projects
 
-> wxt@0.19.1 test /app/packages/wxt
-> buildc --deps-only -- vitest "run" "--reporter" "verbose"
+> @dvcorg/cml@0.18.13 test:unit
+> jest --testPathIgnorePatterns='e2e.test.js$' --forceExit --verbose --silent --no-coverage
 
-â„¹ Waiting for other buildc processes to finish...
-â— @wxt-dev/auto-icons: pnpm -s run build
-âœ” @wxt-dev/auto-icons: Cached!
-â„¹ wxt: vitest run --reporter verbose
-Test seed: 3435587854918289
+Proxy listening on port 9093
+PASS src/commenttarget.test.js
+  comment target tests
+    âœ“ qualified comment target: pr (6 ms)
+    âœ“ qualified comment target: commit (1 ms)
+    âœ“ qualified comment target: issue (1 ms)
+    âœ“ qualified comment target: unsupported (2 ms)
+    âœ“ legacy flag: commitSha (1 ms)
+    âœ“ legacy flag: pr, context (4 ms)
+    âœ“ legacy flag: pr, commit sha (2 ms)
+    âœ“ unqualified flag: commit sha (1 ms)
+    âœ“ unqualified flag: pr, context (2 ms)
+    âœ“ unqualified flag: pr, commit sha (1 ms)
+    âœ“ unqualified comment target: issue
+    âœ“ auto comment target: pr context (1 ms)
+    âœ“ auto comment target: pr, commit sha (1 ms)
+    âœ“ auto comment target: fallback commit sha (1 ms)
 
- RUN  v2.0.4 /app/packages/wxt
+PASS src/terraform.test.js
+  Terraform tests
+    âœ“ default options (10 ms)
+    âœ“ basic settings (2 ms)
+    âœ“ basic settings with runner forever (1 ms)
+    âœ“ basic settings with metadata (2 ms)
+    âœ“ basic settings with docker volumes (1 ms)
+    âœ“ basic settings with permission set (1 ms)
+    âœ“ Startup script (1 ms)
 
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > every > should return true when the array is empty
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > every > should return true when all item predicate's return true
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > every > should return false when a single item predicate's return false
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > some > should return true if one value returns true
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > some > should return false if no values match
- âœ“ src/core/utils/__tests__/content-security-policy.test.ts > Content Security Policy Builder > should add values to new directives correctly
- âœ“ src/core/utils/__tests__/content-security-policy.test.ts > Content Security Policy Builder > should add to existing values
- âœ“ src/core/utils/__tests__/content-security-policy.test.ts > Content Security Policy Builder > should not add duplicates
- âœ“ src/core/utils/__tests__/content-security-policy.test.ts > Content Security Policy Builder > should sort the directives in the correct order
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "HELLO" to "hello"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "Hello, World!" to "hello-world"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "hello123" to "hello123"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "Hello World This Is A Test" to "hello-world-this-is-a-test"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "Hello     World" to "hello-world"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "hello-world" to "hello-world"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert 'Hello world!' to '_hello_world', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert '123' to '_123', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert 'abc-123' to '_abc_123', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert '' to '_', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert ' ' to '_', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert '_' to '_', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > removeImportStatements > should remove all import formats
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > removeImportStatements > should not remove import.meta or inline import statements
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/popup.html to popup
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/options/index.html to options
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/example.sandbox/index.html to example
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/some.content/index.ts to some
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/overlay.content.ts to overlay
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointOutputFile > should return { name: 'popup', ext: '.html', outputDir: '/.output', expected: '/.output/popup.html' }
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointOutputFile > should return { name: 'overlay', ext: '.ts', outputDir: '/.output/content-scripts', expected: '/.output/content-scripts/overlay.ts' }
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > resolvePerBrowserOption > should return the value directly
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > resolvePerBrowserOption > should return the value for the specific browser
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the first arrow function argument for defineBackground
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the first arrow function argument for defineUnlistedScript
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the first function argument for defineBackground
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the first function argument for defineUnlistedScript
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the main field from defineBackground
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the main field from defineContentScript
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the main field from defineUnlistedScript
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove unused imports
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove explict side-effect imports
- Ã— src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove any functions delcared outside the main function that aren't used
-   â†’ expected 'function getMatches() {\n  return ["*â€¦' to deeply equal 'function getMatches() {\n  return ["*â€¦'
- Ã— src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove any variables delcared outside the main function that aren't used
-   â†’ expected 'const unused1 = "a", matches = ["*://â€¦' to deeply equal 'const matches = ["*://*/*"];\n\nexporâ€¦'
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "../test.sh" to "../test.sh"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "..\test.sh" to "../test.sh"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "test.png" to "test.png"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "C:\\path\to\file" to "C:/path/to/file"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "/path/to/file" to "/path/to/file"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "C:\\path\to\folder\" to "C:/path/to/folder"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "/path/to/folder/" to "/path/to/folder"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "path\\\file" to "path/file"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "path//file" to "path/file"
- âœ“ src/sandbox/__tests__/define-unlisted-script.test.ts > defineUnlistedScript > should return the object definition when given an object
- âœ“ src/sandbox/__tests__/define-unlisted-script.test.ts > defineUnlistedScript > should return the object definition when given a main function
- âœ“ src/sandbox/__tests__/define-background.test.ts > defineBackground > should return the object definition when given an object
- âœ“ src/sandbox/__tests__/define-background.test.ts > defineBackground > should return the object definition when given a main function
- âœ“ src/core/utils/__tests__/virtual-modules.test.ts > Virtual Modules > should resolve types to litteral values, not string
- âœ“ src/sandbox/__tests__/define-content-script.test.ts > defineContentScript > should return the object passed in
- âœ“ src/core/package-managers/__tests__/yarn.test.ts > Yarn Package Management Utils > listDependencies > should list direct dependencies 1100ms
- âœ“ src/core/package-managers/__tests__/yarn.test.ts > Yarn Package Management Utils > listDependencies > should list all dependencies 584ms
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should keep scripts separate
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should keep styles separate
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should group extension pages together
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should group sandbox pages together
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should group ESM compatible scripts with extension pages
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addViteConfig > should add base vite config
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addViteConfig > should allow user config to override any changes made
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addImportPreset > should add the import to the config
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addImportPreset > should not add duplicate presets
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addImportPreset > should not enable imports if they've been disabled
- âœ“ src/core/utils/__tests__/validation.test.ts > Validation Utils > validateEntrypoints > should return no errors when there are no errors
- âœ“ src/core/utils/__tests__/validation.test.ts > Validation Utils > validateEntrypoints > should return an error when exclude is not an array
- âœ“ src/core/utils/__tests__/validation.test.ts > Validation Utils > validateEntrypoints > should return an error when include is not an array
- âœ“ src/core/utils/__tests__/validation.test.ts > Validation Utils > validateEntrypoints > should return an error when content scripts don't have a matches
- âœ“ src/core/utils/__tests__/content-scripts.test.ts > Content Script Utils > hashContentScriptOptions > should return a string containing all the options with defaults applied
- âœ“ src/core/utils/__tests__/content-scripts.test.ts > Content Script Utils > hashContentScriptOptions > should be consistent regardless of the object ordering and default values
- âœ“ src/core/package-managers/__tests__/npm.test.ts > NPM Package Management Utils > listDependencies > should list direct dependencies 907ms
-stdout | src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should migrate values to the latest when a version upgrade is detected
-[wxt] Running storage migration for local:count: v1 -> v3
-[wxt] Storage migration completed for local:count v3 { migratedValue: 12 }
+PASS bin/cml/comment/create.test.js
+  Comment integration tests
+    âœ“ cml send-comment --help (833 ms)
 
-stdout | src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should run the v2 migration when converting an unversioned item to a versioned one
-[wxt] Running storage migration for local:count: v1 -> v2
-[wxt] Storage migration completed for local:count v2 { migratedValue: 4 }
+FAIL bin/cml/repo/prepare.test.js
+  CML e2e
+    âœ• cml-ci --help (940 ms)
 
-stdout | src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should not run old migrations if the version is unchanged
-[wxt] Running storage migration for local:count: v3 -> v3
-[wxt] Storage migration completed for local:count v3 { migratedValue: 2 }
+  â— CML e2e â€º cml-ci --help
 
-stdout | src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should skip missing migration functions
-[wxt] Running storage migration for local:count: v0 -> v3
-[wxt] Storage migration completed for local:count v3 { migratedValue: 6 }
+    expect(received).toMatchInlineSnapshot(snapshot)
 
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > No changes > should return 'no-change' when the changed file isn't used by any of the entrypoints
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > wxt.config.ts > should return 'full-restart' when one of the changed files is the config file
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > web-ext.config.ts > should return 'browser-restart' when one of the changed files is the config file
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > Public Assets > should return 'extension-reload' without any groups to rebuild when the changed file is a public asset
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > Background > should rebuild the background and reload the extension when the changed file in it's chunks' `moduleIds` field
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > HTML Pages > should detect changes to entrypoints/<name>.html files
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > HTML Pages > should detect changes to entrypoints/<name>/index.html files
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > Content Scripts > should rebuild then reload only the effected content scripts
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > getItem > should return the value from the correct storage area
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > getItem > should return the value if multiple : are use in the key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > getItem > should return null if the value doesn't exist
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > getItem > should return the default value if passed in options
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > getItems > should return an array of values
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > getMeta > should return item metadata from key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > getMeta > should return an empty object if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > setItem > should set the value in the correct storage area
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > setItem > should remove the item from storage when setting the value to undefined
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > setItem > should remove the item from storage when setting the value to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > setItems > should set multiple items in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > setMeta > should set metadata at key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > setMeta > should remove any properties set to undefined
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > setMeta > should remove any properties set to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > removeItem > should remove the key from storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > removeItem > should not remove the metadata by default
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > removeItem > should remove the metadata when requested
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > removeItems > should remove multiple items
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > removeMeta > should remove all metadata
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > removeMeta > should only remove specific properties
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > snapshot > should return a snapshot of the entire storage without area prefixes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > snapshot > should exclude specific properties and their metadata
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > restoreSnapshot > should restore a snapshot object by setting all values in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > restoreSnapshot > should overwrite, not merge, any metadata keys in the snapshot
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > watch > should not trigger if the changed key is different from the requested key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > watch > should not trigger if the value doesn't change
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > watch > should call the callback when the value changes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > watch > should remove the listener when calling the returned function
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - local > unwatch > should remove all watch listeners
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > getItem > should return the value from the correct storage area
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > getItem > should return the value if multiple : are use in the key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > getItem > should return null if the value doesn't exist
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > getItem > should return the default value if passed in options
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > getItems > should return an array of values
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > getMeta > should return item metadata from key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > getMeta > should return an empty object if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > setItem > should set the value in the correct storage area
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > setItem > should remove the item from storage when setting the value to undefined
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > setItem > should remove the item from storage when setting the value to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > setItems > should set multiple items in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > setMeta > should set metadata at key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > setMeta > should remove any properties set to undefined
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > setMeta > should remove any properties set to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > removeItem > should remove the key from storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > removeItem > should not remove the metadata by default
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > removeItem > should remove the metadata when requested
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > removeItems > should remove multiple items
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > removeMeta > should remove all metadata
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > removeMeta > should only remove specific properties
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > snapshot > should return a snapshot of the entire storage without area prefixes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > snapshot > should exclude specific properties and their metadata
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > restoreSnapshot > should restore a snapshot object by setting all values in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > restoreSnapshot > should overwrite, not merge, any metadata keys in the snapshot
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > watch > should not trigger if the changed key is different from the requested key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > watch > should not trigger if the value doesn't change
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > watch > should call the callback when the value changes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > watch > should remove the listener when calling the returned function
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > unwatch > should remove all watch listeners
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItem > should return the value from the correct storage area
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItem > should return the value if multiple : are use in the key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItem > should return null if the value doesn't exist
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItem > should return the default value if passed in options
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItems > should return an array of values
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getMeta > should return item metadata from key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getMeta > should return an empty object if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > setItem > should set the value in the correct storage area
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > setItem > should remove the item from storage when setting the value to undefined
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > setItem > should remove the item from storage when setting the value to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > setItems > should set multiple items in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > setMeta > should set metadata at key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > setMeta > should remove any properties set to undefined
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > setMeta > should remove any properties set to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > removeItem > should remove the key from storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > removeItem > should not remove the metadata by default
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > removeItem > should remove the metadata when requested
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > removeItems > should remove multiple items
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > removeMeta > should remove all metadata
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > removeMeta > should only remove specific properties
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > snapshot > should return a snapshot of the entire storage without area prefixes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > snapshot > should exclude specific properties and their metadata
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > restoreSnapshot > should restore a snapshot object by setting all values in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > restoreSnapshot > should overwrite, not merge, any metadata keys in the snapshot
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > watch > should not trigger if the changed key is different from the requested key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > watch > should not trigger if the value doesn't change
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > watch > should call the callback when the value changes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > watch > should remove the listener when calling the returned function
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > unwatch > should remove all watch listeners
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > getItem > should return the value from the correct storage area
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > getItem > should return the value if multiple : are use in the key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > getItem > should return null if the value doesn't exist
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > getItem > should return the default value if passed in options
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > getItems > should return an array of values
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > getMeta > should return item metadata from key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > getMeta > should return an empty object if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setItem > should set the value in the correct storage area
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setItem > should remove the item from storage when setting the value to undefined
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setItem > should remove the item from storage when setting the value to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setItems > should set multiple items in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setMeta > should set metadata at key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setMeta > should remove any properties set to undefined
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setMeta > should remove any properties set to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeItem > should remove the key from storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeItem > should not remove the metadata by default
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeItem > should remove the metadata when requested
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeItems > should remove multiple items
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeMeta > should remove all metadata
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeMeta > should only remove specific properties
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > snapshot > should return a snapshot of the entire storage without area prefixes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > snapshot > should exclude specific properties and their metadata
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > restoreSnapshot > should restore a snapshot object by setting all values in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > restoreSnapshot > should overwrite, not merge, any metadata keys in the snapshot
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > watch > should not trigger if the changed key is different from the requested key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > watch > should not trigger if the value doesn't change
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > watch > should call the callback when the value changes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > watch > should remove the listener when calling the returned function
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > unwatch > should remove all watch listeners
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should migrate values to the latest when a version upgrade is detected
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should not run migrations if the value doesn't exist yet
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should run the v2 migration when converting an unversioned item to a versioned one
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should not run old migrations if the version is unchanged
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should skip missing migration functions
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should throw an error if the new version is less than the previous version
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getValue > should return the value from storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getValue > should return null if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getValue > should return the provided default value if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getMeta > should return the value from storage at key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getMeta > should return an empty object if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > setValue > should set the value in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > setValue > should remove the value in storage when undefined is passed in
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > setValue > should remove the value in storage when null is passed in
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > setMeta > should set metadata at key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > setMeta > should add to metadata if already present
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > removeValue > should remove the key from storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > removeValue > should not remove the metadata by default
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > removeValue > should remove the metadata when requested
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > removeMeta > should remove all metadata
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > removeMeta > should only remove specific properties
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > watch > should not trigger if the changed key is different from the item's key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > watch > should not trigger if the value doesn't change
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > watch > should call the callback when the value changes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > watch > should use the default value for the newValue when the item is removed
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > watch > should use the default value for the oldItem when the item didn't exist in storage yet
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > watch > should remove the listener when calling the returned function
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > unwatch > should remove all watch listeners
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > fallback option > should return the default value when provided
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > fallback option > should return null when not provided
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > defaultValue option > should return the default value when provided
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > defaultValue option > should return null when not provided
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > init option > should only call init once (per JS context) when calling getValue successively, avoiding race conditions
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > init option > should initialize the value in storage immediately
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > types > should define a nullable value when options are not passed
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > types > should define a non-null value when options are passed with a nullish default value
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > types > should define a nullable value when options are passed with null default value
- âœ“ src/__tests__/storage.test.ts > Storage Utils > types > should not accept keys without a valid storage area prefix
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > popup > should include an action for mv3
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > popup > should use the correct action for mv2: {"expectedType":"browser_action"}
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > popup > should use the correct action for mv2: {"inputType":"browser_action","expectedType":"browser_action"}
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > popup > should use the correct action for mv2: {"inputType":"page_action","expectedType":"page_action"}
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > action without popup > should respect the action field in the manifest without a popup
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > action without popup > should generate `browser_action` for MV2 when only `action` is defined
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > action without popup > should keep the `page_action` for MV2 when both `action` and `page_action` are defined
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "style.css" into "http://localhost:5173/entrypoints/popup/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "./style.css" into "http://localhost:5173/entrypoints/popup/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "../style.css" into "http://localhost:5173/entrypoints/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~/assets/style.css" into "http://localhost:5173/assets/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~~/assets/style.css" into "http://localhost:5173/assets/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~local/style.css" into "http://localhost:5173/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~absolute/style.css" into "http://localhost:5173/assets/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~file" into "http://localhost:5173/example.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~outside/test.css" into "http://localhost:5173/@fs/some/non-root/test.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "https://example.com/style.css" into "https://example.com/style.css"
- âœ“ src/core/utils/building/__tests__/import-entrypoint.test.ts > importEntrypointFile > should return the default export of test-entrypoints/background.ts
- âœ“ src/core/utils/building/__tests__/import-entrypoint.test.ts > importEntrypointFile > should return the default export of test-entrypoints/content.ts
- âœ“ src/core/utils/building/__tests__/import-entrypoint.test.ts > importEntrypointFile > should return the default export of test-entrypoints/unlisted.ts
- âœ“ src/core/utils/building/__tests__/import-entrypoint.test.ts > importEntrypointFile > should return the default export of test-entrypoints/react.tsx
- âœ“ src/core/utils/building/__tests__/import-entrypoint.test.ts > importEntrypointFile > should return the default export of test-entrypoints/with-named.ts
- âœ“ src/core/utils/building/__tests__/import-entrypoint.test.ts > importEntrypointFile > should return undefined when there is no default export
- âœ“ src/core/utils/building/__tests__/import-entrypoint.test.ts > importEntrypointFile > should throw a custom error message when an imported variable is used before main
- âœ“ src/core/runners/__tests__/index.test.ts > createExtensionRunner > should return a Safari runner when browser is "safari"
- âœ“ src/core/runners/__tests__/index.test.ts > createExtensionRunner > should return a WSL runner when `is-wsl` is true
- âœ“ src/core/runners/__tests__/index.test.ts > createExtensionRunner > should return a manual runner when `runner.disabled` is true
- âœ“ src/core/runners/__tests__/index.test.ts > createExtensionRunner > should return a web-ext runner otherwise
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should not pass any config when no flags are passed
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > action without popup > should keep the custom `browser_action` for MV2 when both `action` and `browser_action` are defined
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > options > should include a options_ui and chrome_style for chrome
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > options > should include a options_ui and browser_style for firefox
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > background > MV3 > should include a service worker and type for chrome
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > background > MV3 > should include a service worker and type for safari
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > background > MV3 > should include a background script and type for firefox
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > background > MV2 > should include scripts and persistent for chrome
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > background > MV2 > should include scripts and persistent for safari
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > background > MV2 > should include a background script and persistent for firefox mv2
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > icons > should auto-discover icons with the correct name
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > icons > should return undefined when no icons are found
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > icons > should allow icons to be overwritten from the wxt.config.ts file
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > should group content scripts and styles together based on their manifest properties
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > should merge any content scripts declared in wxt.config.ts
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > cssInjectionMode > should add a CSS entry when cssInjectionMode is undefined
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > cssInjectionMode > should add a CSS entry when cssInjectionMode is manifest
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > cssInjectionMode > should not add an entry for CSS when cssInjectionMode is manual
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > cssInjectionMode > should not add an entry for CSS when cssInjectionMode is ui
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > cssInjectionMode > should add CSS file to `web_accessible_resources` when cssInjectionMode is "ui" for MV3
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > cssInjectionMode > should add CSS file to `web_accessible_resources` when cssInjectionMode is "ui" for MV2
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > cssInjectionMode > should strip the path off the match pattern so the pattern is valid for `web_accessible_resources`
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > registration > should throw an error when registration=runtime for MV2
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > content_scripts > registration > should add host_permissions instead of content_scripts when registration=runtime
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > sidepanel > should include the side_panel and permission, ignoring all options for chrome
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > sidepanel > should include the side_panel and permission, ignoring all options for safari
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > sidepanel > should include the side_panel and permission, ignoring all options for edge
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > sidepanel > should include a sidebar_action for firefox
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > web_accessible_resources > should combine user defined resources and generated resources for MV3
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > web_accessible_resources > should combine user defined resources and generated resources for MV2
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > web_accessible_resources > should convert mv3 items to mv2 strings automatically
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > web_accessible_resources > should convert mv2 strings to mv3 items with a warning automatically
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > transformManifest option > should call the transformManifest option after the manifest is generated, but before it's returned
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > version > should include version and version_name as is on chrome
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > version > should include version and version_name as is on safari
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > version > should include version and version_name as is on edge
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > version > should not include a version_name on firefox because it is unsupported
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > version > should not include the version_name if it is equal to version
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > version > should not include the version_name if it is equal to version
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > version > should not include the version_name if it is equal to version
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > version > should not include the version_name if it is equal to version
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > version > should log a warning if the version could not be detected
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > commands > should include a command for reloading the extension during development
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > commands > should customize the reload commands key binding if passing a custom command
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > commands > should not include the reload command when it's been disabled
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > commands > should not override any existing commands when adding the one to reload the extension
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > commands > should not include the command if there are already 4 others (the max)
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > commands > should not include the command when building an extension
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Stripping keys > firefox MV2 should only include that version's keys
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Stripping keys > chrome MV2 should only include that version's keys
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Stripping keys > safari MV2 should only include that version's keys
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Stripping keys > edge MV2 should only include that version's keys
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Stripping keys > firefox MV3 should only include that version's keys
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Stripping keys > chrome MV3 should only include that version's keys
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Stripping keys > safari MV3 should only include that version's keys
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Stripping keys > edge MV3 should only include that version's keys
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > host_permissions > should keep host_permissions as-is for MV3
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > host_permissions > should move host_permissions to permissions for MV2, ignoring duplicates
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Dev mode > should not add any code for production builds
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Dev mode > should add required permissions for dev mode to function for MV2
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Dev mode > should add required permissions for dev mode to function for MV3
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > stripPathFromMatchPattern > should convert "<all_urls>" to "<all_urls>"
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > stripPathFromMatchPattern > should convert "*://play.google.com/books/*" to "*://play.google.com/*"
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > stripPathFromMatchPattern > should convert "*://*/*" to "*://*/*"
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > stripPathFromMatchPattern > should convert "https://github.com/wxt-dev/*" to "https://github.com/*"
- âœ“ src/core/package-managers/__tests__/pnpm.test.ts > PNPM Package Management Utils > listDependencies > should list direct dependencies 1289ms
- âœ“ src/core/utils/__tests__/package.test.ts > Package JSON Utils > getPackageJson > should return the package.json inside <root>/package.json
- âœ“ src/core/utils/__tests__/package.test.ts > Package JSON Utils > getPackageJson > should return an empty object when <root>/package.json doesn't exist
- âœ“ src/core/package-managers/__tests__/npm.test.ts > NPM Package Management Utils > listDependencies > should list all dependencies 887ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing a custom root
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load popup entrypoint config from popup.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load popup entrypoint config from popup/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load options entrypoint config from options.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load options entrypoint config from options/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from content.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from overlay.content.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from content/index.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from overlay.content/index.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from overlay.content.tsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load background entrypoint config from background.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load background entrypoint config from background/index.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load sidepanel entrypoint config from sidepanel.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load sidepanel entrypoint config from sidepanel/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load sidepanel entrypoint config from named.sidepanel.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load sidepanel entrypoint config from named.sidepanel/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should remove type=module from MV2 background scripts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should allow type=module for MV3 background service workers
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should include a virtual background script so dev reloading works when there isn't a background entrypoint defined by the user
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected.tsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected.js
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected.jsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected/index.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected/index.tsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected/index.js
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected/index.jsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for sandbox.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for sandbox/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for named.sandbox.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for named.sandbox/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for bookmarks.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for bookmarks/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for history.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for history/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for newtab.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for newtab/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for devtools.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for devtools/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for onboarding.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for onboarding/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for iframe.scss
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for iframe.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for content.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for overlay.content.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for content/index.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for overlay.content/index.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should not allow multiple entrypoints with the same name
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > throw an error if there are no entrypoints
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out the background when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out content scripts when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out the popup when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out the options page when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out an unlisted page when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out the background when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out content scripts when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out the popup when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out the options page when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out an unlisted page when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > filterEntrypoints option > should control entrypoints accessible
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect a custom config file
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing a custom mode
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing a custom browser
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should pass correct filtered entrypoints
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing --mv2
- âœ“ src/core/package-managers/__tests__/pnpm.test.ts > PNPM Package Management Utils > listDependencies > should list all dependencies 945ms
- âœ“ src/core/package-managers/__tests__/npm.test.ts > NPM Package Management Utils > downloadDependency > should download the dependency as a tarball 911ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing --mv3
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing --port
-[log]
-[log] WXT {{version}}
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing --debug
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > integrated > should add a wrapper and custom UI to the page
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > integrated > should allow customizing the wrapper tag
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > iframe > should add a wrapper and iframe to the page
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > shadow-root > should load a shadow root to the page
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > shadow-root > should respect the shadow root mode (open -> open)
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > shadow-root > should respect the shadow root mode (undefined -> open)
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > shadow-root > should respect the shadow root mode (closed -> closed)
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > inline > should wrap the UI in a simple div
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=undefined
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=top-left
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=top-right
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=bottom-right
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=bottom-left
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should respect the provided zIndex
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > modal > should wrap the UI in a div with a fixed position
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > modal > should respect the provided zIndex
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > undefined > should append the element to the body
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > string > should append the element using the specified query selector
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > string > should append the element using an XPath string
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > Element > should append the element using the specified element
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > function > should append the element using the specified function
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > should throw an error when the anchor does not exist
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > append > undefined > should append the element as the last child of the anchor
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > append > last > should append the element as the last child of the anchor
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > append > first > should append the element as the last child of the anchor
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > append > replace > should replace the the anchor
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > append > before > should append the UI before the anchor
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > append > after > should append the UI after the anchor
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > append > function > should append the UI using a function
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > mounted value > integrated > should set the mounted value based on the onMounted return value
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > mounted value > iframe > should set the mounted value based on the onMounted return value
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > mounted value > shadow-root > should set the mounted value based on the onMounted return value
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should not pass any config when no flags are passed
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should respect passing a custom root
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should respect a custom config file
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should generate defined constants correctly 2282ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > imports: { ... } > should generate a declaration file, imports.d.ts, for auto-imports 2305ms
- âœ“ e2e/tests/hooks.test.ts > Hooks > prepare should call hooks 2298ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should respect passing a custom mode
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should respect passing a custom browser
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should pass correct filtered entrypoints
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should not output hidden files and directories that start with "." 2655ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should respect passing --mv2
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should respect passing --mv3
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should include analysis in the build
- âœ“ e2e/tests/modules.test.ts > Module Helpers > options > should recieve the options defined in wxt.config.ts based on the configKey field 2924ms
- âœ“ e2e/tests/user-config.test.ts > User Config > should respect the 'src' directory 2972ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > build > should respect passing --debug
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? vite-node) > should respect the per-browser entrypoint option with {"outDir":"chrome-mv3"} 3020ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should not pass any config when no flags are passed
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ e2e/tests/analysis.test.ts > Analysis > should output a stats.html with no part files by default 3204ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing a custom root
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect a custom config file
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing a custom mode
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should augment the types for browser.runtime.getURL 1283ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing a custom browser
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing --mv2
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > imports: { ... } > should include auto-imports in the project 1374ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing --mv3
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing --debug
- âœ“ e2e/tests/remote-code.test.ts > Remote Code > should download "url:*" modules and include them in the final bundle 3854ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ e2e/tests/hooks.test.ts > Hooks > build should call hooks 1600ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > prepare > should not pass any config when no flags are passed
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > prepare > should respect passing a custom root
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > prepare > should respect a custom config file
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > prepare > should respect passing --debug
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > clean > should not pass any config when no flags are passed
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > clean > should respect passing a custom root
- âœ“ e2e/tests/user-config.test.ts > User Config > should respect the 'entrypoints' directory 1571ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > clean > should respect a custom config file
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addEntrypoint > should add a custom entrypoint to be bundled the project 1655ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > clean > should respect passing --debug
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? vite-node) > should respect the per-browser entrypoint option with {"browser":"chrome","outDir":"chrome-mv3"} 1647ms
-[log]
-[log] WXT {{version}}
- âœ“ src/cli/__tests__/index.test.ts > CLI > init > should not pass any options when no flags are passed
- Ã— e2e/tests/init.test.ts > Init command > should download and create a template 4795ms
-   â†’ Command failed with exit code 1: pnpm -s wxt init /app/packages/wxt/e2e/dist/39qb4lc5dg -t vue --pm npm
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should output separate CSS files for each content script 2163ms
-[log]
-[log] WXT {{version}}
- âœ“ src/cli/__tests__/index.test.ts > CLI > init > should respect the provided folder
-[log]
-[log] WXT {{version}}
- âœ“ src/cli/__tests__/index.test.ts > CLI > init > should respect passing --template
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should augment the types for browser.i18n.getMessage 1380ms
- âœ“ e2e/tests/analysis.test.ts > Analysis > should save part files when requested 1748ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > imports: false > should not generate a imports.d.ts file 1321ms
-[log]
-[log] WXT {{version}}
- âœ“ src/cli/__tests__/index.test.ts > CLI > init > should respect passing --pm
- âœ“ e2e/tests/hooks.test.ts > Hooks > zip should call hooks 1345ms
- âœ“ e2e/tests/react.test.ts > React > should prepare and build an project with a tsx entrypoint 5471ms
- âœ“ e2e/tests/user-config.test.ts > User Config > should merge inline and user config based manifests 1309ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addPublicAssets > should add public assets 1448ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should reference all the required types in a single declaration file 1184ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? vite-node) > should respect the per-browser entrypoint option with {"browser":"firefox","outDir":"firefox-mv2","expected":true} 1420ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > imports: false > should not include imports.d.ts in the type references 1181ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should allow inputs with invalid JS variable names, like dashes 1501ms
- âœ“ e2e/tests/analysis.test.ts > Analysis > should support customizing the stats output directory 1604ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should generate a TSConfig file for the project 1176ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > "enabled: true" should output a JSON config file compatible with ESlint 8 1181ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addPublicAssets > should not overwrite the user's public files 1469ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? vite-node) > should respect the per-browser entrypoint option with {"browser":"safari","outDir":"safari-mv2","expected":false} 1425ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should not include an entrypoint if the target browser is not in the list of included targets 1308ms
- âœ“ e2e/tests/analysis.test.ts > Analysis > should place artifacts next to the custom output file 1451ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should generate correct path aliases for a custom srcDir 1227ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > "enabled: 8" should output a JSON config file compatible with ESlint 8 1256ms
- âœ“ e2e/tests/user-config.test.ts > User Config > should exclude the polyfill when extensionApi="chrome" 2826ms
- âœ“ e2e/tests/init.test.ts > Init command > should throw an error if the directory is not empty 4039ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addWxtPlugin > should include the plugin in the background 1593ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should not include an entrypoint if the target browser is in the list of excluded targets 1615ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? jiti) > should respect the per-browser entrypoint option with {"outDir":"chrome-mv3"} 1746ms
- âœ“ e2e/tests/analysis.test.ts > Analysis > should open the stats in the browser when requested 1963ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should add additional path aliases listed in the alias config, preventing defaults from being overridden 1571ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > "enabled: 9" should output a flat config file compatible with ESlint 9 1727ms
- âœ“ e2e/tests/user-config.test.ts > User Config > should respect changing config files 2094ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addWxtPlugin > should include the plugin in HTML entrypoints 1810ms
- âœ“ e2e/tests/zip.test.ts > Zipping > should download packages and produce a valid build when zipping sources 11149ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? jiti) > should respect the per-browser entrypoint option with {"browser":"chrome","outDir":"chrome-mv3"} 2076ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should generate a stats file when analyzing the bundle 2450ms
- âœ“ e2e/tests/hooks.test.ts > Hooks > server.start should call hooks 6591ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > should allow customizing the output 1893ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addWxtPlugin > should include the plugin in content scripts 2165ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? jiti) > should respect the per-browser entrypoint option with {"browser":"firefox","outDir":"firefox-mv2","expected":true} 1923ms
- âœ“ e2e/tests/zip.test.ts > Zipping > should correctly apply template variables for zip file names based on provided config 2124ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should support JavaScript entrypoints 2901ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addWxtPlugin > should include the plugin in unlisted scripts 1895ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? jiti) > should respect the per-browser entrypoint option with {"browser":"safari","outDir":"safari-mv2","expected":false} 2089ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should output to a custom directory when overriding 'outDir' 1660ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > imports > should add auto-imports 1849ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should generate ESM background script when type=module 1655ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > Actual linting results > ESLint 9 > should have lint errors when not extending generated config 5895ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > imports > should add preset 1621ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should generate IIFE background script when type=undefined 1553ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > Actual linting results > ESLint 9 > should not have any lint errors when configured 4751ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > Actual linting results > ESLint 8 > should have lint errors when not extending generated config 4383ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > Actual linting results > ESLint 8 > should not have any lint errors when configured 5078ms
+    Snapshot name: `CML e2e cml-ci --help 1`
 
- Test Files  2 failed | 37 passed | 1 skipped (40)
-      Tests  3 failed | 532 passed | 4 skipped | 2 todo (541)
-   Start at  15:59:27
-   Duration  36.69s (transform 8.45s, setup 3.63s, collect 93.59s, tests 177.56s, environment 592ms, prepare 7.20s)
+    - Snapshot  - 6
+    + Received  + 0
 
-/app/packages/wxt:
-â€‰ERR_PNPM_RECURSIVE_RUN_FIRST_FAILâ€‰ wxt@0.19.1 test: `buildc --deps-only -- vitest "run" "--reporter" "verbose"`
-Exit status 1
-Stopping dev server (PID 18)
-- Preparing...
+    @@ -9,11 +9,5 @@
+          [string] [choices: "github", "gitlab", "bitbucket"] [default: infer from the
+                                                                          environment]
+        --repo    Repository URL or slug[string] [default: infer from the environment]
+        --token   Personal access token [string] [default: infer from the environment]
+        --help    Show help                                                  [boolean]
+    -
+    - Options:
+    -   --fetch-depth  Number of commits to fetch (use `0` for all branches & tags)
+    -                                                                         [number]
+    -   --user-email   Git user email        [string] [default: "olivaw@iterative.ai"]
+    -   --user-name    Git user name                 [string] [default: "Olivaw[bot]"]
 
- ERROR  connect ECONNREFUSED 127.0.0.1:44667
+       5 |     const output = await exec('node', './bin/cml.js', 'ci', '--help');
+       6 |
+    >  7 |     expect(output).toMatchInlineSnapshot(`
+         |                    ^
+       8 |       "cml.js ci
+       9 |
+      10 |       Prepare Git repository for CML operations
 
-  at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+      at Object.<anonymous> (bin/cml/repo/prepare.test.js:7:20)
 
-file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:249
-    throw Error("Commaned exited with code " + status);
-          ^
+ â€º 1 snapshot failed.
+PASS bin/cml/asset/publish.test.js
+  CML cli test
+    âœ“ cml publish --help (930 ms)
 
-Error: Commaned exited with code 1
-    at execCommand (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:249:11)
-    at file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:180:7
-    at async withLock (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:134:12)
-    at async buildPackage (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:170:3)
+PASS bin/cml/tensorboard/connect.test.js
+  CML e2e
+    âœ“ cml tensorboard-dev --help (902 ms)
 
-Node.js v20.19.1
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > iframe > should add a wrapper and iframe to the page
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
+PASS bin/cml/runner/launch.test.js
+  CML e2e
+    âœ“ cml-runner --help (842 ms)
 
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=undefined
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
+PASS bin/cml/check/create.test.js
+  CML e2e
+    âœ“ cml send-github-check --help (889 ms)
 
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=top-left
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
+PASS bin/cml/workflow/rerun.test.js
+  CML e2e
+    âœ“ cml-ci --help (909 ms)
 
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=top-right
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
+PASS src/utils.test.js
+  exec tests
+    âœ“ exec is await and outputs hello (16 ms)
+    âœ“ Command rejects if failure (7 ms)
+  upload tests
+    âœ“ image/png (685 ms)
+    âœ“ application/pdf (538 ms)
+    âœ“ image/svg+xml (549 ms)
 
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=bottom-right
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
+PASS bin/cml.test.js
+  command-line interface tests
+    âœ“ cml --help (883 ms)
+  Valid Docs URLs
+    âœ“ Check Docs Link (137 ms)
+    âœ“ Check Docs Link (105 ms)
+    âœ“ Check Docs Link (125 ms)
+    âœ“ Check Docs Link (771 ms)
+    âœ“ Check Docs Link (72 ms)
+    âœ“ Check Docs Link (58 ms)
+    âœ“ Check Docs Link (57 ms)
+    âœ“ Check Docs Link (54 ms)
+    âœ“ Check Docs Link (55 ms)
 
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=bottom-left
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
+Snapshot Summary
+ â€º 1 snapshot failed from 1 test suite. Inspect your code changes or run `npm run test:unit -- -u` to update them.
 
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should respect the provided zIndex
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
-
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > modal > should wrap the UI in a div with a fixed position
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
-
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > modal > should respect the provided zIndex
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
-
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > mounted value > iframe > should set the mounted value based on the onMounted return value
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
-
-stderr | e2e/tests/user-config.test.ts > User Config > should respect the 'src' directory
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-[warn] Public directory not found: ./e2e/dist/jq1slvfs1/src/public
-stderr | e2e/tests/modules.test.ts > Module Helpers > options > should recieve the options defined in wxt.config.ts based on the configKey field
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | e2e/tests/typescript-project.test.ts > TypeScript Project > should generate defined constants correctly
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | e2e/tests/output-structure.test.ts > Output Directory Structure > should not output hidden files and directories that start with "."
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | e2e/tests/auto-imports.test.ts > Auto Imports > imports: { ... } > should generate a declaration file, imports.d.ts, for auto-imports
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? vite-node) > should respect the per-browser entrypoint option with {"outDir":"chrome-mv3"}
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | e2e/tests/hooks.test.ts > Hooks > prepare should call hooks
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | e2e/tests/remote-code.test.ts > Remote Code > should download "url:*" modules and include them in the final bundle
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | e2e/tests/analysis.test.ts > Analysis > should output a stats.html with no part files by default
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-- Preparing...
-- Preparing...
-stderr | e2e/tests/zip.test.ts > Zipping > should download packages and produce a valid build when zipping sources
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-stderr | e2e/tests/react.test.ts > React > should prepare and build an project with a tsx entrypoint
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-[warn] Public directory not found: ./e2e/dist/ra52fls1eo/src/public
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-[warn] Public directory not found: ./e2e/dist/6sucqvd0lo/src/public
-[warn] Public directory not found: ./e2e/dist/5gnduigvj8/src/public
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-- Preparing...
-âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯ Failed Tests 3 âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯
-
- FAIL  e2e/tests/init.test.ts > Init command > should download and create a template
-ExecaError: Command failed with exit code 1: pnpm -s wxt init /app/packages/wxt/e2e/dist/39qb4lc5dg -t vue --pm npm
- â¯ getFinalError ../../node_modules/.pnpm/execa@9.3.0/node_modules/execa/lib/return/final-error.js:6:9
- â¯ makeError ../../node_modules/.pnpm/execa@9.3.0/node_modules/execa/lib/return/result.js:108:16
- â¯ getAsyncResult ../../node_modules/.pnpm/execa@9.3.0/node_modules/execa/lib/methods/main-async.js:167:4
- â¯ handlePromise ../../node_modules/.pnpm/execa@9.3.0/node_modules/execa/lib/methods/main-async.js:150:17
- â¯ e2e/tests/init.test.ts:11:5
-      9|     const project = new TestProject();
-     10| 
-     11|     await execaCommand(`pnpm -s wxt init ${project.root} -t vue --pm nâ€¦
-       |     ^
-     12|       env: { ...process.env, CI: 'true' },
-     13|       stdio: 'ignore',
-
-âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯
-Serialized Error: { shortMessage: 'Command failed with exit code 1: pnpm -s wxt init /app/packages/wxt/e2e/dist/39qb4lc5dg -t vue --pm npm', command: 'pnpm -s wxt init /app/packages/wxt/e2e/dist/39qb4lc5dg -t vue --pm npm', escapedCommand: 'pnpm -s wxt init /app/packages/wxt/e2e/dist/39qb4lc5dg -t vue --pm npm', cwd: '/app/packages/wxt', durationMs: 4783.305491, failed: true, timedOut: false, isCanceled: false, isGracefullyCanceled: false, isTerminated: false, isMaxBuffer: false, isForcefullyTerminated: false, exitCode: 1, stdio: [ undefined, undefined, undefined ], ipcOutput: [], pipedFrom: [] }
-âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯[1/3]âŽ¯
-
- FAIL  src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove any functions delcared outside the main function that aren't used
-AssertionError: expected 'function getMatches() {\n  return ["*â€¦' to deeply equal 'function getMatches() {\n  return ["*â€¦'
-
-- Expected
-+ Received
-
-  function getMatches() {
-    return ["*://*/*"]
-  }
-+ function unused1() {}
-+ function unused2() {
-+   unused1();
-+ }
-
-  export default defineContentScript({
-    matches: getMatches()
-  })
-
- â¯ src/core/utils/__tests__/transform.test.ts:117:22
-    115|       const actual = removeMainFunctionCode(input).code;
-    116| 
-    117|       expect(actual).toEqual(expected);
-       |                      ^
-    118|     });
-    119| 
-
-âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯[2/3]âŽ¯
-
- FAIL  src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove any variables delcared outside the main function that aren't used
-AssertionError: expected 'const unused1 = "a", matches = ["*://â€¦' to deeply equal 'const matches = ["*://*/*"];\n\nexporâ€¦'
-
-- Expected
-+ Received
-
-- const matches = ["*://*/*"];
-+ const unused1 = "a", matches = ["*://*/*"];
-+ let unused2 = unused1 + "b";
-
-  export default defineContentScript({
-    matches
-  })
-
- â¯ src/core/utils/__tests__/transform.test.ts:138:22
-    136|       const actual = removeMainFunctionCode(input).code;
-    137| 
-    138|       expect(actual).toEqual(expected);
-       |                      ^
-    139|     });
-    140|   });
-
-âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯[3/3]âŽ¯
-
-file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:249
-    throw Error("Commaned exited with code " + status);
-          ^
-
-Error: Commaned exited with code 1
-    at execCommand (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:249:11)
-    at file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:180:7
-    at async withLock (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:134:12)
-    at async buildPackage (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:170:3)
-
-Node.js v20.19.1
-/run-validation.sh: line 1: kill: (18) - No such process
+Test Suites: 1 failed, 10 passed, 11 total
+Tests:       1 failed, 42 passed, 43 total
+Snapshots:   1 failed, 14 passed, 15 total
+Time:        4.295 s
+Teardown Jest. Stoping Proxy...
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
