@@ -1,584 +1,90 @@
-Starting WXT demo extension in dev mode in the background...
-WXT dev server started with PID: 17
-Waiting for dev server to initialize (15 seconds)...
-
-> wxt-demo@1.0.0 dev /app/packages/wxt-demo
-> buildc --deps-only -- wxt
-
-â— wxt: pnpm -s run build
-[2m  > unbuild[0m
-â„¹ Building wxt
-â„¹ Cleaning dist directory: ./dist
-âœ” Build succeeded for wxt
-  dist (total size: 532 kB)
-  â””â”€ dist/types.mjs
-  â””â”€ dist/browser/chrome.d.ts (457 B)
-  â””â”€ dist/builtin-modules/index.d.ts (93 B)
-  â””â”€ dist/cli/cli-utils.d.ts (1.03 kB)
-  â””â”€ dist/client/app-config.d.ts (120 B)
-  â””â”€ dist/core/build.d.ts (519 B)
-  â””â”€ dist/sandbox/define-app-config.d.ts (525 B)
-  â””â”€ dist/testing/fake-browser.d.ts (75 B)
-  â””â”€ dist/client/content-scripts/content-script-context.d.ts (4.46 kB)
-  â””â”€ dist/core/package-managers/types.mjs
-  â””â”€ dist/core/package-managers/bun.d.ts (98 B)
-  â””â”€ dist/core/runners/index.d.ts (122 B)
-  â””â”€ dist/core/utils/arrays.d.ts (525 B)
-  â””â”€ dist/core/utils/types.mjs
-  â””â”€ dist/sandbox/utils/logger.d.ts (237 B)
-  â””â”€ dist/client/content-scripts/ui/index.d.ts (1.34 kB)
-  â””â”€ dist/client/content-scripts/ui/types.mjs
-  â””â”€ dist/core/utils/building/build-entrypoints.d.ts (218 B)
-  â””â”€ dist/core/utils/environments/browser-environment.d.ts (190 B)
-  â””â”€ dist/core/utils/log/index.d.ts (131 B)
-  â””â”€ dist/index.mjs (94 B)
-  â””â”€ dist/index.d.ts (99 B)
-  â””â”€ dist/storage.d.ts (7.48 kB)
-  â””â”€ dist/modules.d.ts (4.29 kB)
-  â””â”€ dist/modules.mjs (1.52 kB)
-  â””â”€ dist/storage.mjs (13.3 kB)
-  â””â”€ dist/version.d.ts (46 B)
-  â””â”€ dist/types.d.ts (46.9 kB)
-  â””â”€ dist/version.mjs (38 B)
-  â””â”€ dist/browser/chrome.mjs (167 B)
-  â””â”€ dist/browser/index.d.ts (1.22 kB)
-  â””â”€ dist/browser/index.mjs (93 B)
-  â””â”€ dist/builtin-modules/index.mjs (81 B)
-  â””â”€ dist/builtin-modules/unimport.mjs (2.87 kB)
-  â””â”€ dist/builtin-modules/unimport.d.ts (646 B)
-  â””â”€ dist/cli/cli-utils.mjs (1.93 kB)
-  â””â”€ dist/cli/commands.d.ts (58 B)
-  â””â”€ dist/cli/index.d.ts (11 B)
-  â””â”€ dist/cli/commands.mjs (3.89 kB)
-  â””â”€ dist/cli/index.mjs (374 B)
-  â””â”€ dist/client/app-config.mjs (99 B)
-  â””â”€ dist/client/index.mjs (79 B)
-  â””â”€ dist/client/index.d.ts (151 B)
-  â””â”€ dist/core/build.mjs (211 B)
-  â””â”€ dist/core/clean.d.ts (603 B)
-  â””â”€ dist/core/create-server.mjs (6.97 kB)
-  â””â”€ dist/core/create-server.d.ts (369 B)
-  â””â”€ dist/core/clean.mjs (1.12 kB)
-  â””â”€ dist/core/define-config.d.ts (109 B)
-  â””â”€ dist/core/define-config.mjs (58 B)
-  â””â”€ dist/core/define-runner-config.d.ts (148 B)
-  â””â”€ dist/core/define-runner-config.mjs (64 B)
-  â””â”€ dist/core/index.d.ts (236 B)
-  â””â”€ dist/core/initialize.d.ts (138 B)
-  â””â”€ dist/core/initialize.mjs (4.12 kB)
-  â””â”€ dist/core/index.mjs (268 B)
-  â””â”€ dist/core/prepare.d.ts (111 B)
-  â””â”€ dist/core/prepare.mjs (334 B)
-  â””â”€ dist/core/wxt.mjs (1.43 kB)
-  â””â”€ dist/core/utils/testing/fake-objects.d.ts (227 kB)
-  â””â”€ dist/sandbox/define-app-config.mjs (61 B)
-  â””â”€ dist/core/zip.d.ts (303 B)
-  â””â”€ dist/core/wxt.d.ts (797 B)
-  â””â”€ dist/sandbox/define-background.mjs (126 B)
-  â””â”€ dist/core/zip.mjs (5.3 kB)
-  â””â”€ dist/sandbox/define-background.d.ts (234 B)
-  â””â”€ dist/sandbox/define-content-script.d.ts (164 B)
-  â””â”€ dist/sandbox/define-content-script.mjs (73 B)
-  â””â”€ dist/sandbox/define-unlisted-script.d.ts (258 B)
-  â””â”€ dist/sandbox/define-wxt-plugin.d.ts (114 B)
-  â””â”€ dist/sandbox/dev-server-websocket.mjs (1.32 kB)
-  â””â”€ dist/sandbox/define-unlisted-script.mjs (130 B)
-  â””â”€ dist/sandbox/dev-server-websocket.d.ts (1.06 kB)
-  â””â”€ dist/sandbox/index.mjs (259 B)
-  â””â”€ dist/sandbox/index.d.ts (332 B)
-  â””â”€ dist/testing/fake-browser.mjs (57 B)
-  â””â”€ dist/sandbox/define-wxt-plugin.mjs (61 B)
-  â””â”€ dist/testing/index.d.ts (100 B)
-  â””â”€ dist/testing/wxt-vitest-plugin.d.ts (650 B)
-  â””â”€ dist/testing/index.mjs (77 B)
-  â””â”€ dist/client/content-scripts/content-script-context.mjs (5.14 kB)
-  â””â”€ dist/testing/wxt-vitest-plugin.mjs (778 B)
-  â””â”€ dist/client/content-scripts/custom-events.d.ts (351 B)
-  â””â”€ dist/client/content-scripts/index.d.ts (64 B)
-  â””â”€ dist/client/content-scripts/custom-events.mjs (516 B)
-  â””â”€ dist/client/content-scripts/index.mjs (78 B)
-  â””â”€ dist/client/content-scripts/location-watcher.d.ts (428 B)
-  â””â”€ dist/core/package-managers/bun.mjs (686 B)
-  â””â”€ dist/core/package-managers/index.d.ts (140 B)
-  â””â”€ dist/core/package-managers/index.mjs (1.58 kB)
-  â””â”€ dist/client/content-scripts/location-watcher.mjs (642 B)
-  â””â”€ dist/core/package-managers/npm.d.ts (699 B)
-  â””â”€ dist/core/package-managers/npm.mjs (1.75 kB)
-  â””â”€ dist/core/package-managers/pnpm.d.ts (99 B)
-  â””â”€ dist/core/package-managers/types.d.ts (170 B)
-  â””â”€ dist/core/package-managers/pnpm.mjs (764 B)
-  â””â”€ dist/core/package-managers/yarn.d.ts (99 B)
-  â””â”€ dist/core/runners/manual.d.ts (195 B)
-  â””â”€ dist/core/package-managers/yarn.mjs (1.08 kB)
-  â””â”€ dist/core/runners/index.mjs (548 B)
-  â””â”€ dist/core/runners/manual.mjs (354 B)
-  â””â”€ dist/core/runners/safari.d.ts (211 B)
-  â””â”€ dist/core/utils/entrypoints.mjs (1.09 kB)
-  â””â”€ dist/core/utils/eslint.mjs (281 B)
-  â””â”€ dist/core/utils/eslint.d.ts (63 B)
-  â””â”€ dist/core/utils/fs.d.ts (569 B)
-  â””â”€ dist/core/utils/globals.d.ts (302 B)
-  â””â”€ dist/core/utils/fs.mjs (578 B)
-  â””â”€ dist/core/utils/i18n.mjs (1.27 kB)
-  â””â”€ dist/core/utils/i18n.d.ts (330 B)
-  â””â”€ dist/core/utils/globals.mjs (991 B)
-  â””â”€ dist/core/utils/manifest.d.ts (2.34 kB)
-  â””â”€ dist/core/utils/network.d.ts (356 B)
-  â””â”€ dist/core/utils/network.mjs (987 B)
-  â””â”€ dist/core/utils/package.d.ts (198 B)
-  â””â”€ dist/core/utils/manifest.mjs (17.7 kB)
-  â””â”€ dist/core/utils/package.mjs (378 B)
-  â””â”€ dist/core/utils/paths.d.ts (464 B)
-  â””â”€ dist/core/utils/paths.mjs (374 B)
-  â””â”€ dist/core/utils/strings.d.ts (598 B)
-  â””â”€ dist/core/utils/strings.mjs (619 B)
-  â””â”€ dist/core/utils/time.d.ts (344 B)
-  â””â”€ dist/core/utils/time.mjs (623 B)
-  â””â”€ dist/core/utils/transform.d.ts (499 B)
-  â””â”€ dist/core/utils/validation.d.ts (443 B)
-  â””â”€ dist/core/utils/types.d.ts (267 B)
-  â””â”€ dist/core/utils/validation.mjs (1.53 kB)
-  â””â”€ dist/core/utils/transform.mjs (4.15 kB)
-  â””â”€ dist/core/utils/virtual-modules.mjs (361 B)
-  â””â”€ dist/sandbox/utils/logger.mjs (478 B)
-  â””â”€ dist/core/utils/virtual-modules.d.ts (1.35 kB)
-  â””â”€ dist/core/utils/wsl.mjs (105 B)
-  â””â”€ dist/core/utils/wsl.d.ts (104 B)
-  â””â”€ dist/client/content-scripts/ui/index.mjs (5.23 kB)
-  â””â”€ dist/client/content-scripts/ui/types.d.ts (7.01 kB)
-  â””â”€ dist/core/utils/building/build-entrypoints.mjs (1.64 kB)
-  â””â”€ dist/core/utils/building/detect-dev-changes.mjs (3.18 kB)
-  â””â”€ dist/core/utils/building/find-entrypoints.d.ts (205 B)
-  â””â”€ dist/core/utils/building/detect-dev-changes.d.ts (2.07 kB)
-  â””â”€ dist/core/utils/building/generate-wxt-dir.d.ts (221 B)
-  â””â”€ dist/core/utils/building/group-entrypoints.d.ts (381 B)
-  â””â”€ dist/core/utils/building/find-entrypoints.mjs (12.3 kB)
-  â””â”€ dist/core/utils/building/generate-wxt-dir.mjs (5.88 kB)
-  â””â”€ dist/core/utils/building/import-entrypoint.d.ts (597 B)
-  â””â”€ dist/core/utils/building/group-entrypoints.mjs (987 B)
-  â””â”€ dist/core/utils/building/index.d.ts (316 B)
-  â””â”€ dist/core/utils/building/import-entrypoint.mjs (3.29 kB)
-  â””â”€ dist/core/utils/building/internal-build.d.ts (468 B)
-  â””â”€ dist/core/utils/building/index.mjs (352 B)
-  â””â”€ dist/core/utils/building/rebuild.d.ts (1.16 kB)
-  â””â”€ dist/core/utils/building/internal-build.mjs (4.24 kB)
-  â””â”€ dist/core/utils/building/rebuild.mjs (1.42 kB)
-  â””â”€ dist/core/utils/building/resolve-config.d.ts (840 B)
-  â””â”€ dist/core/utils/environments/browser-environment.mjs (443 B)
-  â””â”€ dist/core/utils/environments/environment.d.ts (383 B)
-  â””â”€ dist/core/utils/environments/environment.mjs (760 B)
-  â””â”€ dist/core/utils/environments/extension-environment.mjs (453 B)
-  â””â”€ dist/core/utils/building/resolve-config.mjs (11.6 kB)
-  â””â”€ dist/core/utils/environments/extension-environment.d.ts (298 B)
-  â””â”€ dist/core/utils/environments/index.d.ts (80 B)
-  â””â”€ dist/core/utils/log/printBuildSummary.d.ts (172 B)
-  â””â”€ dist/core/utils/environments/index.mjs (88 B)
-  â””â”€ dist/core/utils/log/index.mjs (147 B)
-  â””â”€ dist/core/utils/log/printBuildSummary.mjs (991 B)
-  â””â”€ dist/core/utils/log/printFileList.mjs (1.33 kB)
-  â””â”€ dist/core/utils/log/printFileList.d.ts (136 B)
-  â””â”€ dist/core/utils/log/printHeader.mjs (228 B)
-  â””â”€ dist/core/utils/log/printHeader.d.ts (45 B)
-  â””â”€ dist/core/utils/log/printTable.mjs (639 B)
-  â””â”€ dist/core/utils/testing/fake-objects.mjs (8.77 kB)
-  â””â”€ dist/core/utils/log/printTable.d.ts (122 B)
-  â””â”€ dist/vite-builder-env.d.ts (38 B)
-  â””â”€ dist/core/builders/vite/plugins/bundleAnalysis.d.ts (259 B)
-  â””â”€ dist/core/builders/vite/index.d.ts (263 B)
-  â””â”€ dist/core/builders/vite/index.mjs (10 kB)
-  â””â”€ dist/core/builders/vite/plugins/bundleAnalysis.mjs (397 B)
-  â””â”€ dist/core/builders/vite/plugins/cssEntrypoints.d.ts (551 B)
-  â””â”€ dist/core/builders/vite/plugins/cssEntrypoints.mjs (569 B)
-  â””â”€ dist/core/builders/vite/plugins/defineImportMeta.mjs (290 B)
-  â””â”€ dist/core/builders/vite/plugins/devHtmlPrerender.d.ts (485 B)
-  â””â”€ dist/core/builders/vite/plugins/defineImportMeta.d.ts (374 B)
-  â””â”€ dist/core/builders/vite/plugins/devServerGlobals.d.ts (313 B)
-  â””â”€ dist/core/builders/vite/plugins/devServerGlobals.mjs (426 B)
-  â””â”€ dist/core/builders/vite/plugins/download.d.ts (395 B)
-  â””â”€ dist/core/builders/vite/plugins/download.mjs (375 B)
-  â””â”€ dist/core/builders/vite/plugins/devHtmlPrerender.mjs (5.14 kB)
-  â””â”€ dist/core/builders/vite/plugins/resolveAppConfig.d.ts (269 B)
-  â””â”€ dist/core/builders/vite/plugins/removeEntrypointMainFunction.mjs (758 B)
-  â””â”€ dist/core/builders/vite/plugins/noopBackground.mjs (565 B)
-  â””â”€ dist/core/builders/vite/plugins/resolveExtensionApi.d.ts (446 B)
-  â””â”€ dist/core/builders/vite/plugins/resolveAppConfig.mjs (817 B)
-  â””â”€ dist/core/builders/vite/plugins/resolveExtensionApi.mjs (349 B)
-  â””â”€ dist/core/builders/vite/plugins/wxtPluginLoader.mjs (2.03 kB)
-  â””â”€ dist/core/builders/vite/plugins/wxtPluginLoader.d.ts (372 B)
-  â””â”€ dist/core/builders/vite/plugins/tsconfigPaths.mjs (193 B)
-  â””â”€ dist/core/builders/vite/plugins/tsconfigPaths.d.ts (163 B)
-  â””â”€ dist/core/builders/vite/plugins/resolveVirtualModules.d.ts (257 B)
-  â””â”€ dist/core/builders/vite/plugins/resolveVirtualModules.mjs (1.04 kB)
-Î£ Total dist size (byte size): 532 kB
-
-â„¹ Building wxt
-âœ” Build succeeded for wxt
-  dist/virtual/content-script-main-world-entrypoint.mjs (total size: 886 B, chunk size: 886 B, exports: default)
-
-Î£ Total dist size (byte size): 533 kB
-Î£ Total dist size (byte size): 542 kB
-
-âœ” wxt
-â— @wxt-dev/auto-icons: pnpm -s run build
-âœ” @wxt-dev/auto-icons: Cached!
-â„¹ wxt-demo: wxt
-
-WXT 0.19.1
-â„¹ Example module with options: { a: 'a', c: 'c' }
-âœ” Started dev server @ http://localhost:3000
-â„¹ Pre-rendering chrome-mv3 for development with Vite 5.3.5
 Running all tests...
-âœ” Built extension in 19.9 s
-  â”œâ”€ .output/chrome-mv3/manifest.json                       1.61 kB  
-  â”œâ”€ .output/chrome-mv3/example.html                        540 B    
-  â”œâ”€ .output/chrome-mv3/iframe-src.html                     594 B    
-  â”œâ”€ .output/chrome-mv3/options.html                        687 B    
-  â”œâ”€ .output/chrome-mv3/popup.html                          558 B    
-  â”œâ”€ .output/chrome-mv3/sandbox.html                        540 B    
-  â”œâ”€ .output/chrome-mv3/sidepanel.html                      477 B    
-  â”œâ”€ .output/chrome-mv3/background.js                       106.36 kB
-  â”œâ”€ .output/chrome-mv3/chunks/reload-html-BxzUToPe.js      8.17 kB  
-  â”œâ”€ .output/chrome-mv3/icons/16.png                        568 B    
-  â”œâ”€ .output/chrome-mv3/icons/32.png                        1.24 kB  
-  â””â”€ .output/chrome-mv3/icons/48.png                        1.99 kB  
-Î£ Total size: 3.51 MB                                     
-âœ– Command failed after 48.1 s
-â€‰ELIFECYCLEâ€‰ Command failed with exit code 1.
-Scope: 7 of 8 workspace projects
 
-> wxt@0.19.1 test /app/packages/wxt
-> buildc --deps-only -- vitest "run" "--reporter" "verbose"
+> @dvcorg/cml@0.18.13 test:unit
+> jest --testPathIgnorePatterns='e2e.test.js$' --forceExit --verbose --silent --no-coverage
 
-â„¹ Waiting for other buildc processes to finish...
-â— @wxt-dev/auto-icons: pnpm -s run build
-âœ” @wxt-dev/auto-icons: Cached!
-â„¹ wxt: vitest run --reporter verbose
-Test seed: 4129601864282115
+Proxy listening on port 9093
+PASS src/commenttarget.test.js
+  comment target tests
+    âœ“ qualified comment target: pr (5 ms)
+    âœ“ qualified comment target: commit (1 ms)
+    âœ“ qualified comment target: issue (4 ms)
+    âœ“ qualified comment target: unsupported (1 ms)
+    âœ“ legacy flag: commitSha (1 ms)
+    âœ“ legacy flag: pr, context (5 ms)
+    âœ“ legacy flag: pr, commit sha (2 ms)
+    âœ“ unqualified flag: commit sha (1 ms)
+    âœ“ unqualified flag: pr, context (2 ms)
+    âœ“ unqualified flag: pr, commit sha (1 ms)
+    âœ“ unqualified comment target: issue
+    âœ“ auto comment target: pr context (1 ms)
+    âœ“ auto comment target: pr, commit sha (1 ms)
+    âœ“ auto comment target: fallback commit sha (2 ms)
 
- RUN  v2.0.4 /app/packages/wxt
+PASS src/terraform.test.js
+  Terraform tests
+    âœ“ default options (9 ms)
+    âœ“ basic settings (2 ms)
+    âœ“ basic settings with runner forever (2 ms)
+    âœ“ basic settings with metadata (2 ms)
+    âœ“ basic settings with docker volumes (1 ms)
+    âœ“ basic settings with permission set (3 ms)
+    âœ“ Startup script (1 ms)
 
- âœ“ src/core/utils/__tests__/content-security-policy.test.ts > Content Security Policy Builder > should add values to new directives correctly
- âœ“ src/core/utils/__tests__/content-security-policy.test.ts > Content Security Policy Builder > should add to existing values
- âœ“ src/core/utils/__tests__/content-security-policy.test.ts > Content Security Policy Builder > should not add duplicates
- âœ“ src/core/utils/__tests__/content-security-policy.test.ts > Content Security Policy Builder > should sort the directives in the correct order
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "HELLO" to "hello"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "Hello, World!" to "hello-world"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "hello123" to "hello123"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "Hello World This Is A Test" to "hello-world-this-is-a-test"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "Hello     World" to "hello-world"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > kebabCaseAlphanumeric > should convert "hello-world" to "hello-world"
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert 'Hello world!' to '_hello_world', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert '123' to '_123', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert 'abc-123' to '_abc_123', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert '' to '_', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert ' ' to '_', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > safeVarName > should convert '_' to '_', which can be used for a variable name
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > removeImportStatements > should remove all import formats
- âœ“ src/core/utils/__tests__/strings.test.ts > String utils > removeImportStatements > should not remove import.meta or inline import statements
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > every > should return true when the array is empty
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > every > should return true when all item predicate's return true
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > every > should return false when a single item predicate's return false
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > some > should return true if one value returns true
- âœ“ src/core/utils/__tests__/arrays.test.ts > Array Utils > some > should return false if no values match
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/popup.html to popup
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/options/index.html to options
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/example.sandbox/index.html to example
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/some.content/index.ts to some
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointName > should convert /entrypoints/overlay.content.ts to overlay
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointOutputFile > should return { name: 'popup', ext: '.html', outputDir: '/.output', expected: '/.output/popup.html' }
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointOutputFile > should return { name: 'overlay', ext: '.ts', outputDir: '/.output/content-scripts', expected: '/.output/content-scripts/overlay.ts' }
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > resolvePerBrowserOption > should return the value directly
- âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > resolvePerBrowserOption > should return the value for the specific browser
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove unused imports
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove explict side-effect imports
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove any functions delcared outside the main function that aren't used
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove any variables delcared outside the main function that aren't used
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "../test.sh" to "../test.sh"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "..\test.sh" to "../test.sh"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "test.png" to "test.png"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "C:\\path\to\file" to "C:/path/to/file"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "/path/to/file" to "/path/to/file"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "C:\\path\to\folder\" to "C:/path/to/folder"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "/path/to/folder/" to "/path/to/folder"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "path\\\file" to "path/file"
- âœ“ src/core/utils/__tests__/paths.test.ts > Path Utils > normalizePath > should normalize "path//file" to "path/file"
- âœ“ src/sandbox/__tests__/define-unlisted-script.test.ts > defineUnlistedScript > should return the object definition when given an object
- âœ“ src/sandbox/__tests__/define-unlisted-script.test.ts > defineUnlistedScript > should return the object definition when given a main function
- âœ“ src/core/utils/__tests__/virtual-modules.test.ts > Virtual Modules > should resolve types to litteral values, not string
- âœ“ src/sandbox/__tests__/define-background.test.ts > defineBackground > should return the object definition when given an object
- âœ“ src/sandbox/__tests__/define-background.test.ts > defineBackground > should return the object definition when given a main function
- âœ“ src/sandbox/__tests__/define-content-script.test.ts > defineContentScript > should return the object passed in
- âœ“ src/core/package-managers/__tests__/yarn.test.ts > Yarn Package Management Utils > listDependencies > should list direct dependencies 1178ms
- âœ“ src/core/package-managers/__tests__/yarn.test.ts > Yarn Package Management Utils > listDependencies > should list all dependencies 588ms
- âœ“ src/core/package-managers/__tests__/npm.test.ts > NPM Package Management Utils > listDependencies > should list direct dependencies 958ms
- âœ“ src/core/utils/__tests__/validation.test.ts > Validation Utils > validateEntrypoints > should return no errors when there are no errors
- âœ“ src/core/utils/__tests__/validation.test.ts > Validation Utils > validateEntrypoints > should return an error when exclude is not an array
- âœ“ src/core/utils/__tests__/validation.test.ts > Validation Utils > validateEntrypoints > should return an error when include is not an array
- âœ“ src/core/utils/__tests__/validation.test.ts > Validation Utils > validateEntrypoints > should return an error when content scripts don't have a matches
- âœ“ src/core/utils/__tests__/content-scripts.test.ts > Content Script Utils > hashContentScriptOptions > should return a string containing all the options with defaults applied
- âœ“ src/core/utils/__tests__/content-scripts.test.ts > Content Script Utils > hashContentScriptOptions > should be consistent regardless of the object ordering and default values
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should keep scripts separate
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should keep styles separate
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should group extension pages together
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should group sandbox pages together
- âœ“ src/core/utils/building/__tests__/group-entrypoints.test.ts > groupEntrypoints > should group ESM compatible scripts with extension pages
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addViteConfig > should add base vite config
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addViteConfig > should allow user config to override any changes made
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addImportPreset > should add the import to the config
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addImportPreset > should not add duplicate presets
- âœ“ src/__tests__/modules.test.ts > Module Utilities > addImportPreset > should not enable imports if they've been disabled
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "style.css" into "http://localhost:5173/entrypoints/popup/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "./style.css" into "http://localhost:5173/entrypoints/popup/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "../style.css" into "http://localhost:5173/entrypoints/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~/assets/style.css" into "http://localhost:5173/assets/style.css"
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Dev mode > should not add any code for production builds
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Dev mode > should add required permissions for dev
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > should throw an error when the anchor does not exist
+PASS bin/cml/comment/create.test.js
+  Comment integration tests
+    âœ“ cml send-comment --help (848 ms)
 
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should not pass any config when no flags are passed
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing a custom root
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should augment the types for browser.runtime.getURL 1462ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect a custom config file
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > imports: { ... } > should include auto-imports in the project 1488ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing a custom mode
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing a custom browser
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing --mv2
- âœ“ e2e/tests/hooks.test.ts > Hooks > build should call hooks 1776ms
- âœ“ e2e/tests/remote-code.test.ts > Remote Code > should download "url:*" modules and include them in the final bundle 4317ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing --mv3
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > zip > should respect passing --debug
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > prepare > should not pass any config when no flags are passed
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > prepare > should respect passing a custom root
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > prepare > should respect a custom config file
- âœ“ e2e/tests/user-config.test.ts > User Config > should respect the 'entrypoints' directory 1665ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 1 ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? vite-node) > should respect the per-browser entrypoint option with {"browser":"chrome","outDir":"chrome-mv3"} 1605ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > prepare > should respect passing --debug
- Ã— e2e/tests/init.test.ts > Init command > should download and create a template 5202ms
-   â†’ Command failed with exit code 1: pnpm -s wxt init /app/packages/wxt/e2e/dist/g6svauu9mo -t vue --pm npm
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > clean > should not pass any config when no flags are passed
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > clean > should respect passing a custom root
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addEntrypoint > should add a custom entrypoint to be bundled the project 1754ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > clean > should respect a custom config file
- âœ“ e2e/tests/analysis.test.ts > Analysis > should save part files when requested 1778ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should output separate CSS files for each content script 2287ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > imports: false > should not generate a imports.d.ts file 1360ms
-[log]
-[log] WXT {{version}}
-[success] Finished in 0 ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > clean > should respect passing --debug
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should augment the types for browser.i18n.getMessage 1452ms
-[log]
-[log] WXT {{version}}
- âœ“ src/cli/__tests__/index.test.ts > CLI > init > should not pass any options when no flags are passed
-[log]
-[log] WXT {{version}}
- âœ“ src/cli/__tests__/index.test.ts > CLI > init > should respect the provided folder
-[log]
-[log] WXT {{version}}
- âœ“ src/cli/__tests__/index.test.ts > CLI > init > should respect passing --template
-[log]
-[log] WXT {{version}}
- âœ“ src/cli/__tests__/index.test.ts > CLI > init > should respect passing --pm
- âœ“ e2e/tests/hooks.test.ts > Hooks > zip should call hooks 1454ms
- âœ“ e2e/tests/react.test.ts > React > should prepare and build an project with a tsx entrypoint 6072ms
- âœ“ e2e/tests/user-config.test.ts > User Config > should merge inline and user config based manifests 1436ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? vite-node) > should respect the per-browser entrypoint option with {"browser":"firefox","outDir":"firefox-mv2","expected":true} 1638ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > imports: false > should not include imports.d.ts in the type references 1325ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should reference all the required types in a single declaration file 1322ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addPublicAssets > should add public assets 1686ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should allow inputs with invalid JS variable names, like dashes 1655ms
- âœ“ e2e/tests/analysis.test.ts > Analysis > should support customizing the stats output directory 1712ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > "enabled: true" should output a JSON config file compatible with ESlint 8 1269ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should generate a TSConfig file for the project 1236ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? vite-node) > should respect the per-browser entrypoint option with {"browser":"safari","outDir":"safari-mv2","expected":false} 1493ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should not include an entrypoint if the target browser is not in the list of included targets 1364ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addPublicAssets > should not overwrite the user's public files 1569ms
- âœ“ e2e/tests/analysis.test.ts > Analysis > should place artifacts next to the custom output file 1498ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > "enabled: 8" should output a JSON config file compatible with ESlint 8 1234ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should generate correct path aliases for a custom srcDir 1213ms
- âœ“ e2e/tests/user-config.test.ts > User Config > should exclude the polyfill when extensionApi="chrome" 2907ms
- âœ“ e2e/tests/init.test.ts > Init command > should throw an error if the directory is not empty 4341ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? jiti) > should respect the per-browser entrypoint option with {"outDir":"chrome-mv3"} 1482ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should not include an entrypoint if the target browser is in the list of excluded targets 1290ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addWxtPlugin > should include the plugin in the background 1363ms
- âœ“ e2e/tests/analysis.test.ts > Analysis > should open the stats in the browser when requested 1464ms
- âœ“ e2e/tests/typescript-project.test.ts > TypeScript Project > should add additional path aliases listed in the alias config, preventing defaults from being overridden 1204ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > "enabled: 9" should output a flat config file compatible with ESlint 9 1213ms
- âœ“ e2e/tests/user-config.test.ts > User Config > should respect changing config files 1456ms
- âœ“ e2e/tests/zip.test.ts > Zipping > should download packages and produce a valid build when zipping sources 11103ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? jiti) > should respect the per-browser entrypoint option with {"browser":"chrome","outDir":"chrome-mv3"} 1477ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addWxtPlugin > should include the plugin in HTML entrypoints 1419ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should generate a stats file when analyzing the bundle 1759ms
- âœ“ e2e/tests/hooks.test.ts > Hooks > server.start should call hooks 5817ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > should allow customizing the output 1253ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? jiti) > should respect the per-browser entrypoint option with {"browser":"firefox","outDir":"firefox-mv2","expected":true} 1313ms
- âœ“ e2e/tests/zip.test.ts > Zipping > should correctly apply template variables for zip file names based on provided config 1416ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addWxtPlugin > should include the plugin in content scripts 1323ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should support JavaScript entrypoints 1882ms
- âœ“ e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? jiti) > should respect the per-browser entrypoint option with {"browser":"safari","outDir":"safari-mv2","expected":false} 1336ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > addWxtPlugin > should include the plugin in unlisted scripts 1327ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should output to a custom directory when overriding 'outDir' 1309ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > imports > should add auto-imports 1557ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should generate ESM background script when type=module 1709ms
- âœ“ e2e/tests/modules.test.ts > Module Helpers > imports > should add preset 1594ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > Actual linting results > ESLint 9 > should have lint errors when not extending generated config 5425ms
- âœ“ e2e/tests/output-structure.test.ts > Output Directory Structure > should generate IIFE background script when type=undefined 1244ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > Actual linting results > ESLint 9 > should not have any lint errors when configured 3957ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > Actual linting results > ESLint 8 > should have lint errors when not extending generated config 4085ms
- âœ“ e2e/tests/auto-imports.test.ts > Auto Imports > eslintrc > Actual linting results > ESLint 8 > should not have any lint errors when configured 4011ms
+PASS bin/cml/workflow/rerun.test.js
+  CML e2e
+    âœ“ cml-ci --help (890 ms)
 
- Test Files  1 failed | 38 passed | 1 skipped (40)
-      Tests  1 failed | 534 passed | 4 skipped | 2 todo (541)
-   Start at  15:59:39
-   Duration  34.68s (transform 12.71s, setup 2.88s, collect 118.44s, tests 174.25s, environment 618ms, prepare 10.03s)
+PASS bin/cml/repo/prepare.test.js
+  CML e2e
+    âœ“ cml-ci --help (900 ms)
 
-/app/packages/wxt:
-â€‰ERR_PNPM_RECURSIVE_RUN_FIRST_FAILâ€‰ wxt@0.19.1 test: `buildc --deps-only -- vitest "run" "--reporter" "verbose"`
-Exit status 1
-Stopping dev server (PID 17)
-- Preparing...
+PASS bin/cml/check/create.test.js
+  CML e2e
+    âœ“ cml send-github-check --help (836 ms)
 
- ERROR  connect ECONNREFUSED 127.0.0.1:40371
+PASS bin/cml/asset/publish.test.js
+  CML cli test
+    âœ“ cml publish --help (894 ms)
 
-  at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)
+PASS bin/cml/tensorboard/connect.test.js
+  CML e2e
+    âœ“ cml tensorboard-dev --help (909 ms)
 
-file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:249
-    throw Error("Commaned exited with code " + status);
-          ^
+PASS bin/cml/runner/launch.test.js
+  CML e2e
+    âœ“ cml-runner --help (938 ms)
 
-Error: Commaned exited with code 1
-    at execCommand (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:249:11)
-    at file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:180:7
-    at async withLock (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:134:12)
-    at async buildPackage (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:170:3)
+PASS src/utils.test.js
+  exec tests
+    âœ“ exec is await and outputs hello (19 ms)
+    âœ“ Command rejects if failure (7 ms)
+  upload tests
+    âœ“ image/png (892 ms)
+    âœ“ application/pdf (409 ms)
+    âœ“ image/svg+xml (529 ms)
 
-Node.js v20.19.1
-stderr | e2e/tests/user-config.test.ts > User Config > should respect the 'src' directory
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+PASS bin/cml.test.js
+  command-line interface tests
+    âœ“ cml --help (893 ms)
+  Valid Docs URLs
+    âœ“ Check Docs Link (218 ms)
+    âœ“ Check Docs Link (87 ms)
+    âœ“ Check Docs Link (135 ms)
+    âœ“ Check Docs Link (824 ms)
+    âœ“ Check Docs Link (62 ms)
+    âœ“ Check Docs Link (56 ms)
+    âœ“ Check Docs Link (58 ms)
+    âœ“ Check Docs Link (66 ms)
+    âœ“ Check Docs Link (61 ms)
 
-[warn] Public directory not found: ./e2e/dist/u0j9sd8ifg/src/public
-stderr | e2e/tests/typescript-project.test.ts > TypeScript Project > should generate defined constants correctly
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > modal > should wrap the UI in a div with a fixed position
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
-
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > modal > should respect the provided zIndex
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/page.html": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
-
-stderr | src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > mounted value > iframe > should set the mounted value based on the onMounted return value
-DOMException [NotSupportedError]: Failed to fetch from "chrome-extension://test-extension-id/": URL scheme "chrome-extension" is not supported.
-    at Function.validateSchema (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/utilities/FetchRequestValidationUtility.ts:120:10)
-    at Fetch.send (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/fetch/Fetch.ts:105:33)
-    at BrowserWindow.fetch (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/window/BrowserWindow.ts:1246:6)
-    at Function.navigate (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/utilities/BrowserFrameNavigator.ts:146:34)
-    at DetachedBrowserFrame.goto (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/browser/detached-browser/DetachedBrowserFrame.ts:170:32)
-    at HTMLIFrameElementPageLoader.loadPage (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElementPageLoader.ts:116:5)
-    at HTMLIFrameElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-iframe-element/HTMLIFrameElement.ts:225:22)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/Node.ts:584:48)
-    at HTMLElement.[connectToNode] (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/html-element/HTMLElement.ts:639:38)
-    at Function.appendChild (file:///app/node_modules/.pnpm/happy-dom@14.12.3/node_modules/happy-dom/src/nodes/node/NodeUtility.ts:72:45)
-
-stderr | e2e/tests/manifest-content.test.ts > Manifest Content (Vite runtime? vite-node) > should respect the per-browser entrypoint option with {"outDir":"chrome-mv3"}
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | e2e/tests/hooks.test.ts > Hooks > prepare should call hooks
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
-stderr | e2e/tests/modules.test.ts > Module Helpers > options > should recieve the options defined in wxt.config.ts based on the configKey field
-[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
-
- FAIL  e2e/tests/init.test.ts > Init command > should download and create a template
-ExecaError: Command failed with exit code 1: pnpm -s wxt init /app/packages/wxt/e2e/dist/g6svauu9mo -t vue --pm npm
- â¯ getFinalError ../../node_modules/.pnpm/execa@9.3.0/node_modules/execa/lib/return/final-error.js:6:9
- â¯ makeError ../../node_modules/.pnpm/execa@9.3.0/node_modules/execa/lib/return/result.js:108:16
- â¯ getAsyncResult ../../node_modules/.pnpm/execa@9.3.0/node_modules/execa/lib/methods/main-async.js:167:4
- â¯ handlePromise ../../node_modules/.pnpm/execa@9.3.0/node_modules/execa/lib/methods/main-async.js:150:17
- â¯ e2e/tests/init.test.ts:11:5
-      9|     const project = new TestProject();
-     10| 
-     11|     await execaCommand(`pnpm -s wxt init ${project.root} -t vue --pm nâ€¦
-       |     ^
-     12|       env: { ...process.env, CI: 'true' },
-     13|       stdio: 'ignore',
-
-âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯
-Serialized Error: { shortMessage: 'Command failed with exit code 1: pnpm -s wxt init /app/packages/wxt/e2e/dist/g6svauu9mo -t vue --pm npm', command: 'pnpm -s wxt init /app/packages/wxt/e2e/dist/g6svauu9mo -t vue --pm npm', escapedCommand: 'pnpm -s wxt init /app/packages/wxt/e2e/dist/g6svauu9mo -t vue --pm npm', cwd: '/app/packages/wxt', durationMs: 5188.090945, failed: true, timedOut: false, isCanceled: false, isGracefullyCanceled: false, isTerminated: false, isMaxBuffer: false, isForcefullyTerminated: false, exitCode: 1, stdio: [ undefined, undefined, undefined ], ipcOutput: [], pipedFrom: [] }
-âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯âŽ¯[1/1]âŽ¯
-
-file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:249
-    throw Error("Commaned exited with code " + status);
-          ^
-
-Error: Commaned exited with code 1
-    at execCommand (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:249:11)
-    at file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:180:7
-    at async withLock (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:134:12)
-    at async buildPackage (file:///app/node_modules/.pnpm/@aklinker1+buildc@1.0.11_typescript@5.5.4/node_modules/@aklinker1/buildc/dist/cli.mjs:170:3)
-
-Node.js v20.19.1
-/run-evaluation.sh: line 1: kill: (17) - No such process
+Test Suites: 11 passed, 11 total
+Tests:       43 passed, 43 total
+Snapshots:   15 passed, 15 total
+Time:        4.359 s
+Teardown Jest. Stoping Proxy...
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
