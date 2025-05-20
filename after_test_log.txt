@@ -113,23 +113,6 @@ Waiting for dev server to initialize (15 seconds)...
   â””â”€ dist/core/runners/index.mjs (548 B)
   â””â”€ dist/core/runners/manual.mjs (354 B)
   â””â”€ dist/core/runners/safari.d.ts (211 B)
-  â””â”€ dist/core/runners/safari.mjs (383 B)
-  â””â”€ dist/core/runners/web-ext.d.ts (170 B)
-  â””â”€ dist/core/runners/web-ext.mjs (3.06 kB)
-  â””â”€ dist/core/utils/arrays.mjs (441 B)
-  â””â”€ dist/core/runners/wsl.d.ts (200 B)
-  â””â”€ dist/core/runners/wsl.mjs (387 B)
-  â””â”€ dist/core/utils/cli.mjs (775 B)
-  â””â”€ dist/core/utils/cache.d.ts (315 B)
-  â””â”€ dist/core/utils/cli.d.ts (210 B)
-  â””â”€ dist/core/utils/cache.mjs (589 B)
-  â””â”€ dist/core/utils/constants.d.ts (218 B)
-  â””â”€ dist/core/utils/constants.mjs (76 B)
-  â””â”€ dist/core/utils/content-scripts.mjs (1.95 kB)
-  â””â”€ dist/core/utils/content-scripts.d.ts (867 B)
-  â””â”€ dist/core/utils/content-security-policy.d.ts (500 B)
-  â””â”€ dist/core/utils/content-security-policy.mjs (1.14 kB)
-  â””â”€ dist/core/utils/entrypoints.d.ts (1.35 kB)
   â””â”€ dist/core/utils/entrypoints.mjs (1.09 kB)
   â””â”€ dist/core/utils/eslint.mjs (281 B)
   â””â”€ dist/core/utils/eslint.d.ts (63 B)
@@ -214,18 +197,6 @@ Waiting for dev server to initialize (15 seconds)...
   â””â”€ dist/core/builders/vite/plugins/download.d.ts (395 B)
   â””â”€ dist/core/builders/vite/plugins/download.mjs (375 B)
   â””â”€ dist/core/builders/vite/plugins/devHtmlPrerender.mjs (5.14 kB)
-  â””â”€ dist/core/builders/vite/plugins/entrypointGroupGlobals.d.ts (260 B)
-  â””â”€ dist/core/builders/vite/plugins/entrypointGroupGlobals.mjs (497 B)
-  â””â”€ dist/core/builders/vite/plugins/extensionApiMock.d.ts (532 B)
-  â””â”€ dist/core/builders/vite/plugins/extensionApiMock.mjs (662 B)
-  â””â”€ dist/core/builders/vite/plugins/globals.d.ts (163 B)
-  â””â”€ dist/core/builders/vite/plugins/index.mjs (676 B)
-  â””â”€ dist/core/builders/vite/plugins/index.d.ts (608 B)
-  â””â”€ dist/core/builders/vite/plugins/multipageMove.d.ts (956 B)
-  â””â”€ dist/core/builders/vite/plugins/globals.mjs (357 B)
-  â””â”€ dist/core/builders/vite/plugins/noopBackground.d.ts (281 B)
-  â””â”€ dist/core/builders/vite/plugins/removeEntrypointMainFunction.d.ts (283 B)
-  â””â”€ dist/core/builders/vite/plugins/multipageMove.mjs (1.92 kB)
   â””â”€ dist/core/builders/vite/plugins/resolveAppConfig.d.ts (269 B)
   â””â”€ dist/core/builders/vite/plugins/removeEntrypointMainFunction.mjs (758 B)
   â””â”€ dist/core/builders/vite/plugins/noopBackground.mjs (565 B)
@@ -245,35 +216,6 @@ Waiting for dev server to initialize (15 seconds)...
   dist/virtual/content-script-main-world-entrypoint.mjs (total size: 886 B, chunk size: 886 B, exports: default)
 
 Î£ Total dist size (byte size): 533 kB
-
-â„¹ Building wxt
-âœ” Build succeeded for wxt
-  dist/virtual/content-script-isolated-world-entrypoint.mjs (total size: 1.06 kB, chunk size: 1.06 kB, exports: default)
-
-Î£ Total dist size (byte size): 534 kB
-
-â„¹ Building wxt
-âœ” Build succeeded for wxt
-  dist/virtual/background-entrypoint.mjs (total size: 5.78 kB, chunk size: 5.78 kB, exports: default)
-
-Î£ Total dist size (byte size): 539 kB
-
-â„¹ Building wxt
-âœ” Build succeeded for wxt
-  dist/virtual/unlisted-script-entrypoint.mjs (total size: 877 B, chunk size: 877 B, exports: default)
-
-Î£ Total dist size (byte size): 540 kB
-
-â„¹ Building wxt
-âœ” Build succeeded for wxt
-  dist/virtual/mock-browser.mjs (total size: 148 B, chunk size: 148 B, exports: browser, default)
-
-Î£ Total dist size (byte size): 540 kB
-
-â„¹ Building wxt
-âœ” Build succeeded for wxt
-  dist/virtual/reload-html.mjs (total size: 2.09 kB, chunk size: 2.09 kB)
-
 Î£ Total dist size (byte size): 542 kB
 
 âœ” wxt
@@ -296,17 +238,6 @@ Running all tests...
   â”œâ”€ .output/chrome-mv3/sidepanel.html                      477 B    
   â”œâ”€ .output/chrome-mv3/background.js                       106.36 kB
   â”œâ”€ .output/chrome-mv3/chunks/reload-html-BxzUToPe.js      8.17 kB  
-  â”œâ”€ .output/chrome-mv3/chunks/reload-html-BxzUToPe.js      8.17 kB  
-  â”œâ”€ .output/chrome-mv3/content-scripts/example-tsx.js      3.25 MB  
-  â”œâ”€ .output/chrome-mv3/content-scripts/iframe.js           40.69 kB 
-  â”œâ”€ .output/chrome-mv3/content-scripts/location-change.js  27.35 kB 
-  â”œâ”€ .output/chrome-mv3/content-scripts/main-world.js       2.04 kB  
-  â”œâ”€ .output/chrome-mv3/content-scripts/ui.js               52.41 kB 
-  â”œâ”€ .output/chrome-mv3/unlisted.js                         1.9 kB   
-  â”œâ”€ .output/chrome-mv3/content-scripts/injected.css        24 B     
-  â”œâ”€ .output/chrome-mv3/content-scripts/ui.css              150 B    
-  â”œâ”€ .output/chrome-mv3/_locales/en/messages.json           594 B    
-  â”œâ”€ .output/chrome-mv3/icons/128.png                       1.55 kB  
   â”œâ”€ .output/chrome-mv3/icons/16.png                        568 B    
   â”œâ”€ .output/chrome-mv3/icons/32.png                        1.24 kB  
   â””â”€ .output/chrome-mv3/icons/48.png                        1.99 kB  
@@ -358,13 +289,6 @@ Test seed: 4129601864282115
  âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > getEntrypointOutputFile > should return { name: 'overlay', ext: '.ts', outputDir: '/.output/content-scripts', expected: '/.output/content-scripts/overlay.ts' }
  âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > resolvePerBrowserOption > should return the value directly
  âœ“ src/core/utils/__tests__/entrypoints.test.ts > Entrypoint Utils > resolvePerBrowserOption > should return the value for the specific browser
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the first arrow function argument for defineBackground
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the first arrow function argument for defineUnlistedScript
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the first function argument for defineBackground
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the first function argument for defineUnlistedScript
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the main field from defineBackground
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the main field from defineContentScript
- âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove the main field from defineUnlistedScript
  âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove unused imports
  âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove explict side-effect imports
  âœ“ src/core/utils/__tests__/transform.test.ts > Transform Utils > removeMainFunctionCode > should remove any functions delcared outside the main function that aren't used
@@ -410,11 +334,6 @@ Test seed: 4129601864282115
  âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~~/assets/style.css" into "http://localhost:5173/assets/style.css"
  âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~local/style.css" into "http://localhost:5173/style.css"
  âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~absolute/style.css" into "http://localhost:5173/assets/style.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~file" into "http://localhost:5173/example.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "~outside/test.css" into "http://localhost:5173/@fs/some/non-root/test.css"
- âœ“ src/core/builders/vite/plugins/__tests__/devHtmlPrerender.test.ts > Dev HTML Prerender Plugin > pointToDevServer > should transform "https://example.com/style.css" into "https://example.com/style.css"
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > No changes > should return 'no-change' when the changed file isn't used by any of the entrypoints
- âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > wxt.config.ts > should return 'full-restart' when one of the changed files is the config file
  âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > web-ext.config.ts > should return 'browser-restart' when one of the changed files is the config file
  âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > Public Assets > should return 'extension-reload' without any groups to rebuild when the changed file is a public asset
  âœ“ src/core/utils/building/__tests__/detect-dev-changes.test.ts > Detect Dev Changes > Background > should rebuild the background and reload the extension when the changed file in it's chunks' `moduleIds` field
@@ -496,16 +415,6 @@ stdout | src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > restoreSnapshot > should restore a snapshot object by setting all values in storage
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > restoreSnapshot > should overwrite, not merge, any metadata keys in the snapshot
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > watch > should not trigger if the changed key is different from the requested key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > watch > should not trigger if the value doesn't change
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > watch > should call the callback when the value changes
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > watch > should remove the listener when calling the returned function
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - sync > unwatch > should remove all watch listeners
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItem > should return the value from the correct storage area
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItem > should return the value if multiple : are use in the key
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItem > should return null if the value doesn't exist
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItem > should return the default value if passed in options
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getItems > should return an array of values
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getMeta > should return item metadata from key+$
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > getMeta > should return an empty object if missing
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > setItem > should set the value in the correct storage area
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - managed > setItem > should remove the item from storage when setting the value to undefined
@@ -539,14 +448,6 @@ stdout | src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setItem > should set the value in the correct storage area
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setItem > should remove the item from storage when setting the value to undefined
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setItem > should remove the item from storage when setting the value to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setItems > should set multiple items in storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setMeta > should set metadata at key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setMeta > should remove any properties set to undefined
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > setMeta > should remove any properties set to null
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeItem > should remove the key from storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeItem > should not remove the metadata by default
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeItem > should remove the metadata when requested
- âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeItems > should remove multiple items
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeMeta > should remove all metadata
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > removeMeta > should only remove specific properties
  âœ“ src/__tests__/storage.test.ts > Storage Utils > storage - session > snapshot > should return a snapshot of the entire storage without area prefixes
@@ -564,12 +465,6 @@ stdout | src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning
  âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should not run old migrations if the version is unchanged
  âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should skip missing migration functions
  âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning > should throw an error if the new version is less than the previous version
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getValue > should return the value from storage
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getValue > should return null if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getValue > should return the provided default value if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getMeta > should return the value from storage at key+$
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > getMeta > should return an empty object if missing
- âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > setValue > should set the value in storage
  âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > setValue > should remove the value in storage when undefined is passed in
  âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > setValue > should remove the value in storage when null is passed in
  âœ“ src/__tests__/storage.test.ts > Storage Utils > defineItem > setMeta > should set metadata at key+$
@@ -672,102 +567,7 @@ stdout | src/__tests__/storage.test.ts > Storage Utils > defineItem > versioning
  âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > host_permissions > should keep host_permissions as-is for MV3
  âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > host_permissions > should move host_permissions to permissions for MV2, ignoring duplicates
  âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Dev mode > should not add any code for production builds
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Dev mode > should add required permissions for dev mode to function for MV2
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Dev mode > should add required permissions for dev mode to function for MV3
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > stripPathFromMatchPattern > should convert "<all_urls>" to "<all_urls>"
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > stripPathFromMatchPattern > should convert "*://play.google.com/books/*" to "*://play.google.com/*"
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > stripPathFromMatchPattern > should convert "*://*/*" to "*://*/*"
- âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > stripPathFromMatchPattern > should convert "https://github.com/wxt-dev/*" to "https://github.com/*"
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load popup entrypoint config from popup.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load popup entrypoint config from popup/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load options entrypoint config from options.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load options entrypoint config from options/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from content.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from overlay.content.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from content/index.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from overlay.content/index.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load content script entrypoint config from overlay.content.tsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load background entrypoint config from background.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load background entrypoint config from background/index.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load sidepanel entrypoint config from sidepanel.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load sidepanel entrypoint config from sidepanel/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load sidepanel entrypoint config from named.sidepanel.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load sidepanel entrypoint config from named.sidepanel/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should remove type=module from MV2 background scripts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should allow type=module for MV3 background service workers
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should include a virtual background script so dev reloading works when there isn't a background entrypoint defined by the user
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected.tsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected.js
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected.jsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected/index.ts
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected/index.tsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected/index.js
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find and load unlisted-script entrypoint config from injected/index.jsx
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for sandbox.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for sandbox/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for named.sandbox.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for named.sandbox/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for bookmarks.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for bookmarks/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for history.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for history/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for newtab.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for newtab/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for devtools.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for devtools/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for onboarding.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for onboarding/index.html
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for iframe.scss
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for iframe.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for content.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for overlay.content.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for content/index.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should find entrypoint for overlay.content/index.css
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > should not allow multiple entrypoints with the same name
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > throw an error if there are no entrypoints
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out the background when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out content scripts when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out the popup when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out the options page when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > include option > should filter out an unlisted page when include doesn't contain the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out the background when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out content scripts when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out the popup when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out the options page when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > exclude option > should filter out an unlisted page when exclude contains the target browser
- âœ“ src/core/utils/building/__tests__/find-entrypoints.test.ts > findEntrypoints > filterEntrypoints option > should control entrypoints accessible
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing a custom root
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect a custom config file
- âœ“ src/core/package-managers/__tests__/pnpm.test.ts > PNPM Package Management Utils > listDependencies > should list all dependencies 1212ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing a custom mode
- âœ“ src/core/package-managers/__tests__/npm.test.ts > NPM Package Management Utils > downloadDependency > should download the dependency as a tarball 1132ms
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing a custom browser
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should pass correct filtered entrypoints
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing --mv2
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing --mv3
- âœ“ src/cli/__tests__/index.test.ts > CLI > dev > should respect passing --port
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > integrated > should add a wrapper and custom UI to the page
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > integrated > should allow customizing the wrapper tag
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > iframe > should add a wrapper and iframe to the page
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > shadow-root > should load a shadow root to the page
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > shadow-root > should respect the shadow root mode (open -> open)
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > shadow-root > should respect the shadow root mode (undefined -> open)
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > type > shadow-root > should respect the shadow root mode (closed -> closed)
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > inline > should wrap the UI in a simple div
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=undefined
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=top-left
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=top-right
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=bottom-right
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should wrap the UI in a positioned div when alignment=bottom-left
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > overlay > should respect the provided zIndex
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > modal > should wrap the UI in a div with a fixed position
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > position > modal > should respect the provided zIndex
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > undefined > should append the element to the body
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > string > should append the element using the specified query selector
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > string > should append the element using an XPath string
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > Element > should append the element using the specified element
- âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > function > should append the element using the specified function
+ âœ“ src/core/utils/__tests__/manifest.test.ts > Manifest Utils > generateManifest > Dev mode > should add required permissions for dev
  âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > anchor > should throw an error when the anchor does not exist
  âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > append > undefined > should append the element as the last child of the anchor
  âœ“ src/client/content-scripts/ui/__tests__/index.test.ts > Content Script UIs > append > last > should append the element as the last child of the anchor
